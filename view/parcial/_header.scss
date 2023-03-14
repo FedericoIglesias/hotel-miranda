@@ -1,0 +1,71 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    position: relative;
+}
+.div__emblem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div__logo{
+    padding: 8px 8px;
+    border: solid black 1px;
+    margin-right: 10px;
+    p{
+        font-size: 13px;
+        font-weight: 700
+    };
+}
+.h1__name{
+    font-size: 13px;
+    font-weight: 700;
+    span{
+        font-weight: 400;
+        display: block;
+    }
+}
+.div__hamburguer{
+    order: -1;
+    width: 20px;
+    height: 13px;
+}
+.div__cross{
+    order: -1;
+    width: 20px;
+    height: 13px;
+}
+
+.div__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img__iconPerson{
+    margin-right: 28px;
+    img{
+        width: 20px;
+        height: 20px;
+    }
+}
+.img__search{
+    img{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.div__menu{
+    position: absolute;
+    top: 82px;
+    left: 0;
+    background-color: white;
+    width: 320px;
+    font-weight: 600;
+    padding: 20px 0;
+    p{
+        margin: 25px 20px;
+    }
+}

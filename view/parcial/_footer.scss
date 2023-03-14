@@ -1,0 +1,67 @@
+// @mixin
+.footer__div {
+    padding: 30px 20px 0px;
+}
+
+.art__logo {
+    margin: auto;
+    max-width: 419px;
+    .logo {
+        height: 80px;
+        margin-bottom: 47px;
+    }
+    margin-bottom: 32px;
+}
+
+.art__logo__text {
+    line-height: 26px;
+}
+
+.art_service {
+    margin: auto;
+    max-width: 419px;
+    h2 {
+        font-size: 24px;
+        font-weight: 400;
+    }
+}
+
+.art__service__list {
+    list-style-type: none;
+    line-height: 48px;
+    display: flex;
+    flex-flow: column wrap;
+    height: 300px;
+    span {
+        font-size: 14px;
+        font-weight: 700;
+    }
+    margin-bottom: 30px;
+}
+
+.art__contact {
+    margin: auto;
+    max-width: 419px;
+    h2 {
+        font-size: 24px;
+        font-weight: 400;
+    }
+    display: flex;
+    flex-flow: column wrap;
+}
+.art__contact__item {
+    display: flex;
+    margin: 30px 0px;
+    div {
+        margin-right: 10px;
+    }
+}
+
+.copyright{
+    padding: 16px 20px;
+    background-color: #F8F8F8;
+    p{
+        font-weight: 700;
+        line-height: 24px;
+    }
+}

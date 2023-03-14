@@ -6,24 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Miranda</title>
+    <link rel="stylesheet" href="view/style.css">
 </head>
 
 <body>
     <header>
-        <div>
-            <p>H</p>
+        <div class="div__emblem">
+            <div class="div__logo">
+                <p>H</p>
+            </div>
+            <h1 class="h1__name">Hotel <span>Miranda</span> </h1>
         </div>
-        <h1>Hotel Miranda</h1>
-        <div><img src="assets/hamburguer.svg" alt="menu"></div>
-        <div><img src="assets/crooss.svg" alt="closeMenu"></div>
-        <div>
+
+        <div class="div__hamburguer"><img src="assets/hamburguer.svg" alt="menu"></div>
+        <div class="div__cross display--none"><img src="assets/crooss.svg" alt="closeMenu"></div>
+        <div class="div__menu display--none">
             <p>About Us</p>
             <p>Rooms</p>
             <p>Offers</p>
             <p>Contact</p>
         </div>
-        <div><img src="assets/login.svg" alt="iconPerson"></div>
-        <div><img src="assets/search.svg" alt="search"></div>
+
+        <div class="div__img">
+            <div class="img__iconPerson"><img src="assets/login.svg" alt="iconPerson"></div>
+            <div class="img__search"><img src="assets/search.svg" alt="search"></div>
+        </div>
+
     </header>
     <main>
         <!-- PROOF -->
@@ -39,9 +47,9 @@
             </div>
             <div>
                 <p>Arrival Date</p>
-                <input type="calendar">
+                <input type="date">
                 <p>LeDeparture Date</p>
-                <input type="calendar" name="" id="">
+                <input type="date" name="" id="">
                 <div>
                     <p>CHECK AVAILABILITY</p>
                 </div>
@@ -165,52 +173,63 @@
             </div>
         </article>
     </main>
+
+    <!-- FOOTER -->
     <footer>
-        <div>
-            <article>
-                <div><img src="assets/logo-footer.svg" alt="logo-footer"></div>
-                <p>Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod tempor incididunt ut
+        <div class="footer__div">
+            <article class="art__logo">
+                <div class="logo"><img src="assets/logo-footer.svg" alt="logo-footer"></div>
+                <p class="art__logo__text">Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod
+                    tempor incididunt ut
                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat ion ullamco laboris
                     nisi.</p>
-                <div></div>
+                <div>socialssssss</div>
             </article>
-            <article>
-                <h2>Sevices</h2>
-                <ul>
-                    <li>Resturent & Bar</li>
-                    <li>Swimming Pool</li>
-                    <li>Wellness & Spa</li>
-                    <li>Resturant</li>
-                    <li>Conference Rooms</li>
-                    <li>Coctail Party House</li>
-                    <li>Gaming Zone</li>
-                    <li>Marrige Party</li>
-                    <li>Party Planning</li>
-                    <li>Tour Consultancy</li>
-                </ul>
+
+            <article class="art_service">
+                <h2>Services</h2>
+                <div class="art__service__list">
+                    <p><span>+</span> Resturent & Bar</p>
+                    <p><span>+</span> Swimming Pool</p>
+                    <p><span>+</span> Wellness & Spa</p>
+                    <p><span>+</span> Resturant</p>
+                    <p><span>+</span> Conference Rooms</p>
+                    <p><span>+</span> Coctail Party House</p>
+                    <p><span>+</span> Gaming Zone</p>
+                    <p><span>+</span> Marrige Party</p>
+                    <p><span>+</span> Party Planning</p>
+                    <p><span>+</span> Tour Consultancy</p>
+                </div>
             </article>
-            <article>
+
+            <article class="art__contact">
                 <h2>Conctact Us</h2>
-                <div>
-                    <img src="assets/contact/phone.svg" alt="">
-                    <p>Phone Number</p>
-                    <p>+987654321</p>
+                <div class="art__contact__item">
+                    <div><img src="assets/contact/phone.svg" alt=""></div>
+                    <div>
+                        <p>Phone Number</p>
+                        <p>+987654321</p>
+                    </div>
                 </div>
-                <div>
-                    <img src="assets/contact/mail.svg" alt="">
-                    <p>Mail</p>
-                    <p>miranda@mail.com</p>
+                <div class="art__contact__item">
+                    <div><img src="assets/contact/mail.svg" alt=""></div>
+                    <div>
+                        <p>Mail</p>
+                        <p>miranda@mail.com</p>
+                    </div>
                 </div>
-                <div>
-                    <img src="assets/contact/ubi.svg" alt="">
-                    <p>Ubication</p>
-                    <p>At World</p>
+                <div class="art__contact__item"> 
+                    <div><img src="assets/contact/ubi.svg" alt=""></div>
+                    <div>
+                        <p>Ubication</p>
+                        <p>At World</p>
+                    </div>
                 </div>
             </article>
         </div>
-        <div>
+        <div class="copyright">
             <p>Copyright By Dev. Iglesias Federico - 2023</p>
-            <p>terms of use | Privacy Environmental Policy</p>
+            <p>Terms of use | Privacy Environmental Policy</p>
         </div>
     </footer>
 </body>

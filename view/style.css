@@ -1,0 +1,158 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  position: relative;
+}
+
+.div__emblem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div__logo {
+  padding: 8px 8px;
+  border: solid black 1px;
+  margin-right: 10px;
+}
+.div__logo p {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.h1__name {
+  font-size: 13px;
+  font-weight: 700;
+}
+.h1__name span {
+  font-weight: 400;
+  display: block;
+}
+
+.div__hamburguer {
+  order: -1;
+  width: 20px;
+  height: 13px;
+}
+
+.div__cross {
+  order: -1;
+  width: 20px;
+  height: 13px;
+}
+
+.div__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img__iconPerson {
+  margin-right: 28px;
+}
+.img__iconPerson img {
+  width: 20px;
+  height: 20px;
+}
+
+.img__search img {
+  width: 20px;
+  height: 20px;
+}
+
+.div__menu {
+  position: absolute;
+  top: 82px;
+  left: 0;
+  background-color: white;
+  width: 320px;
+  font-weight: 600;
+  padding: 20px 0;
+}
+.div__menu p {
+  margin: 25px 20px;
+}
+
+.footer__div {
+  padding: 30px 20px 0px;
+}
+
+.art__logo {
+  margin: auto;
+  max-width: 419px;
+  margin-bottom: 32px;
+}
+.art__logo .logo {
+  height: 80px;
+  margin-bottom: 47px;
+}
+
+.art__logo__text {
+  line-height: 26px;
+}
+
+.art_service {
+  margin: auto;
+  max-width: 419px;
+}
+.art_service h2 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.art__service__list {
+  list-style-type: none;
+  line-height: 48px;
+  display: flex;
+  flex-flow: column wrap;
+  height: 300px;
+  margin-bottom: 30px;
+}
+.art__service__list span {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.art__contact {
+  margin: auto;
+  max-width: 419px;
+  display: flex;
+  flex-flow: column wrap;
+}
+.art__contact h2 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.art__contact__item {
+  display: flex;
+  margin: 30px 0px;
+}
+.art__contact__item div {
+  margin-right: 10px;
+}
+
+.copyright {
+  padding: 16px 20px;
+  background-color: #F8F8F8;
+}
+.copyright p {
+  font-weight: 700;
+  line-height: 24px;
+}
+
+html, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+}
+
+.display--none {
+  display: none;
+}/*# sourceMappingURL=style.css.map */

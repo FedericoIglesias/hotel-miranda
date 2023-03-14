@@ -1,0 +1,11 @@
+@import "./parcial/_header.scss";
+@import "./parcial/_footer.scss";
+
+html, * { box-sizing: border-box;
+    margin: 0 ;
+    padding: 0 }
+body { min-width: 320px }
+
+.display--none{
+    display: none;
+}
