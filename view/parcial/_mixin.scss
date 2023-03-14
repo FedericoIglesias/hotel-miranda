@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+
+@mixin gold {
+    background-color: #BEAD8E;
+}
+@mixin black {
+    background-color: #222222;
+}
+@mixin blackLight {
+    background-color: #333333;
+}
+
+@mixin text($size: 16px, $color: black,  $bold: 400, $fontFamily: sans-serif){
+    font-size: $size;
+    color: $color;
+    font-family: $fontFamily;
+    font-weight: $bold;
+}
+
+@mixin Old{
+    font-family: 'Old Standard TT', sans-serif;
+} 
+@mixin archivo{
+    font-family: 'Archivo', sans-serif;
+}
+@mixin roboto{
+    font-family: 'Roboto',sans-serif;
+}
+@mixin b600{
+    font-weight: 600;
+}
+@mixin b700{
+    font-weight: 700;
+}
+
+@mixin center{
+    padding: 0 20px;
+}

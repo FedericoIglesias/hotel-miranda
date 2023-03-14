@@ -1,0 +1,128 @@
+@import "./_mixin.scss";
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+.index {
+    // PROOF ---------------------------------------
+    .proof__art {
+        margin-bottom: 60px;
+        .art__div1 {
+            padding: 76px 20px;
+            @include blackLight;
+            .div1__p {
+                @include text(13px, white, 700);
+                @include archivo;
+                margin-bottom: 40px;
+                font-family: "Archivo", sans-serif;
+            }
+            .div1__p1 {
+                @include text(56px, white);
+                margin-bottom: 40px;
+            }
+            .div1__button {
+                display: flex;
+                flex-flow: column wrap;
+                .div__button1 {
+                    @include archivo;
+                    border: none;
+                    @include gold;
+                    padding: 22px 0px;
+                    width: 217px;
+                    @include text(14px, white, 700);
+                    margin-bottom: 24px;
+                }
+                .div__button2 {
+                    @include archivo;
+                    border: solid 1px grey;
+                    @include blackLight;
+                    padding: 22px 0px;
+                    width: 217px;
+                    @include text(14px, white, 700);
+                    margin-bottom: 24px;
+                }
+            }
+        }
+        .art__div2 {
+            padding: 36px 20px;
+            @include black;
+            p {
+                @include text(16px, white, 700);
+                margin-bottom: 24px;
+            }
+            input {
+                width: 120px;
+                @include black;
+                color: white;
+                border: none;
+                margin-bottom: 14px;
+            }
+            .div2__line {
+                @include gold;
+                height: 2px;
+                width: 100%;
+                max-width: 335px;
+                margin-bottom: 30px;
+            }
+            .div2__button {
+                border: none;
+                padding: 22px 25px;
+                @include text(14px, white, 700);
+                @include gold;
+            }
+        }
+    }
+
+    // ABOUT US-------------------------------------------------------
+
+    .about__art {
+        background-color: #f9f9f9;
+        padding: 38px 20px;
+        .art__div1 {
+            h2 {
+                @include text(13px, #777777, 700);
+                margin-bottom: 32px;
+            }
+            .div1__p1{
+                @include text (40px, #111111);
+                margin-bottom: 16px;
+            }
+            .div1__p2{
+                @include text(14px, #777777);
+                margin-bottom: 24px;
+            }
+            button{
+                border: none;
+                padding: 22px 56px ;
+                @include gold;
+                margin-bottom: 82px;
+            }
+        }
+        .art__div2{
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            .div2__img1{
+                img{
+                    height: 400px;
+                    width: 270px;
+                }
+            }
+            .div2__div{
+                padding: 54px 35px  38px;
+                display: flex;
+                flex-flow: column wrap;
+                img{
+                    margin-bottom: 30px;
+                }
+                .div__p1{
+                    text-align: center;
+                    @include text (30px, #111111);
+                    margin-bottom: 21px;
+                }
+                .div__p2{
+                    text-align: center;
+                    @include text(14px, #111111)
+                }
+            }
+        }
+    }
+}

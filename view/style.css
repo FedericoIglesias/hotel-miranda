@@ -1,3 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap");
+html, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -143,14 +156,153 @@ header {
   line-height: 24px;
 }
 
-html, * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+.index .proof__art {
+  margin-bottom: 60px;
 }
-
-body {
-  min-width: 320px;
+.index .proof__art .art__div1 {
+  padding: 76px 20px;
+  background-color: #333333;
+}
+.index .proof__art .art__div1 .div1__p {
+  font-size: 13px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-family: "Archivo", sans-serif;
+  margin-bottom: 40px;
+  font-family: "Archivo", sans-serif;
+}
+.index .proof__art .art__div1 .div1__p1 {
+  font-size: 56px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.index .proof__art .art__div1 .div1__button {
+  display: flex;
+  flex-flow: column wrap;
+}
+.index .proof__art .art__div1 .div1__button .div__button1 {
+  font-family: "Archivo", sans-serif;
+  border: none;
+  background-color: #BEAD8E;
+  padding: 22px 0px;
+  width: 217px;
+  font-size: 14px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.index .proof__art .art__div1 .div1__button .div__button2 {
+  font-family: "Archivo", sans-serif;
+  border: solid 1px grey;
+  background-color: #333333;
+  padding: 22px 0px;
+  width: 217px;
+  font-size: 14px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.index .proof__art .art__div2 {
+  padding: 36px 20px;
+  background-color: #222222;
+}
+.index .proof__art .art__div2 p {
+  font-size: 16px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.index .proof__art .art__div2 input {
+  width: 120px;
+  background-color: #222222;
+  color: white;
+  border: none;
+  margin-bottom: 14px;
+}
+.index .proof__art .art__div2 .div2__line {
+  background-color: #BEAD8E;
+  height: 2px;
+  width: 100%;
+  max-width: 335px;
+  margin-bottom: 30px;
+}
+.index .proof__art .art__div2 .div2__button {
+  border: none;
+  padding: 22px 25px;
+  font-size: 14px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 700;
+  background-color: #BEAD8E;
+}
+.index .about__art {
+  background-color: #f9f9f9;
+  padding: 38px 20px;
+}
+.index .about__art .art__div1 h2 {
+  font-size: 13px;
+  color: #777777;
+  font-family: sans-serif;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+.index .about__art .art__div1 .div1__p1 {
+  font-size: 40px;
+  color: #111111;
+  font-family: sans-serif;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+.index .about__art .art__div1 .div1__p2 {
+  font-size: 14px;
+  color: #777777;
+  font-family: sans-serif;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+.index .about__art .art__div1 button {
+  border: none;
+  padding: 22px 56px;
+  background-color: #BEAD8E;
+  margin-bottom: 82px;
+}
+.index .about__art .art__div2 {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.index .about__art .art__div2 .div2__img1 img {
+  height: 400px;
+  width: 270px;
+}
+.index .about__art .art__div2 .div2__div {
+  padding: 54px 35px 38px;
+  display: flex;
+  flex-flow: column wrap;
+}
+.index .about__art .art__div2 .div2__div img {
+  margin-bottom: 30px;
+}
+.index .about__art .art__div2 .div2__div .div__p1 {
+  text-align: center;
+  font-size: 30px;
+  color: #111111;
+  font-family: sans-serif;
+  font-weight: 400;
+  margin-bottom: 21px;
+}
+.index .about__art .art__div2 .div2__div .div__p2 {
+  text-align: center;
+  font-size: 14px;
+  color: #111111;
+  font-family: sans-serif;
+  font-weight: 400;
 }
 
 .display--none {

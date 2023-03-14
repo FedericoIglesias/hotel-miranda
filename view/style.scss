@@ -1,10 +1,15 @@
-@import "./parcial/_header.scss";
-@import "./parcial/_footer.scss";
-
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap');
 html, * { box-sizing: border-box;
     margin: 0 ;
     padding: 0 }
 body { min-width: 320px }
+
+@import "./parcial/_header.scss";
+@import "./parcial/_footer.scss";
+@import './parcial/_index.scss';
+
+
+
 
 .display--none{
     display: none;
