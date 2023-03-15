@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap");
 html, * {
   box-sizing: border-box;
   margin: 0;
@@ -564,6 +565,217 @@ header {
   font-family: sans-serif;
   font-weight: 700;
   margin-bottom: 60px;
+}
+
+.about .proof__art {
+  background-color: #333333;
+  padding: 75px 20px 96px;
+  position: relative;
+}
+.about .proof__art .art__p1 {
+  font-size: 14px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.about .proof__art .art__p2 {
+  font-size: 56px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+.about .proof__art .art__div {
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+  background-color: white;
+  padding: 16px 24px;
+  font-size: 16px;
+  color: #222222;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+.about .proof__art .art__div span {
+  color: #bead8e;
+}
+.about .video__art {
+  padding: 0px;
+  margin-bottom: 71px;
+}
+.about .video__art .art__p {
+  padding: 0 20px;
+  font-size: 32px;
+  color: #222222;
+  font-family: sans-serif;
+  font-weight: 400;
+  margin-bottom: 51px;
+}
+.about .video__art .art__div {
+  display: grid;
+  grid-template-areas: "auto  auto" "auto  auto";
+  justify-content: center;
+}
+.about .video__art .art__div div {
+  width: 158px;
+  height: 158px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+.about .video__art .art__div div img {
+  width: 58px;
+  height: 58px;
+}
+.about .restaurant__art {
+  padding: 20px 20px 80px;
+}
+.about .restaurant__art .art__div1 {
+  margin: auto;
+  width: 280px;
+  height: 280px;
+  margin-bottom: 32px;
+}
+.about .restaurant__art .art__div1 .art__img {
+  width: 280px;
+  height: 280px;
+}
+.about .restaurant__art .art__p1 {
+  font-size: 14px;
+  color: #777;
+  font-family: sans-serif;
+  font-weight: 700;
+  margin-bottom: 26px;
+}
+.about .restaurant__art .art__p2 {
+  font-size: 40px;
+  color: #222222;
+  font-family: sans-serif;
+  font-weight: 400;
+  margin-bottom: 26px;
+}
+.about .restaurant__art .art__p3 {
+  font-size: 14px;
+  color: #777;
+  font-family: sans-serif;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+.about .restaurant__art button {
+  background-color: #BEAD8E;
+  padding: 22px 45px;
+  font-size: 14px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 700;
+  border: none;
+}
+.about .facilities__art {
+  padding: 60px 20px;
+  margin-bottom: 60px;
+  background-color: #222222;
+}
+.about .facilities__art .art__p1 {
+  font-size: 14px;
+  color: #777777;
+  font-family: sans-serif;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.about .facilities__art .art__p2 {
+  font-size: 40px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+.about .facilities__art .art__div {
+  padding: 81px 15px 51px;
+  position: relative;
+  background-color: #333333;
+}
+.about .facilities__art .art__div .div__p1 {
+  font-size: 120px;
+  color: black;
+  font-family: sans-serif;
+  font-weight: 700;
+  position: absolute;
+  right: 0;
+  top: 0px;
+  color: #222222;
+}
+.about .facilities__art .art__div img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 37px;
+}
+.about .facilities__art .art__div .div__p2 {
+  font-size: 30px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 400;
+  margin-bottom: 28px;
+}
+.about .facilities__art .art__div .div__p3 {
+  font-size: 14px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+.about .counter__art {
+  padding-bottom: 82px;
+}
+.about .counter__art .art__div1 {
+  padding: 0 20px;
+}
+.about .counter__art .art__div1 .art__p1 {
+  font-size: 14px;
+  color: #777;
+  font-family: sans-serif;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.about .counter__art .art__div1 .art__p2 {
+  font-size: 40px;
+  color: #222;
+  font-family: sans-serif;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+.about .counter__art .art__div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px auto;
+  padding: 25px 20px;
+  max-width: 335px;
+}
+.about .counter__art .art__div img {
+  width: 55px;
+  height: 55px;
+  margin-right: 20px;
+}
+.about .counter__art .art__div .div__div .div__p1 {
+  font-size: 60px;
+  color: #222222;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+.about .counter__art .art__div .div__div .div__p2 {
+  font-size: 16px;
+  color: #777;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+.about .counter__art .art__div .div__p {
+  color: #dcdcdc;
+  font-size: 32px;
+}
+.about .counter__art .art__img {
+  width: 280px;
+  height: 300px;
 }
 
 .display--none {

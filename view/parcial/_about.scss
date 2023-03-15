@@ -1,0 +1,173 @@
+@import "./_mixin.scss";
+
+.about {
+    // PROOF --------------------------------------
+    .proof__art {
+        @include blackLight;
+        padding: 75px 20px 96px;
+        position: relative;
+        .art__p1 {
+            @include text(14px, white, 700);
+            margin-bottom: 16px;
+        }
+        .art__p2 {
+            @include text(56px, white);
+        }
+        .art__div {
+            position: absolute;
+            bottom: 0px;
+            right: 20px;
+            background-color: white;
+            padding: 16px 24px;
+            @include text(16px, #222222, 700);
+            span {
+                color: #bead8e;
+            }
+        }
+    }
+    // VIDEO --------------------------------
+    .video__art {
+        padding: 0px;
+        margin-bottom: 71px;
+        .art__p {
+            padding: 0 20px;
+            @include text(32px, #222222);
+            margin-bottom: 51px;
+        }
+        .art__div {
+            display: grid;
+            grid-template-areas:
+                "auto  auto"
+                "auto  auto";
+            justify-content: center;
+            div {
+                width: 158px;
+                height: 158px;
+                display: flex;
+                flex-flow: column wrap;
+                align-items: center;
+                justify-content: center;
+                img {
+                    width: 58px;
+                    height: 58px;
+                }
+            }
+        }
+    }
+    // RESTAURANT ----------------------------------------
+    .restaurant__art {
+        padding: 20px 20px 80px;
+        .art__div1 {
+            margin: auto;
+            width: 280px;
+            height: 280px;
+            margin-bottom: 32px;
+            .art__img {
+                width: 280px;
+                height: 280px;
+            }
+        }
+        .art__p1 {
+            @include text(14px, #777, 700);
+            margin-bottom: 26px;
+        }
+        .art__p2 {
+            @include text(40px, #222222);
+            margin-bottom: 26px;
+        }
+        .art__p3 {
+            @include text(14px, #777);
+            margin-bottom: 16px;
+        }
+        button {
+            @include gold;
+            padding: 22px 45px;
+            @include text(14px, white, 700);
+            border: none;
+        }
+    }
+    // FACILITIES ----------------------------------------------
+    .facilities__art {
+        padding: 60px 20px;
+        margin-bottom: 60px;
+        @include black;
+        .art__p1 {
+            @include text(14px, #777777, 700);
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        .art__p2 {
+            @include text(40px, white);
+            margin-bottom: 32px;
+        }
+        .art__div {
+            padding: 81px 15px 51px;
+            position: relative;
+            @include blackLight;
+            .div__p1 {
+                @include text(120px, black, 700);
+                position: absolute;
+                right: 0;
+                top: 0px;
+                color: rgba($color: #222, $alpha: 1);
+            }
+            img {
+                width: 70px;
+                height: 70px;
+                margin-bottom: 37px;
+            }
+            .div__p2 {
+                @include text(30px, white);
+                margin-bottom: 28px;
+            }
+            .div__p3 {
+                @include text(14px, white);
+            }
+        }
+    }
+
+    // COUNTER --------------------------------------------------------------
+    .counter__art {
+        padding-bottom: 82px;
+        .art__div1 {
+            padding: 0 20px;
+            .art__p1 {
+                @include text(14px, #777, 700);
+                margin-bottom: 24px;
+            }
+            .art__p2 {
+                @include text(40px, #222);
+                margin-bottom: 60px;
+            }
+        }
+        .art__div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 16px auto;
+            padding: 25px 20px;
+            max-width: 335px;
+            img {
+                width: 55px;
+                height: 55px;
+                margin-right: 20px;
+            }
+            .div__div {
+                .div__p1 {
+                    @include text(60px, #222222);
+                }
+                .div__p2 {
+                    @include text(16px, #777);
+                }
+            }
+            .div__p {
+                color: #dcdcdc;
+                font-size: 32px;
+            }
+        }
+        .art__img {
+            width: 280px;
+            height: 300px;
+        }
+    }
+}
