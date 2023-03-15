@@ -81,47 +81,243 @@
                 @include text(13px, #777777, 700);
                 margin-bottom: 32px;
             }
-            .div1__p1{
-                @include text (40px, #111111);
+            .div1__p1 {
+                @include text(40px, #111111);
                 margin-bottom: 16px;
             }
-            .div1__p2{
+            .div1__p2 {
                 @include text(14px, #777777);
                 margin-bottom: 24px;
             }
-            button{
+            button {
                 border: none;
-                padding: 22px 56px ;
+                padding: 22px 56px;
                 @include gold;
                 margin-bottom: 82px;
+                @include text(14px, white, 700);
             }
         }
-        .art__div2{
+        .art__div2 {
             display: flex;
             flex-flow: column wrap;
             align-items: center;
-            .div2__img1{
-                img{
+            .div2__img1 {
+                img {
                     height: 400px;
                     width: 270px;
                 }
             }
-            .div2__div{
-                padding: 54px 35px  38px;
+            .div2__div {
+                padding: 54px 35px 38px;
                 display: flex;
                 flex-flow: column wrap;
-                img{
+                img {
                     margin-bottom: 30px;
                 }
-                .div__p1{
+                .div__p1 {
                     text-align: center;
-                    @include text (30px, #111111);
+                    @include text(30px, #111111);
                     margin-bottom: 21px;
                 }
-                .div__p2{
+                .div__p2 {
                     text-align: center;
-                    @include text(14px, #111111)
+                    @include text(14px, #111111);
                 }
+            }
+        }
+        .art__div3 {
+            .div3__img {
+                width: 270px;
+                height: 400px;
+                background-color: #777777;
+            }
+            .div3__div {
+                padding: 54px 35px 38px;
+                display: flex;
+                flex-flow: column wrap;
+                img {
+                    margin-bottom: 30px;
+                }
+                .div__p1 {
+                    text-align: center;
+                    @include text(30px, #111111);
+                    margin-bottom: 21px;
+                }
+                .div__p2 {
+                    text-align: center;
+                    @include text(14px, #111111);
+                }
+            }
+        }
+    }
+    // ROOMSSSSS --------------------------------------
+    .room__art {
+        padding: 20px;
+        margin-bottom: 49px;
+        .art__p1 {
+            text-align: center;
+            @include text(14px, #777777, 700);
+            margin-bottom: 24px;
+        }
+        .art__p2 {
+            text-align: center;
+            @include text(40px, #111111);
+            margin-bottom: 16px;
+        }
+        img {
+            width: 270px;
+            height: 400px;
+        }
+        .art__div1 {
+            text-align: center;
+            .div1__p1 {
+                @include text(28px);
+                margin-bottom: 12px;
+            }
+            .div1__p2 {
+                @include text(14px);
+                margin-bottom: 12px;
+            }
+            .div1__p3 {
+                @include text(13px, #bead8e, 700);
+                span {
+                    @include text(8px, #bead8e, 700);
+                }
+            }
+        }
+    }
+    // VIDEO -----------------------------------------------
+    .video__art {
+        padding: 64px 20px 48px;
+        @include black;
+        .art__p1 {
+            @include text(14px, #bdac8d, 700);
+            margin-bottom: 32px;
+        }
+        .art__p2 {
+            @include text(40px, white);
+            margin-bottom: 16px;
+        }
+        .art__p3 {
+            @include text(14px, #c2c2c2);
+            margin-bottom: 32px;
+        }
+        button {
+            padding: 22px 56px;
+            @include gold;
+            @include text(14px, white, 700);
+            border: none;
+        }
+    }
+
+    // FACILITIES -----------------------------------------------
+    .facilities__art {
+        padding: 60px 20px;
+        margin-bottom: 175px;
+        .art__p1 {
+            @include text(14px, #777777, 700);
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        .art__p2 {
+            @include text(40px, #222222);
+            margin-bottom: 32px;
+        }
+        .art__div {
+            padding: 81px 15px 0;
+            position: relative;
+            .div__p1 {
+                @include text(120px, black, 700);
+                position: absolute;
+                right: 0;
+                top: 0px;
+                color: rgba($color: #222, $alpha: 0.05);
+            }
+            img {
+                width: 70px;
+                height: 70px;
+                margin-bottom: 37px;
+            }
+            .div__p2 {
+                @include text(30px, #222222);
+                margin-bottom: 28px;
+            }
+            .div__p3 {
+                @include text(14px, #777777);
+                margin-bottom: 32px;
+            }
+        }
+    }
+    // MENU ------------------------
+    .menu__art {
+        padding: 0 20px;
+        position: relative;
+        .menu__img {
+            position: absolute;
+            // width: 114px;
+            // height: 114px;
+            right: 0;
+            top: -120px;
+        }
+        .art__p1 {
+            @include text(14px, #777777, 700);
+            margin-bottom: 24px;
+        }
+        .art__p2 {
+            @include text(40px, #222);
+            margin-bottom: 32px;
+        }
+        .art__div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            img {
+                width: 120px;
+                height: 120px;
+                margin-right: 30px;
+                margin-bottom: 16px;
+            }
+            .div__p1 {
+                @include text(24px, #222);
+                margin-bottom: 12px;
+            }
+            .div__p2 {
+                @include text(14px, #222);
+                width: 185px;
+            }
+        }
+        .menu__img2 {
+            width: 280px;
+            height: 300px;
+            margin-bottom: 91px;
+        }
+    }
+    // NUMBER -----------------------------------
+    .number__art {
+        padding-top: 48px;
+        @include black;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        .art__div {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            margin-bottom: 60px;
+            img {
+                width: 80px;
+                height: 80px;
+                margin-bottom: 16px;
+            }
+            .div__p1 {
+                @include text(60px, white, 700);
+                span {
+                    @include text(16px, white, 700);
+                }
+            }
+            .div__p2 {
+                @include text(14px, #777777, 700);
+                margin-bottom: 60px;
             }
         }
     }
