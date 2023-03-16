@@ -1,0 +1,169 @@
+@import "./mixin";
+
+.offers {
+    // PROOF --------------------------------------
+    .proof__art {
+        @include blackLight;
+        padding: 75px 20px 96px;
+        position: relative;
+        .art__p1 {
+            @include text(14px, white, 700);
+            margin-bottom: 16px;
+        }
+        .art__p2 {
+            @include text(56px, white);
+        }
+        .art__div {
+            position: absolute;
+            bottom: 0px;
+            right: 20px;
+            background-color: white;
+            padding: 16px 24px;
+            @include text(16px, #222222, 700);
+            span {
+                color: #bead8e;
+            }
+        }
+    }
+    // SHOW --------------------------
+    .show__art {
+        .show__div {
+            padding: 48px 20px;
+            .div__img {
+                position: relative;
+                max-width: 335px;
+                margin-bottom: 16px;
+                img {
+                    width: 100%;
+                    height: 162px;
+                }
+            }
+            .img__p1 {
+                position: absolute;
+                @include text(23px, #bead8e, 700);
+                right: 15px;
+                text-decoration: line-through;
+                bottom: 48px;
+                span {
+                    @include text(11px, #bead8e, 700);
+                    text-decoration: none;
+                }
+            }
+            .img__p2 {
+                position: absolute;
+                position: absolute;
+                @include text(30px, #de5777, 700);
+                right: 15px;
+                bottom: 0px;
+                span {
+                    @include text(11px, #de5777, 700);
+                }
+            }
+        }
+        .show__p1 {
+            @include text(14px, #777, 700);
+            padding: 0 20px;
+            margin-bottom: 12px;
+        }
+        .show__p2 {
+            @include text(40px, #222);
+            padding: 0 20px;
+            margin-bottom: 16px;
+        }
+        .show__p3 {
+            @include text(14px, #777);
+            padding: 0 20px;
+            margin-bottom: 24px;
+        }
+        .show__div1 {
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .div1__div {
+                width: 140px;
+                display: flex;
+                margin-bottom: 17px;
+                .div__img1 {
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 8px;
+                    img {
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+                p {
+                    @include text(15px, #777, 400);
+                }
+            }
+        }
+        button {
+            @include text(14px, white, 700);
+            padding: 23px 56px;
+            border: none;
+            @include gold;
+        }
+
+    }
+    // MOSTPOPULAR ---------------------------
+    .most__art{
+        @include black;
+        padding: 48px 20px;
+        margin: auto;
+max-width: 375px;
+        .art__p1{
+            text-align: center;
+            @include text(14px, #bead8e);
+            margin-bottom: 25px;
+        }
+        .art__p2{
+            text-align: center;
+            @include text(40px, white);
+            margin-bottom: 48px;
+        }
+        .art__div{
+            .div__img{
+                max-width: 335px;
+                img{
+                    width: 100%;
+                    height: 218px;
+                }
+            }
+            .div__div{
+                background-color: white;
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: 49px 20px 24px;
+                .div__img1{
+                    position: absolute;
+                    background-color: white;
+                    padding: 12px 24px;
+                    top: -20px;
+                }
+                .div__p1{
+                    @include text(24px, #222222);
+                    margin-bottom: 24px;
+                    text-align: center;
+                }
+                .div__p2{
+                    @include text(16px, #777);
+                    text-align: center;
+                    margin-bottom: 5px
+                }
+                .div__p3{
+                    @include text(16px, #bead8e, 700);
+                    text-align: center;
+                    span{
+                        @include text(16px, #BDBDBD, 700);
+                        margin-left: 19px;
+                    }
+                
+                }
+            }
+
+        }
+    }
+}
