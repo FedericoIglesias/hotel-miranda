@@ -1,0 +1,61 @@
+@import './_mixin.scss';
+
+.details {
+    // PROOF --------------------------------------
+    .proof__art {
+        @include blackLight;
+        padding: 75px 20px 96px;
+        position: relative;
+        .art__p1 {
+            @include text(14px, white, 700);
+            margin-bottom: 16px;
+        }
+        .art__p2 {
+            @include text(56px, white);
+        }
+        .art__div {
+            position: absolute;
+            bottom: 0px;
+            right: 20px;
+            background-color: white;
+            padding: 16px 24px;
+            @include text(16px, #222222, 700);
+            span {
+                color: #bead8e;
+            }
+        }
+    }
+    // CONTACTS --------------------------
+    .contacts__art{
+        margin: auto;
+        padding: 77px 20px 0;
+        .art__div{
+            display: flex;
+            margin: auto;
+            margin-bottom: 150px;
+            position: relative;
+            max-width: 335px;
+            .art__p1{
+                @include text(200px, #bead8e, 700);
+                position: absolute;
+                right: 0px;
+                top: -50px;
+                opacity: 0.1;
+            }
+            img{
+                width: 40px;
+                height: 40px;
+                margin-right: 27px;
+            }
+            .div__div{
+                .div__p1{
+                    @include text(20px, #222);
+                    margin-bottom: 16px;
+                }
+                .div__p2{
+                    @include text(14px, #777);
+                }
+            }
+        }
+    }
+}
