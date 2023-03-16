@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap");
 html, * {
   box-sizing: border-box;
   margin: 0;
@@ -15,71 +16,68 @@ body {
   min-width: 320px;
 }
 
-header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 25px;
   position: relative;
 }
-
-.div__emblem {
+.header .header__p {
+  display: none;
+}
+.header .div__emblem {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.div__logo {
+.header .div__logo {
   padding: 8px 8px;
-  border: solid black 1px;
   margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 5px black;
 }
-.div__logo p {
+.header .div__logo p {
   font-size: 13px;
   font-weight: 700;
 }
-
-.h1__name {
+.header .h1__name {
   font-size: 13px;
   font-weight: 700;
 }
-.h1__name span {
+.header .h1__name span {
   font-weight: 400;
   display: block;
 }
-
-.div__hamburguer {
+.header .div__hamburguer {
   order: -1;
   width: 20px;
   height: 13px;
 }
-
-.div__cross {
+.header .div__cross {
   order: -1;
   width: 20px;
   height: 13px;
 }
-
-.div__img {
+.header .div__img {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.img__iconPerson {
+.header .img__iconPerson {
   margin-right: 28px;
 }
-.img__iconPerson img {
+.header .img__iconPerson img {
   width: 20px;
   height: 20px;
 }
-
-.img__search img {
+.header .img__search img {
   width: 20px;
   height: 20px;
 }
-
-.div__menu {
+.header .div__menu {
   position: absolute;
   top: 82px;
   left: 0;
@@ -87,11 +85,66 @@ header {
   width: 320px;
   font-weight: 600;
   padding: 20px 0;
+  display: none;
 }
-.div__menu p {
+.header .div__menu p {
   margin: 25px 20px;
 }
 
+@media (min-width: 1000px) {
+  header {
+    background-color: #222222;
+  }
+  .header {
+    margin: auto;
+    max-width: 1420px;
+    background-color: white;
+    top: 40px;
+    padding: 20px 120px 20px 20px;
+  }
+  .header .header__p {
+    display: block;
+    position: absolute;
+    top: -30px;
+    left: 0px;
+    font-size: 16px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 400;
+  }
+  .header .div__hamburguer {
+    display: none;
+  }
+  .header .div__menu {
+    display: flex;
+    position: sticky;
+    padding: 0;
+    width: 100%;
+    margin-left: 125px;
+  }
+  .header .div__menu p {
+    margin: 0;
+    margin-right: 30px;
+  }
+  .header .img__iconPerson {
+    border: 1px solid gray;
+    padding: 10px;
+  }
+  .header .img__search {
+    border: 1px solid gray;
+    padding: 10px;
+  }
+  .header .div__logo {
+    width: 80px;
+    height: 80px;
+  }
+  .header .div__logo p {
+    font-size: 70px;
+  }
+  .header .h1__name {
+    font-size: 26px;
+  }
+}
 .footer__div {
   padding: 30px 20px 0px;
 }
@@ -152,14 +205,46 @@ header {
 }
 
 .copyright {
+  margin: auto;
   padding: 16px 20px;
   background-color: #F8F8F8;
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .copyright p {
   font-weight: 700;
   line-height: 24px;
 }
 
+@media (min-width: 1000px) {
+  .footer__div {
+    padding: 101px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+  }
+  .footer__div .art__logo {
+    margin: 0;
+  }
+  .footer__div .art_service {
+    margin: 0;
+  }
+  .footer__div .art__logo {
+    margin-right: 80px;
+  }
+  .footer__div .art__contact {
+    margin: 0 0 0 230px;
+  }
+  .footer__div .art__contact .art__contact__item {
+    display: flex;
+    margin: 30px 0px;
+  }
+  .footer__div .art__contact .art__contact__item div {
+    margin-right: 10px;
+  }
+}
 .index .proof__art {
   margin-bottom: 60px;
 }
