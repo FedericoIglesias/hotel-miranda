@@ -22,6 +22,7 @@ body {
   align-items: center;
   padding: 25px;
   position: relative;
+  z-index: 2;
 }
 .header .header__p {
   display: none;
@@ -886,6 +887,12 @@ body {
   padding: 0px;
   margin-bottom: 71px;
 }
+.about .video__art .video {
+  min-width: 217px;
+  min-height: 186px;
+  max-width: 1170px;
+  max-height: 650px;
+}
 .about .video__art .art__p {
   padding: 0 20px;
   font-size: 32px;
@@ -909,6 +916,37 @@ body {
 .about .video__art .art__div div img {
   width: 58px;
   height: 58px;
+}
+.about .video__art .art__div :hover {
+  background-color: #BEAD8E;
+}
+.about .video__art .art__div :hover p {
+  color: white;
+}
+@media (min-width: 1000px) {
+  .about .video__art .video__div {
+    display: flex;
+    justify-content: center;
+    padding: 120px 20px 70px;
+  }
+  .about .video__art .video__div .video {
+    width: 1170px;
+    height: 650px;
+  }
+  .about .video__art .art__p {
+    text-align: center;
+    font-size: 72px;
+  }
+  .about .video__art .art__div {
+    display: flex;
+    justify-content: space-around;
+  }
+  .about .video__art .art__div div {
+    padding: 21px;
+  }
+  .about .video__art .art__div div p {
+    text-align: center;
+  }
 }
 .about .restaurant__art {
   padding: 20px 20px 80px;
@@ -949,14 +987,46 @@ body {
   font-weight: 700;
   border: none;
 }
+@media (min-width: 1000px) {
+  .about .restaurant__art {
+    padding: 40px;
+    display: grid;
+    grid-template-areas: "img p1" "img p2" "img p3" "img button";
+    justify-content: space-around;
+  }
+  .about .restaurant__art .art__img {
+    grid-area: img;
+    width: 530px;
+    height: 420px;
+    margin-right: 5px;
+  }
+  .about .restaurant__art .art__p1 {
+    grid-area: p1;
+    padding-top: 30px;
+  }
+  .about .restaurant__art .art__p2 {
+    grid-area: p2;
+    font-size: 48px;
+    max-width: 481px;
+  }
+  .about .restaurant__art .art__p3 {
+    grid-area: p3;
+    max-width: 477px;
+  }
+  .about .restaurant__art button {
+    grid-area: button;
+    max-width: 216px;
+    margin-bottom: 20px;
+  }
+}
 .about .facilities__art {
   padding: 60px 20px;
-  margin-bottom: 60px;
+  margin-bottom: 175px;
   background-color: #222222;
 }
 .about .facilities__art .art__p1 {
   font-size: 14px;
-  color: #777777;
+  color: white;
   font-weight: 700;
   text-align: center;
   margin-bottom: 24px;
@@ -968,18 +1038,20 @@ body {
   margin-bottom: 32px;
 }
 .about .facilities__art .art__div {
-  padding: 81px 15px 51px;
+  padding: 81px 15px 0;
   position: relative;
+  max-width: 370px;
+  max-height: 349px;
+  margin: 15px;
   background-color: #333333;
 }
 .about .facilities__art .art__div .div__p1 {
   font-size: 120px;
-  color: black;
+  color: #222;
   font-weight: 700;
   position: absolute;
   right: 0;
   top: 0px;
-  color: #222222;
 }
 .about .facilities__art .art__div img {
   width: 70px;
@@ -996,6 +1068,52 @@ body {
   font-size: 14px;
   color: white;
   font-weight: 400;
+  margin-bottom: 32px;
+}
+.about .facilities__art .n2 {
+  display: none;
+}
+.about .facilities__art .n3 {
+  display: none;
+}
+.about .facilities__art .n4 {
+  display: none;
+}
+.about .facilities__art .n5 {
+  display: none;
+}
+.about .facilities__art .n6 {
+  display: none;
+}
+@media (min-width: 1000px) {
+  .about .facilities__art .art__p1 {
+    text-align: center;
+  }
+  .about .facilities__art .art__p2 {
+    text-align: center;
+  }
+  .about .facilities__art .n2 {
+    display: inline-block;
+  }
+  .about .facilities__art .n3 {
+    display: block;
+  }
+  .about .facilities__art .n4 {
+    display: block;
+  }
+  .about .facilities__art .n5 {
+    display: block;
+  }
+  .about .facilities__art .n6 {
+    display: block;
+  }
+  .about .facilities__art .flexing {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+  }
 }
 .about .counter__art {
   padding-bottom: 82px;
@@ -1045,6 +1163,26 @@ body {
 .about .counter__art .art__img {
   width: 280px;
   height: 300px;
+}
+@media (min-width: 1000px) {
+  .about .counter__art {
+    max-width: 1170px;
+    margin: auto;
+  }
+  .about .counter__art .art__div1 .art__p2 {
+    font-size: 80px;
+  }
+  .about .counter__art .flexing {
+    display: flex;
+    justify-content: space-around;
+  }
+  .about .counter__art .div__img {
+    display: flex;
+  }
+  .about .counter__art .div__img .art__img {
+    width: 100%;
+    margin: 30px;
+  }
 }
 
 .room .proof__art {

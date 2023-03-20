@@ -29,6 +29,12 @@
     .video__art {
         padding: 0px;
         margin-bottom: 71px;
+        .video {
+            min-width: 217px;
+            min-height: 186px;
+            max-width: 1170px;
+            max-height: 650px;
+        }
         .art__p {
             padding: 0 20px;
             @include text(32px, #222222);
@@ -50,6 +56,39 @@
                 img {
                     width: 58px;
                     height: 58px;
+                }
+            }
+            :hover {
+                @include gold;
+                p {
+                    color: white;
+                }
+            }
+        }
+    }
+    @media (min-width: 1000px) {
+        .video__art {
+            .video__div {
+                display: flex;
+                justify-content: center;
+                padding: 120px 20px 70px;
+                .video {
+                    width: 1170px;
+                    height: 650px;
+                }
+            }
+            .art__p {
+                text-align: center;
+                font-size: 72px;
+            }
+            .art__div {
+                display: flex;
+                justify-content: space-around;
+                div {
+                    padding: 21px;
+                    p {
+                        text-align: center;
+                    }
                 }
             }
         }
@@ -86,13 +125,49 @@
             border: none;
         }
     }
+    @media (min-width: 1000px) {
+        .restaurant__art {
+            padding: 40px;
+            display: grid;
+            grid-template-areas:
+                "img p1"
+                "img p2"
+                "img p3"
+                "img button";
+            justify-content: space-around;
+            .art__img {
+                grid-area: img;
+                width: 530px;
+                height: 420px;
+                margin-right: 5px;
+            }
+            .art__p1 {
+                grid-area: p1;
+                padding-top: 30px;
+            }
+            .art__p2 {
+                grid-area: p2;
+                font-size: 48px;
+                max-width: 481px;
+            }
+            .art__p3 {
+                grid-area: p3;
+                max-width: 477px;
+            }
+            button {
+                grid-area: button;
+                max-width: 216px;
+                margin-bottom: 20px;
+            }
+        }
+    }
     // FACILITIES ----------------------------------------------
     .facilities__art {
         padding: 60px 20px;
-        margin-bottom: 60px;
+        margin-bottom: 175px;
         @include black;
         .art__p1 {
-            @include text(14px, #777777, 700);
+            @include text(14px, white, 700);
             text-align: center;
             margin-bottom: 24px;
         }
@@ -101,15 +176,17 @@
             margin-bottom: 32px;
         }
         .art__div {
-            padding: 81px 15px 51px;
+            padding: 81px 15px 0;
             position: relative;
+            max-width: 370px;
+            max-height: 349px;
+            margin: 15px;
             @include blackLight;
             .div__p1 {
-                @include text(120px, black, 700);
+                @include text(120px, #222, 700);
                 position: absolute;
                 right: 0;
                 top: 0px;
-                color: rgba($color: #222, $alpha: 1);
             }
             img {
                 width: 70px;
@@ -122,6 +199,54 @@
             }
             .div__p3 {
                 @include text(14px, white);
+                margin-bottom: 32px;
+            }
+        }
+        .n2 {
+            display: none;
+        }
+        .n3 {
+            display: none;
+        }
+        .n4 {
+            display: none;
+        }
+        .n5 {
+            display: none;
+        }
+        .n6 {
+            display: none;
+        }
+    }
+    @media (min-width: 1000px) {
+        .facilities__art {
+            .art__p1 {
+                text-align: center;
+            }
+            .art__p2 {
+                text-align: center;
+            }
+            .n2 {
+                display: inline-block;
+            }
+            .n3 {
+                display: block;
+            }
+            .n4 {
+                display: block;
+            }
+            .n5 {
+                display: block;
+            }
+            .n6 {
+                display: block;
+            }
+            .flexing {
+                margin: auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                max-width: 1200px;
             }
         }
     }
@@ -168,6 +293,28 @@
         .art__img {
             width: 280px;
             height: 300px;
+        }
+    }
+    @media (min-width: 1000px) {
+        .counter__art {
+            max-width: 1170px;
+            margin: auto;
+            .art__div1{
+                .art__p2{
+                    font-size: 80px;
+                }
+            }
+            .flexing{
+                display: flex;
+                justify-content: space-around;
+            }
+            .div__img{
+                display: flex;
+                .art__img{
+                    width: 100%;
+                    margin: 30px;
+                }
+            }
         }
     }
 }

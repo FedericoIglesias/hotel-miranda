@@ -11,27 +11,31 @@
 
 <body>
     <header>
-        <div class="div__emblem">
-            <div class="div__logo">
-                <p>H</p>
+
+        <div class="header">
+            <p class="header__p">We Make Your Feel Comfortable</p>
+            <div class="div__emblem">
+                <div class="div__logo">
+                    <p>H</p>
+                </div>
+                <h1 class="h1__name">Hotel <span>Miranda</span> </h1>
             </div>
-            <h1 class="h1__name">Hotel <span>Miranda</span> </h1>
-        </div>
 
-        <div class="div__hamburguer"><img src="../assets/hamburguer.svg" alt="menu"></div>
-        <div class="div__cross display--none"><img src="../assets/crooss.svg" alt="closeMenu"></div>
-        <div class="div__menu display--none">
-            <p>About Us</p>
-            <p>Rooms</p>
-            <p>Offers</p>
-            <p>Contact</p>
-        </div>
+            <div class="div__hamburguer"><img src="../assets/hamburguer.svg" alt="menu"></div>
+            <div class="div__cross display--none"><img src="../assets/crooss.svg" alt="closeMenu"></div>
+            <div class="div__menu ">
+                <p>About Us</p>
+                <p>Rooms</p>
+                <p>Offers</p>
+                <p>Contact</p>
+            </div>
 
-        <div class="div__img">
-            <div class="img__iconPerson"><img src="../assets/login.svg" alt="iconPerson"></div>
-            <div class="img__search"><img src="../assets/search.svg" alt="search"></div>
-        </div>
+            <div class="div__img">
+                <div class="img__iconPerson"><img src="../assets/login.svg" alt="iconPerson"></div>
+                <div class="img__search"><img src="../assets/search.svg" alt="search"></div>
+            </div>
 
+        </div>
     </header>
     <main class="about">
         <!-- PROOF -->
@@ -44,7 +48,12 @@
         </article>
         <!-- VIDEO -->
         <article class="video__art">
-            <video src=""></video>
+            <div class="video__div">
+                <iframe class="video" src="https://www.youtube.com/embed/Bu3Doe45lcU?start=25" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
             <p class="art__p">Hello. Our hotel has been present for over 20 years. We make the best for all our
                 customers
             </p>
@@ -54,12 +63,16 @@
                     <p>BREAKFAST</p>
                 </div>
                 <div>
-                    <img src="" alt="">
+                    <img src="../assets/about/plane.svg" alt="">
                     <p>AIRPORT PICKUP</p>
                 </div>
                 <div>
                     <img src="../assets/about/ubi.svg" alt="">
                     <p>CITY GUIDE</p>
+                </div>
+                <div>
+                    <img src="../assets/about/bbqParty.svg" alt="">
+                    <p>BBQ Party</p>
                 </div>
                 <div>
                     <img src="../assets/about/bedLux.svg" alt="">
@@ -69,7 +82,7 @@
         </article>
         <!-- RESTAURANT -->
         <article class="restaurant__art">
-            <div class="art__div1"><img class="art__img" src="../assets/about/hosteleros.jpg" alt=""></div>
+            <img class="art__img" src="../assets/about/hosteleros.jpg" alt="">
             <p class="art__p1">RESTAURANT</p>
             <p class="art__p2">Get Restaurant Facilities & Many Other More</p>
             <p class="art__p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tem por
@@ -82,12 +95,55 @@
         <article class="facilities__art">
             <p class="art__p1">FACILITIES</p>
             <p class="art__p2">Core Features</p>
-            <div class="art__div">
-                <p class="div__p1">01</p>
-                <img src="../assets/index/facilities/facilities1.svg" alt="">
-                <p class="div__p2">Have High Rating</p>
-                <p class="div__p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna..</p>
+            <div class="flexing">
+                <div class="art__div n1">
+                    <p class="div__p1">01</p>
+                    <img src="../assets/index/facilities/facilities1.svg" alt="">
+                    <p class="div__p2">Have High Rating</p>
+                    <p class="div__p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore
+                        et dolore magna..</p>
+                </div>
+                <div class="art__div n2">
+                    <p class="div__p1">02</p>
+                    <img src="../assets/index/facilities/clock.svg" alt="">
+                    <p class="div__p2">Quiet Hours</p>
+                    <p class="div__p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore
+                        et dolore magna..</p>
+                </div>
+                <div class="art__div n3">
+                    <p class="div__p1">03</p>
+                    <img src="../assets/index/facilities/location.svg" alt="">
+                    <p class="div__p2">Best Locations</p>
+                    <p class="div__p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore
+                        et dolore magna..</p>
+                </div>
+                <div class="art__div n4">
+                    <p class="div__p1">04</p>
+                    <img src="../assets/index/facilities/offClock.svg" alt="">
+                    <p class="div__p2">Free Cancellation</p>
+                    <p class="div__p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore
+                        et dolore magna..</p>
+                </div>
+                <div class="art__div n5">
+                    <p class="div__p1">05</p>
+                    <img src="../assets/index/facilities/payCard.svg" alt="">
+                    <p class="div__p2">Payment Options</p>
+                    <p class="div__p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore
+                        et dolore magna..</p>
+                </div>
+                <div class="art__div n6">
+                    <p class="div__p1">06</p>
+                    <img src="../assets/index/facilities/offerSpecial.svg" alt="">
+                    <p class="div__p2">Special Offers</p>
+                    <p class="div__p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore
+                        et dolore magna..</p>
+                </div>
             </div>
         </article>
         <!-- COUNTER -->
@@ -96,23 +152,24 @@
                 <p class="art__p1">COUNTER</p>
                 <p class="art__p2">Some Fun Facts</p>
             </div>
-            <div class="art__div">
-                <img src="../assets/about/dialogo.svg" alt="">
-                <div class="div__div">
-                    <p class="div__p1">8000</p>
-                    <p class="div__p2">Happy Users</p>
+            <div class="flexing">
+                <div class="art__div">
+                    <img src="../assets/about/dialogo.svg" alt="">
+                    <div class="div__div">
+                        <p class="div__p1">8000</p>
+                        <p class="div__p2">Happy Users</p>
+                    </div>
+                    <p class="div__p">→</p>
                 </div>
-                <p class="div__p">→</p>
-            </div>
-            <div class="art__div">
-                <img src="../assets/about/like.svg" alt="">
-                <div class="div__div">
-                    <p class="div__p1">10M</p>
-                    <p class="div__p2">Reviews & Appriciate</p>
+                <div class="art__div">
+                    <img src="../assets/about/like.svg" alt="">
+                    <div class="div__div">
+                        <p class="div__p1">10M</p>
+                        <p class="div__p2">Reviews & Appriciate</p>
+                    </div>
+                    <p class="div__p">→</p>
                 </div>
-                <p class="div__p">→</p>
-            </div>
-            <div class="art__div">
+                <div class="art__div">
                 <img src="../assets/about/world.svg" alt="">
                 <div class="div__div">
                     <p class="div__p1">100</p>
@@ -120,7 +177,9 @@
                 </div>
                 <p class="div__p">→</p>
             </div>
+        </div>
             <div class="div__img">
+                <img class="art__img" src="../assets/about/hotel.jpg" alt="">
                 <img class="art__img" src="../assets/about/hotel.jpg" alt="">
             </div>
         </article>
