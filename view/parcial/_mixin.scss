@@ -11,10 +11,9 @@
     background-color: #333333;
 }
 
-@mixin text($size: 16px, $color: black,  $bold: 400, $fontFamily: sans-serif){
+@mixin text($size: 16px, $color: black,  $bold: 400){
     font-size: $size;
     color: $color;
-    font-family: $fontFamily;
     font-weight: $bold;
 }
 
@@ -26,14 +25,4 @@
 }
 @mixin roboto{
     font-family: 'Roboto',sans-serif;
-}
-@mixin b600{
-    font-weight: 600;
-}
-@mixin b700{
-    font-weight: 700;
-}
-
-@mixin center{
-    padding: 0 20px;
 }

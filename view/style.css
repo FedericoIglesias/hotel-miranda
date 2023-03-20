@@ -109,7 +109,6 @@ body {
     left: 0px;
     font-size: 16px;
     color: white;
-    font-family: sans-serif;
     font-weight: 400;
   }
   .header .div__hamburguer {
@@ -255,7 +254,6 @@ body {
 .index .proof__art .art__div1 .div1__p {
   font-size: 13px;
   color: white;
-  font-family: sans-serif;
   font-weight: 700;
   font-family: "Archivo", sans-serif;
   margin-bottom: 40px;
@@ -264,7 +262,6 @@ body {
 .index .proof__art .art__div1 .div1__p1 {
   font-size: 56px;
   color: white;
-  font-family: sans-serif;
   font-weight: 400;
   margin-bottom: 40px;
 }
@@ -280,7 +277,6 @@ body {
   width: 217px;
   font-size: 14px;
   color: white;
-  font-family: sans-serif;
   font-weight: 700;
   margin-bottom: 24px;
 }
@@ -292,7 +288,6 @@ body {
   width: 217px;
   font-size: 14px;
   color: white;
-  font-family: sans-serif;
   font-weight: 700;
   margin-bottom: 24px;
 }
@@ -303,7 +298,6 @@ body {
 .index .proof__art .art__div2 p {
   font-size: 16px;
   color: white;
-  font-family: sans-serif;
   font-weight: 700;
   margin-bottom: 24px;
 }
@@ -326,9 +320,44 @@ body {
   padding: 22px 25px;
   font-size: 14px;
   color: white;
-  font-family: sans-serif;
   font-weight: 700;
   background-color: #BEAD8E;
+}
+@media (min-width: 1000px) {
+  .index .proof__art {
+    background-color: #333333;
+  }
+  .index .proof__art .art__div1 {
+    max-width: 1380px;
+    margin: auto;
+  }
+  .index .proof__art .art__div1 .div1__p {
+    max-width: 660px;
+  }
+  .index .proof__art .art__div1 .div1__p1 {
+    max-width: 800px;
+    font-size: 120px;
+  }
+  .index .proof__art .art__div1 .div1__button {
+    display: flex;
+    flex-direction: row;
+  }
+  .index .proof__art .art__div1 button {
+    margin-right: 30px;
+  }
+  .index .proof__art .art__div2 {
+    display: flex;
+    justify-content: center;
+  }
+  .index .proof__art .art__div2 input {
+    width: 335px;
+  }
+  .index .proof__art .art__div2 div {
+    margin-right: 30px;
+  }
+  .index .proof__art .art__div2 .div2__button {
+    margin-left: 50%;
+  }
 }
 .index .about__art {
   background-color: #f9f9f9;
@@ -337,21 +366,18 @@ body {
 .index .about__art .art__div1 h2 {
   font-size: 13px;
   color: #777777;
-  font-family: sans-serif;
   font-weight: 700;
   margin-bottom: 32px;
 }
 .index .about__art .art__div1 .div1__p1 {
   font-size: 40px;
   color: #111111;
-  font-family: sans-serif;
   font-weight: 400;
   margin-bottom: 16px;
 }
 .index .about__art .art__div1 .div1__p2 {
   font-size: 14px;
   color: #777777;
-  font-family: sans-serif;
   font-weight: 400;
   margin-bottom: 24px;
 }
@@ -362,7 +388,6 @@ body {
   margin-bottom: 82px;
   font-size: 14px;
   color: white;
-  font-family: sans-serif;
   font-weight: 700;
 }
 .index .about__art .art__div2 {
@@ -371,7 +396,7 @@ body {
   align-items: center;
 }
 .index .about__art .art__div2 .div2__img1 img {
-  height: 400px;
+  height: 300px;
   width: 270px;
 }
 .index .about__art .art__div2 .div2__div {
@@ -386,7 +411,6 @@ body {
   text-align: center;
   font-size: 30px;
   color: #111111;
-  font-family: sans-serif;
   font-weight: 400;
   margin-bottom: 21px;
 }
@@ -394,12 +418,11 @@ body {
   text-align: center;
   font-size: 14px;
   color: #111111;
-  font-family: sans-serif;
   font-weight: 400;
 }
 .index .about__art .art__div3 .div3__img {
   width: 270px;
-  height: 400px;
+  height: 300px;
   background-color: #777777;
 }
 .index .about__art .art__div3 .div3__div {
@@ -414,7 +437,6 @@ body {
   text-align: center;
   font-size: 30px;
   color: #111111;
-  font-family: sans-serif;
   font-weight: 400;
   margin-bottom: 21px;
 }
@@ -422,8 +444,62 @@ body {
   text-align: center;
   font-size: 14px;
   color: #111111;
-  font-family: sans-serif;
   font-weight: 400;
+}
+@media (min-width: 1000px) {
+  .index .about__art {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .index .about__art .art__div1 {
+    max-width: 460px;
+    margin-left: 81px;
+  }
+  .index .about__art .art__div1 .div1__p1 {
+    font-size: 80px;
+  }
+  .index .about__art .art__div1 .div1__p2 {
+    max-width: 400px;
+  }
+  .index .about__art .art__div2 {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .index .about__art .art__div2 .div2__div {
+    background-color: white;
+    max-width: 270px;
+    max-height: 300px;
+    padding: 65px 35px 49px;
+    margin-right: 30px;
+    position: relative;
+    top: -30px;
+    margin-top: 30px;
+  }
+  .index .about__art .art__div3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .index .about__art .art__div3 .div3__img {
+    margin-right: 30px;
+  }
+  .index .about__art .art__div3 .div3__div {
+    background-color: #222222;
+    max-width: 270px;
+    max-height: 300px;
+    position: relative;
+    top: 30px;
+  }
+  .index .about__art .art__div3 .div3__div .div__p1 {
+    color: white;
+  }
+  .index .about__art .art__div3 .div3__div .div__p2 {
+    color: white;
+  }
 }
 .index .room__art {
   padding: 20px;
@@ -433,7 +509,6 @@ body {
   text-align: center;
   font-size: 14px;
   color: #777777;
-  font-family: sans-serif;
   font-weight: 700;
   margin-bottom: 24px;
 }
@@ -441,7 +516,6 @@ body {
   text-align: center;
   font-size: 40px;
   color: #111111;
-  font-family: sans-serif;
   font-weight: 400;
   margin-bottom: 16px;
 }
@@ -455,27 +529,23 @@ body {
 .index .room__art .art__div1 .div1__p1 {
   font-size: 28px;
   color: black;
-  font-family: sans-serif;
   font-weight: 400;
   margin-bottom: 12px;
 }
 .index .room__art .art__div1 .div1__p2 {
   font-size: 14px;
   color: black;
-  font-family: sans-serif;
   font-weight: 400;
   margin-bottom: 12px;
 }
 .index .room__art .art__div1 .div1__p3 {
   font-size: 13px;
   color: #bead8e;
-  font-family: sans-serif;
   font-weight: 700;
 }
 .index .room__art .art__div1 .div1__p3 span {
   font-size: 8px;
   color: #bead8e;
-  font-family: sans-serif;
   font-weight: 700;
 }
 .index .video__art {
@@ -485,21 +555,18 @@ body {
 .index .video__art .art__p1 {
   font-size: 14px;
   color: #bdac8d;
-  font-family: sans-serif;
   font-weight: 700;
   margin-bottom: 32px;
 }
 .index .video__art .art__p2 {
   font-size: 40px;
   color: white;
-  font-family: sans-serif;
   font-weight: 400;
   margin-bottom: 16px;
 }
 .index .video__art .art__p3 {
   font-size: 14px;
   color: #c2c2c2;
-  font-family: sans-serif;
   font-weight: 400;
   margin-bottom: 32px;
 }
@@ -508,9 +575,44 @@ body {
   background-color: #BEAD8E;
   font-size: 14px;
   color: white;
-  font-family: sans-serif;
   font-weight: 700;
   border: none;
+}
+.index .video__art .video {
+  min-width: 270px;
+  min-height: 300px;
+  margin-bottom: 36px;
+}
+@media (min-width: 1000px) {
+  .index .video__art {
+    display: grid;
+    grid-template-areas: "p1 video" "p2 video" "p3 video" "button video";
+    grid-template-columns: auto 570px;
+    justify-content: space-around;
+  }
+  .index .video__art .art__p1 {
+    grid-area: p1;
+    max-width: 500px;
+  }
+  .index .video__art .art__p2 {
+    grid-area: p2;
+    font-size: 80px;
+    max-width: 500px;
+  }
+  .index .video__art .art__p3 {
+    grid-area: p3;
+    max-width: 500px;
+  }
+  .index .video__art button {
+    grid-area: button;
+    max-width: 216px;
+  }
+  .index .video__art .video {
+    grid-area: video;
+    width: 570px;
+    height: 460px;
+    margin-bottom: 0px;
+  }
 }
 .index .facilities__art {
   padding: 60px 20px;
@@ -519,7 +621,6 @@ body {
 .index .facilities__art .art__p1 {
   font-size: 14px;
   color: #777777;
-  font-family: sans-serif;
   font-weight: 700;
   text-align: center;
   margin-bottom: 24px;
@@ -527,18 +628,19 @@ body {
 .index .facilities__art .art__p2 {
   font-size: 40px;
   color: #222222;
-  font-family: sans-serif;
   font-weight: 400;
   margin-bottom: 32px;
 }
 .index .facilities__art .art__div {
   padding: 81px 15px 0;
   position: relative;
+  max-width: 370px;
+  max-height: 349px;
+  margin: 15px;
 }
 .index .facilities__art .art__div .div__p1 {
   font-size: 120px;
   color: black;
-  font-family: sans-serif;
   font-weight: 700;
   position: absolute;
   right: 0;
@@ -553,16 +655,59 @@ body {
 .index .facilities__art .art__div .div__p2 {
   font-size: 30px;
   color: #222222;
-  font-family: sans-serif;
   font-weight: 400;
   margin-bottom: 28px;
 }
 .index .facilities__art .art__div .div__p3 {
   font-size: 14px;
   color: #777777;
-  font-family: sans-serif;
   font-weight: 400;
   margin-bottom: 32px;
+}
+.index .facilities__art .n2 {
+  display: none;
+}
+.index .facilities__art .n3 {
+  display: none;
+}
+.index .facilities__art .n4 {
+  display: none;
+}
+.index .facilities__art .n5 {
+  display: none;
+}
+.index .facilities__art .n6 {
+  display: none;
+}
+@media (min-width: 1000px) {
+  .index .facilities__art .art__p1 {
+    text-align: center;
+  }
+  .index .facilities__art .art__p2 {
+    text-align: center;
+  }
+  .index .facilities__art .n2 {
+    display: inline-block;
+  }
+  .index .facilities__art .n3 {
+    display: block;
+  }
+  .index .facilities__art .n4 {
+    display: block;
+  }
+  .index .facilities__art .n5 {
+    display: block;
+  }
+  .index .facilities__art .n6 {
+    display: block;
+  }
+  .index .facilities__art .flexing {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+  }
 }
 .index .menu__art {
   padding: 0 20px;
@@ -570,52 +715,97 @@ body {
 }
 .index .menu__art .menu__img {
   position: absolute;
-  right: 0;
+  right: 0px;
   top: -120px;
+  width: 115px;
+  height: 115px;
+}
+.index .menu__art .menuss {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
 }
 .index .menu__art .art__p1 {
   font-size: 14px;
   color: #777777;
-  font-family: sans-serif;
   font-weight: 700;
   margin-bottom: 24px;
 }
 .index .menu__art .art__p2 {
   font-size: 40px;
   color: #222;
-  font-family: sans-serif;
   font-weight: 400;
   margin-bottom: 32px;
 }
 .index .menu__art .art__div {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .index .menu__art .art__div img {
   width: 120px;
   height: 120px;
-  margin-right: 30px;
   margin-bottom: 16px;
 }
 .index .menu__art .art__div .div__p1 {
   font-size: 24px;
   color: #222;
-  font-family: sans-serif;
   font-weight: 400;
   margin-bottom: 12px;
+  margin-left: 30px;
 }
 .index .menu__art .art__div .div__p2 {
   font-size: 14px;
   color: #222;
-  font-family: sans-serif;
   font-weight: 400;
+  margin-top: 12px;
   width: 185px;
+  margin-left: 30px;
 }
 .index .menu__art .menu__img2 {
   width: 280px;
   height: 300px;
   margin-bottom: 91px;
+}
+@media (min-width: 1000px) {
+  .index .menu__art {
+    max-width: 1200px;
+    margin: auto;
+  }
+  .index .menu__art .menu__img {
+    position: absolute;
+    left: -18%;
+    top: -120px;
+    width: 230px;
+    height: 230px;
+  }
+  .index .menu__art .art__p1 {
+    grid-column: 1/3;
+  }
+  .index .menu__art .art__p2 {
+    font-size: 80px;
+  }
+  .index .menu__art .menuss {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .index .menu__art .menuss .art__div {
+    max-width: 570px;
+    margin-bottom: 16px;
+  }
+  .index .menu__art .menuss .art__div img {
+    margin: 0;
+  }
+  .index .menu__art .menuss .art__div :hover {
+    background-color: #222222;
+  }
+  .index .menu__art .menuss .art__div :hover p {
+    color: white;
+  }
+  .index .menu__art .div__img {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 .index .number__art {
   padding-top: 48px;
@@ -638,21 +828,29 @@ body {
 .index .number__art .art__div .div__p1 {
   font-size: 60px;
   color: white;
-  font-family: sans-serif;
   font-weight: 700;
 }
 .index .number__art .art__div .div__p1 span {
   font-size: 16px;
   color: white;
-  font-family: sans-serif;
   font-weight: 700;
 }
 .index .number__art .art__div .div__p2 {
   font-size: 14px;
   color: #777777;
-  font-family: sans-serif;
   font-weight: 700;
-  margin-bottom: 60px;
+}
+@media (min-width: 1000px) {
+  .index .number__art {
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 80px;
+    max-width: 1170px;
+  }
+  .index .number__art .art__div {
+    margin: 0;
+  }
 }
 
 .about .proof__art {
@@ -663,14 +861,12 @@ body {
 .about .proof__art .art__p1 {
   font-size: 14px;
   color: white;
-  font-family: sans-serif;
   font-weight: 700;
   margin-bottom: 16px;
 }
 .about .proof__art .art__p2 {
   font-size: 56px;
   color: white;
-  font-family: sans-serif;
   font-weight: 400;
 }
 .about .proof__art .art__div {
@@ -681,7 +877,6 @@ body {
   padding: 16px 24px;
   font-size: 16px;
   color: #222222;
-  font-family: sans-serif;
   font-weight: 700;
 }
 .about .proof__art .art__div span {
@@ -695,7 +890,6 @@ body {
   padding: 0 20px;
   font-size: 32px;
   color: #222222;
-  font-family: sans-serif;
   font-weight: 400;
   margin-bottom: 51px;
 }
@@ -732,21 +926,18 @@ body {
 .about .restaurant__art .art__p1 {
   font-size: 14px;
   color: #777;
-  font-family: sans-serif;
   font-weight: 700;
   margin-bottom: 26px;
 }
 .about .restaurant__art .art__p2 {
   font-size: 40px;
   color: #222222;
-  font-family: sans-serif;
   font-weight: 400;
   margin-bottom: 26px;
 }
 .about .restaurant__art .art__p3 {
   font-size: 14px;
   color: #777;
-  font-family: sans-serif;
   font-weight: 400;
   margin-bottom: 16px;
 }
@@ -755,7 +946,6 @@ body {
   padding: 22px 45px;
   font-size: 14px;
   color: white;
-  font-family: sans-serif;
   font-weight: 700;
   border: none;
 }
@@ -767,7 +957,6 @@ body {
 .about .facilities__art .art__p1 {
   font-size: 14px;
   color: #777777;
-  font-family: sans-serif;
   font-weight: 700;
   text-align: center;
   margin-bottom: 24px;
@@ -775,7 +964,6 @@ body {
 .about .facilities__art .art__p2 {
   font-size: 40px;
   color: white;
-  font-family: sans-serif;
   font-weight: 400;
   margin-bottom: 32px;
 }
@@ -787,7 +975,6 @@ body {
 .about .facilities__art .art__div .div__p1 {
   font-size: 120px;
   color: black;
-  font-family: sans-serif;
   font-weight: 700;
   position: absolute;
   right: 0;
@@ -802,14 +989,12 @@ body {
 .about .facilities__art .art__div .div__p2 {
   font-size: 30px;
   color: white;
-  font-family: sans-serif;
   font-weight: 400;
   margin-bottom: 28px;
 }
 .about .facilities__art .art__div .div__p3 {
   font-size: 14px;
   color: white;
-  font-family: sans-serif;
   font-weight: 400;
 }
 .about .counter__art {
@@ -821,14 +1006,12 @@ body {
 .about .counter__art .art__div1 .art__p1 {
   font-size: 14px;
   color: #777;
-  font-family: sans-serif;
   font-weight: 700;
   margin-bottom: 24px;
 }
 .about .counter__art .art__div1 .art__p2 {
   font-size: 40px;
   color: #222;
-  font-family: sans-serif;
   font-weight: 400;
   margin-bottom: 60px;
 }
@@ -848,13 +1031,11 @@ body {
 .about .counter__art .art__div .div__div .div__p1 {
   font-size: 60px;
   color: #222222;
-  font-family: sans-serif;
   font-weight: 400;
 }
 .about .counter__art .art__div .div__div .div__p2 {
   font-size: 16px;
   color: #777;
-  font-family: sans-serif;
   font-weight: 400;
 }
 .about .counter__art .art__div .div__p {
@@ -874,14 +1055,12 @@ body {
 .room .proof__art .art__p1 {
   font-size: 14px;
   color: white;
-  font-family: sans-serif;
   font-weight: 700;
   margin-bottom: 16px;
 }
 .room .proof__art .art__p2 {
   font-size: 56px;
   color: white;
-  font-family: sans-serif;
   font-weight: 400;
 }
 .room .proof__art .art__div {
@@ -892,7 +1071,6 @@ body {
   padding: 16px 24px;
   font-size: 16px;
   color: #222222;
-  font-family: sans-serif;
   font-weight: 700;
 }
 .room .proof__art .art__div span {
@@ -923,7 +1101,6 @@ body {
 .room .show__art .art__div .div__p {
   font-size: 24px;
   color: #222222;
-  font-family: sans-serif;
   font-weight: 400;
   margin-bottom: 16px;
   text-align: center;
@@ -931,7 +1108,6 @@ body {
 .room .show__art .art__div .div__p1 {
   font-size: 14px;
   color: #777;
-  font-family: sans-serif;
   font-weight: 400;
   margin: auto;
   margin-bottom: 10px;
@@ -941,7 +1117,6 @@ body {
 .room .show__art .art__div .div__p2 {
   font-size: 16px;
   color: #bead8e;
-  font-family: sans-serif;
   font-weight: 700;
   margin-bottom: 52px;
   text-align: center;
@@ -949,7 +1124,6 @@ body {
 .room .show__art .art__div .div__p2 span {
   font-size: 16px;
   color: #BDBDBD;
-  font-family: sans-serif;
   font-weight: 700;
 }
 
@@ -961,14 +1135,12 @@ body {
 .offers .proof__art .art__p1 {
   font-size: 14px;
   color: white;
-  font-family: sans-serif;
   font-weight: 700;
   margin-bottom: 16px;
 }
 .offers .proof__art .art__p2 {
   font-size: 56px;
   color: white;
-  font-family: sans-serif;
   font-weight: 400;
 }
 .offers .proof__art .art__div {
@@ -979,7 +1151,6 @@ body {
   padding: 16px 24px;
   font-size: 16px;
   color: #222222;
-  font-family: sans-serif;
   font-weight: 700;
 }
 .offers .proof__art .art__div span {
@@ -1001,7 +1172,6 @@ body {
   position: absolute;
   font-size: 23px;
   color: #bead8e;
-  font-family: sans-serif;
   font-weight: 700;
   right: 15px;
   text-decoration: line-through;
@@ -1010,7 +1180,6 @@ body {
 .offers .show__art .show__div .img__p1 span {
   font-size: 11px;
   color: #bead8e;
-  font-family: sans-serif;
   font-weight: 700;
   text-decoration: none;
 }
@@ -1019,7 +1188,6 @@ body {
   position: absolute;
   font-size: 30px;
   color: #de5777;
-  font-family: sans-serif;
   font-weight: 700;
   right: 15px;
   bottom: 0px;
@@ -1027,13 +1195,11 @@ body {
 .offers .show__art .show__div .img__p2 span {
   font-size: 11px;
   color: #de5777;
-  font-family: sans-serif;
   font-weight: 700;
 }
 .offers .show__art .show__p1 {
   font-size: 14px;
   color: #777;
-  font-family: sans-serif;
   font-weight: 700;
   padding: 0 20px;
   margin-bottom: 12px;
@@ -1041,7 +1207,6 @@ body {
 .offers .show__art .show__p2 {
   font-size: 40px;
   color: #222;
-  font-family: sans-serif;
   font-weight: 400;
   padding: 0 20px;
   margin-bottom: 16px;
@@ -1049,7 +1214,6 @@ body {
 .offers .show__art .show__p3 {
   font-size: 14px;
   color: #777;
-  font-family: sans-serif;
   font-weight: 400;
   padding: 0 20px;
   margin-bottom: 24px;
@@ -1077,13 +1241,11 @@ body {
 .offers .show__art .show__div1 .div1__div p {
   font-size: 15px;
   color: #777;
-  font-family: sans-serif;
   font-weight: 400;
 }
 .offers .show__art button {
   font-size: 14px;
   color: white;
-  font-family: sans-serif;
   font-weight: 700;
   padding: 23px 56px;
   border: none;
@@ -1099,7 +1261,6 @@ body {
   text-align: center;
   font-size: 14px;
   color: #bead8e;
-  font-family: sans-serif;
   font-weight: 400;
   margin-bottom: 25px;
 }
@@ -1107,7 +1268,6 @@ body {
   text-align: center;
   font-size: 40px;
   color: white;
-  font-family: sans-serif;
   font-weight: 400;
   margin-bottom: 48px;
 }
@@ -1135,7 +1295,6 @@ body {
 .offers .most__art .art__div .div__div .div__p1 {
   font-size: 24px;
   color: #222222;
-  font-family: sans-serif;
   font-weight: 400;
   margin-bottom: 24px;
   text-align: center;
@@ -1143,7 +1302,6 @@ body {
 .offers .most__art .art__div .div__div .div__p2 {
   font-size: 16px;
   color: #777;
-  font-family: sans-serif;
   font-weight: 400;
   text-align: center;
   margin-bottom: 5px;
@@ -1151,14 +1309,12 @@ body {
 .offers .most__art .art__div .div__div .div__p3 {
   font-size: 16px;
   color: #bead8e;
-  font-family: sans-serif;
   font-weight: 700;
   text-align: center;
 }
 .offers .most__art .art__div .div__div .div__p3 span {
   font-size: 16px;
   color: #BDBDBD;
-  font-family: sans-serif;
   font-weight: 700;
   margin-left: 19px;
 }
@@ -1171,14 +1327,12 @@ body {
 .details .proof__art .art__p1 {
   font-size: 14px;
   color: white;
-  font-family: sans-serif;
   font-weight: 700;
   margin-bottom: 16px;
 }
 .details .proof__art .art__p2 {
   font-size: 56px;
   color: white;
-  font-family: sans-serif;
   font-weight: 400;
 }
 .details .proof__art .art__div {
@@ -1189,7 +1343,6 @@ body {
   padding: 16px 24px;
   font-size: 16px;
   color: #222222;
-  font-family: sans-serif;
   font-weight: 700;
 }
 .details .proof__art .art__div span {
@@ -1209,7 +1362,6 @@ body {
 .details .contacts__art .art__div .art__p1 {
   font-size: 200px;
   color: #bead8e;
-  font-family: sans-serif;
   font-weight: 700;
   position: absolute;
   right: 0px;
@@ -1224,14 +1376,12 @@ body {
 .details .contacts__art .art__div .div__div .div__p1 {
   font-size: 20px;
   color: #222;
-  font-family: sans-serif;
   font-weight: 400;
   margin-bottom: 16px;
 }
 .details .contacts__art .art__div .div__div .div__p2 {
   font-size: 14px;
   color: #777;
-  font-family: sans-serif;
   font-weight: 400;
 }
 
