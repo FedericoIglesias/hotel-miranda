@@ -24,6 +24,41 @@
                 color: #bead8e;
             }
         }
+    }    @media (min-width: 1000px) {
+        .proof__art {
+            @include blackLight;
+            .art__div1 {
+                max-width: 1380px;
+                margin: auto;
+                .div1__p {
+                    max-width: 660px;
+                }
+                .div1__p1 {
+                    max-width: 800px;
+                    font-size: 120px;
+                }
+                .div1__button {
+                    display: flex;
+                    flex-direction: row;
+                }
+                button {
+                    margin-right: 30px;
+                }
+            }
+            .art__div2 {
+                display: flex;
+                justify-content: center;
+                input {
+                    width: 335px;
+                }
+                div {
+                    margin-right: 30px;
+                }
+                .div2__button {
+                    margin-left: 50%;
+                }
+            }
+        }
     }
     //  SHOW ROOMS --------------------------------------
     .show__art__list {
