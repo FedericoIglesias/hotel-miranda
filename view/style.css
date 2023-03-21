@@ -1512,13 +1512,15 @@ body {
 }
 .offers .show__art .show__div {
   padding: 48px 20px;
+  max-width: 1170px;
+  margin: auto;
+  position: relative;
 }
 .offers .show__art .show__div .div__img {
-  position: relative;
-  max-width: 335px;
-  margin-bottom: 16px;
+  max-width: 1170px;
 }
 .offers .show__art .show__div .div__img img {
+  margin-bottom: 16px;
   width: 100%;
   height: 162px;
 }
@@ -1527,9 +1529,9 @@ body {
   font-size: 23px;
   color: #bead8e;
   font-weight: 700;
-  right: 15px;
+  right: 25px;
   text-decoration: line-through;
-  bottom: 48px;
+  top: 150px;
 }
 .offers .show__art .show__div .img__p1 span {
   font-size: 11px;
@@ -1543,8 +1545,8 @@ body {
   font-size: 30px;
   color: #de5777;
   font-weight: 700;
-  right: 15px;
-  bottom: 0px;
+  right: 25px;
+  top: 170px;
 }
 .offers .show__art .show__div .img__p2 span {
   font-size: 11px;
@@ -1571,9 +1573,11 @@ body {
   font-weight: 400;
   padding: 0 20px;
   margin-bottom: 24px;
+  max-width: 500px;
 }
 .offers .show__art .show__div1 {
   max-width: 300px;
+  padding-left: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -1602,14 +1606,75 @@ body {
   color: white;
   font-weight: 700;
   padding: 23px 56px;
+  margin-left: 20px;
   border: none;
   background-color: #BEAD8E;
+}
+.offers .show__art .line {
+  display: none;
+}
+@media (min-width: 1000px) {
+  .offers .show__art .show__div .div__img img {
+    height: 570px;
+  }
+  .offers .show__art .show__div .card__div {
+    max-width: 1050px;
+    position: relative;
+    top: -70px;
+    padding: 60px;
+    border-top: 6px #bead8e solid;
+    background-color: white;
+    margin: auto;
+    display: grid;
+    grid-template-areas: "subtitle price" "title prices" "br br" "texts features" "button features";
+  }
+  .offers .show__art .show__div .card__div .show__p1 {
+    grid-area: subtitle;
+    padding-left: 33px;
+  }
+  .offers .show__art .show__div .card__div .show__p2 {
+    grid-area: title;
+    padding-left: 33px;
+  }
+  .offers .show__art .show__div .card__div .img__p1 {
+    grid-area: price;
+    position: static;
+    text-align: end;
+    padding-right: 40px;
+  }
+  .offers .show__art .show__div .card__div .img__p2 {
+    grid-area: prices;
+    position: static;
+    text-align: end;
+    padding-right: 40px;
+    font-size: 40px;
+  }
+  .offers .show__art .show__div .card__div .show__p3 {
+    grid-area: texts;
+    padding-left: 33px;
+  }
+  .offers .show__art .show__div .card__div .show__div1 {
+    grid-area: features;
+  }
+  .offers .show__art .show__div .card__div button {
+    grid-area: button;
+    max-width: 216px;
+    margin-left: 33px;
+  }
+  .offers .show__art .show__div .card__div .line {
+    display: block;
+    background-color: #BEAD8E;
+    width: 930px;
+    grid-area: br;
+    height: 2px;
+    opacity: 0.3;
+    margin: 36px;
+  }
 }
 .offers .most__art {
   background-color: #222222;
   padding: 48px 20px;
   margin: auto;
-  max-width: 375px;
 }
 .offers .most__art .art__p1 {
   text-align: center;
@@ -1625,8 +1690,9 @@ body {
   font-weight: 400;
   margin-bottom: 48px;
 }
-.offers .most__art .art__div .div__img {
-  max-width: 335px;
+.offers .most__art .art__div {
+  max-width: 370px;
+  margin: auto;
 }
 .offers .most__art .art__div .div__img img {
   width: 100%;
@@ -1668,9 +1734,17 @@ body {
 }
 .offers .most__art .art__div .div__div .div__p3 span {
   font-size: 16px;
-  color: #BDBDBD;
+  color: #bdbdbd;
   font-weight: 700;
   margin-left: 19px;
+}
+@media (min-width: 1000px) {
+  .offers .most__art .art__p1 {
+    margin-bottom: 84px;
+  }
+  .offers .most__art .art__p2 {
+    font-size: 80px;
+  }
 }
 
 .details .proof__art {

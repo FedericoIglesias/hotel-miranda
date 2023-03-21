@@ -29,11 +29,13 @@
     .show__art {
         .show__div {
             padding: 48px 20px;
+            max-width: 1170px;
+            margin: auto;
+            position: relative;
             .div__img {
-                position: relative;
-                max-width: 335px;
-                margin-bottom: 16px;
+                max-width: 1170px;
                 img {
+                    margin-bottom: 16px;
                     width: 100%;
                     height: 162px;
                 }
@@ -41,9 +43,9 @@
             .img__p1 {
                 position: absolute;
                 @include text(23px, #bead8e, 700);
-                right: 15px;
+                right: 25px;
                 text-decoration: line-through;
-                bottom: 48px;
+                top: 150px;
                 span {
                     @include text(11px, #bead8e, 700);
                     text-decoration: none;
@@ -53,8 +55,8 @@
                 position: absolute;
                 position: absolute;
                 @include text(30px, #de5777, 700);
-                right: 15px;
-                bottom: 0px;
+                right: 25px;
+                top: 170px;
                 span {
                     @include text(11px, #de5777, 700);
                 }
@@ -74,9 +76,11 @@
             @include text(14px, #777);
             padding: 0 20px;
             margin-bottom: 24px;
+            max-width: 500px;
         }
         .show__div1 {
             max-width: 300px;
+            padding-left: 20px;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -101,69 +105,151 @@
         button {
             @include text(14px, white, 700);
             padding: 23px 56px;
+            margin-left: 20px;
             border: none;
             @include gold;
         }
-
+        .line {
+            display: none;
+        }
+    }
+    @media (min-width: 1000px) {
+        .show__art {
+            .show__div {
+                .div__img {
+                    img {
+                        height: 570px;
+                    }
+                }
+                .card__div {
+                    max-width: 1050px;
+                    position: relative;
+                    top: -70px;
+                    padding: 60px;
+                    border-top: 6px #bead8e solid;
+                    background-color: white;
+                    margin: auto;
+                    display: grid;
+                    grid-template-areas:
+                        "subtitle price"
+                        "title prices"
+                        "br br"
+                        "texts features"
+                        "button features";
+                    .show__p1 {
+                        grid-area: subtitle;
+                        padding-left: 33px;
+                    }
+                    .show__p2 {
+                        grid-area: title;
+                        padding-left: 33px;
+                    }
+                    .img__p1 {
+                        grid-area: price;
+                        position: static;
+                        text-align: end;
+                        padding-right: 40px;
+                    }
+                    .img__p2 {
+                        grid-area: prices;
+                        position: static;
+                        text-align: end;
+                        padding-right: 40px;
+                        font-size: 40px;
+                    }
+                    .show__p3 {
+                        grid-area: texts;
+                        padding-left: 33px;
+                    }
+                    .show__div1 {
+                        grid-area: features;
+                    }
+                    button {
+                        grid-area: button;
+                        max-width: 216px;
+                        margin-left: 33px;
+                    }
+                    .line {
+                        display: block;
+                        @include gold;
+                        width: 930px;
+                        grid-area: br;
+                        height: 2px;
+                        opacity: 0.3;
+                        margin: 36px;
+                    }
+                }
+            }
+        }
     }
     // MOSTPOPULAR ---------------------------
-    .most__art{
+    .most__art {
         @include black;
         padding: 48px 20px;
         margin: auto;
-max-width: 375px;
-        .art__p1{
+        
+        .art__p1 {
             text-align: center;
             @include text(14px, #bead8e);
             margin-bottom: 25px;
         }
-        .art__p2{
+        .art__p2 {
             text-align: center;
             @include text(40px, white);
             margin-bottom: 48px;
         }
-        .art__div{
-            .div__img{
-                max-width: 335px;
-                img{
+        .art__div {
+            max-width: 370px;
+            margin: auto;
+            .div__img {
+                img {
                     width: 100%;
                     height: 218px;
                 }
             }
-            .div__div{
+            .div__div {
                 background-color: white;
                 position: relative;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
                 padding: 49px 20px 24px;
-                .div__img1{
+                .div__img1 {
                     position: absolute;
                     background-color: white;
                     padding: 12px 24px;
                     top: -20px;
                 }
-                .div__p1{
+                .div__p1 {
                     @include text(24px, #222222);
                     margin-bottom: 24px;
                     text-align: center;
                 }
-                .div__p2{
+                .div__p2 {
                     @include text(16px, #777);
                     text-align: center;
-                    margin-bottom: 5px
+                    margin-bottom: 5px;
                 }
-                .div__p3{
+                .div__p3 {
                     @include text(16px, #bead8e, 700);
                     text-align: center;
-                    span{
-                        @include text(16px, #BDBDBD, 700);
+                    span {
+                        @include text(16px, #bdbdbd, 700);
                         margin-left: 19px;
                     }
-                
                 }
             }
-
         }
+    }
+    @media (min-width:1000px) {
+        .most__art{
+            .art__p1{
+                margin-bottom: 84px;
+            }
+            .art__p2{
+                font-size: 80px;
+            }
+        }
+        
     }
 }
