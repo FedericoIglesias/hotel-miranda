@@ -6,6 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap");
 html, * {
   box-sizing: border-box;
   margin: 0;
@@ -789,19 +790,46 @@ body {
   .index .menu__art .menuss {
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
   }
   .index .menu__art .menuss .art__div {
     max-width: 570px;
     margin-bottom: 16px;
+    width: 570px;
   }
   .index .menu__art .menuss .art__div img {
     margin: 0;
+  }
+  .index .menu__art .menuss .art__div .div__div {
+    display: grid;
+    grid-template-areas: "title arrow" "text arrow";
+    align-items: center;
+    padding: 21px 40px 21px 30px;
+  }
+  .index .menu__art .menuss .art__div .div__div .div__p1 {
+    grid-area: title;
+    margin: 0;
+    width: 205px;
+  }
+  .index .menu__art .menuss .art__div .div__div .div__p2 {
+    grid-area: text;
+    margin: 0;
+  }
+  .index .menu__art .menuss .art__div .div__div .div__p {
+    grid-area: arrow;
+    padding-left: 63px;
+    color: #bdac8d;
+    font-size: 32px;
+    opacity: 0;
   }
   .index .menu__art .menuss .art__div :hover {
     background-color: #222222;
   }
   .index .menu__art .menuss .art__div :hover p {
     color: white;
+  }
+  .index .menu__art .menuss .art__div :hover .div__p {
+    opacity: 1;
   }
   .index .menu__art .div__img {
     display: flex;
@@ -1219,12 +1247,12 @@ body {
 }
 .room .show__art .art__div .div__div {
   background-color: #777;
-  max-width: 335px;
+  max-width: 370px;
   margin: auto;
 }
 .room .show__art .art__div .div__div .div__img {
   width: 100%;
-  max-width: 335px;
+  max-width: 370px;
   height: 300px;
 }
 .room .show__art .art__div .div__div2 {
@@ -1261,8 +1289,196 @@ body {
 }
 .room .show__art .art__div .div__p2 span {
   font-size: 16px;
-  color: #BDBDBD;
+  color: #bdbdbd;
   font-weight: 700;
+}
+.room .show__art .n7 {
+  display: none;
+}
+.room .show__art .n8 {
+  display: none;
+}
+.room .show__art .n9 {
+  display: none;
+}
+.room .show__art .n10 {
+  display: none;
+}
+.room .show__art .n11 {
+  display: none;
+}
+.room .show__art .n12 {
+  display: none;
+}
+@media (min-width: 1000px) {
+  .room .show__art {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1170px;
+    justify-content: space-between;
+    margin: auto;
+  }
+  .room .show__art .n7 {
+    display: block;
+  }
+  .room .show__art .n8 {
+    display: block;
+  }
+  .room .show__art .n9 {
+    display: block;
+  }
+  .room .show__art .n10 {
+    display: block;
+  }
+  .room .show__art .n11 {
+    display: block;
+  }
+  .room .show__art .n12 {
+    display: block;
+  }
+}
+
+.room .proof__art {
+  background-color: #333333;
+  padding: 75px 20px 96px;
+  position: relative;
+}
+.room .proof__art .art__p1 {
+  font-size: 14px;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.room .proof__art .art__p2 {
+  font-size: 56px;
+  color: white;
+  font-weight: 400;
+}
+.room .proof__art .art__div {
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+  background-color: white;
+  padding: 16px 24px;
+  font-size: 16px;
+  color: #222222;
+  font-weight: 700;
+}
+.room .proof__art .art__div span {
+  color: #bead8e;
+}
+.room .show__art__list {
+  padding: 50px 20px;
+}
+.room .show__art__list .art__div .div__div {
+  max-width: 370px;
+  margin: auto;
+}
+.room .show__art__list .art__div .div__div .div__img {
+  width: 100%;
+  max-width: 370px;
+  height: 300px;
+}
+.room .show__art__list .art__div .div__div2 {
+  background-color: white;
+  padding: 12px 24px;
+  position: relative;
+  width: 256px;
+  top: -20px;
+  margin: auto;
+  margin-bottom: 28px;
+}
+.room .show__art__list .art__div .div__p {
+  font-size: 24px;
+  color: #222222;
+  font-weight: 400;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.room .show__art__list .art__div .div__p1 {
+  font-size: 14px;
+  color: #777;
+  font-weight: 400;
+  margin: auto;
+  margin-bottom: 10px;
+  text-align: center;
+  max-width: 437px;
+}
+.room .show__art__list .art__div .div__p2 {
+  font-size: 16px;
+  color: #bead8e;
+  font-weight: 700;
+  margin-bottom: 52px;
+  text-align: center;
+}
+.room .show__art__list .art__div .div__p2 span {
+  font-size: 16px;
+  color: #bdbdbd;
+  font-weight: 700;
+}
+.room .show__art__list .n7 {
+  display: none;
+}
+.room .show__art__list .n8 {
+  display: none;
+}
+.room .show__art__list .n9 {
+  display: none;
+}
+.room .show__art__list .n10 {
+  display: none;
+}
+.room .show__art__list .n11 {
+  display: none;
+}
+.room .show__art__list .n12 {
+  display: none;
+}
+@media (min-width: 1000px) {
+  .room .show__art__list .art__div {
+    margin: 30px auto;
+    display: grid;
+    grid-template-areas: "photo tag price" "photo title price" "photo texts price";
+    max-width: 1170px;
+  }
+  .room .show__art__list .art__div .div__div {
+    grid-area: photo;
+    margin: 0;
+  }
+  .room .show__art__list .art__div .div__div2 {
+    grid-area: tag;
+    margin: 0;
+    position: static;
+    padding: 0;
+    padding-top: 49px;
+    margin-left: 26px;
+  }
+  .room .show__art__list .art__div .div__p {
+    grid-area: title;
+    margin: 0;
+    text-align: left;
+    max-width: none;
+  }
+  .room .show__art__list .art__div .div__p1 {
+    grid-area: texts;
+    margin: 0;
+    text-align: left;
+  }
+  .room .show__art__list .art__div .div__p2 {
+    grid-area: price;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 40px;
+    color: #bead8e;
+    font-weight: 700;
+  }
+  .room .show__art__list .art__div .div__p2 span {
+    font-size: 16px;
+    color: #777;
+    font-weight: 700;
+  }
 }
 
 .offers .proof__art {

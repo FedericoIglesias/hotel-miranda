@@ -26,11 +26,10 @@
         }
     }
     //  SHOW ROOMS --------------------------------------
-    .show__art {
+    .show__art__list {
         padding: 50px 20px;
         .art__div {
             .div__div {
-                background-color: #777;
                 max-width: 370px;
                 margin: auto;
                 .div__img {
@@ -58,7 +57,7 @@
                 margin: auto;
                 margin-bottom: 10px;
                 text-align: center;
-                max-width: 290px;
+                max-width: 437px;
             }
             .div__p2 {
                 @include text(16px, #bead8e, 700);
@@ -89,29 +88,48 @@
         }
     }
     @media (min-width: 1000px) {
-        .show__art {
-            display: flex;
-            flex-wrap: wrap;
-            max-width: 1170px;
-            justify-content: space-between;
-            margin: auto;
-            .n7 {
-                display: block;
-            }
-            .n8 {
-                display: block;
-            }
-            .n9 {
-                display: block;
-            }
-            .n10 {
-                display: block;
-            }
-            .n11 {
-                display: block;
-            }
-            .n12 {
-                display: block;
+        .show__art__list {
+
+            .art__div {
+                margin: 30px auto;
+
+                display: grid;
+                grid-template-areas: "photo tag price" "photo title price" "photo texts price";
+                max-width: 1170px;
+                .div__div {
+                    grid-area: photo;
+                    margin: 0;
+                }
+                .div__div2 {
+                    grid-area: tag;
+                    margin: 0;
+                    position: static;
+                    padding: 0;
+                    padding-top: 49px;
+                    margin-left: 26px;
+                }
+                .div__p {
+                    grid-area: title;
+                    margin: 0;
+                    text-align: left;
+                    max-width: none;
+                }
+                .div__p1 {
+                    grid-area: texts;
+                    margin: 0;
+                    text-align: left;
+                }
+                .div__p2 {
+                    grid-area: price;
+                    margin: 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    @include text(40px, #bead8e, 700);
+                    span {
+                        @include text(16px, #777, 700);
+                    }
+                }
             }
         }
     }

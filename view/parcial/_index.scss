@@ -503,17 +503,46 @@
             .menuss {
                 flex-direction: row;
                 justify-content: space-around;
+                align-items: center;
                 .art__div{
                     max-width: 570px;
                     margin-bottom: 16px;
+                    width: 570px;
                     img{
                         margin: 0;
                     }
-                    :hover{
-                        @include black;
-                        p{
-                            color: white;
+                    .div__div{
+                        display: grid;
+                        grid-template-areas: 'title arrow'
+                        'text arrow';
+                        align-items: center;
+                        
+                        padding: 21px 40px 21px 30px;
+                        .div__p1{
+                            grid-area: title;
+                            margin: 0;
+                            width: 205px;
                         }
+                        .div__p2{
+                            grid-area: text;
+                            margin: 0;
+                        }
+                        .div__p{
+                            grid-area: arrow;
+                            padding-left: 63px;
+                            color: #bdac8d;
+                            font-size: 32px;
+                            opacity: 0;
+                        }
+                    }
+                        :hover{
+                            @include black;
+                            p{
+                                color: white;
+                            }
+                            .div__p{
+                                opacity: 1;
+                            }
                     }
                 }
             }
