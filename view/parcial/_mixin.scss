@@ -15,9 +15,10 @@
     font-size: $size;
     color: $color;
     font-weight: $bold;
+    font-family: 'Archivo', sans-serif;
 }
 
-@mixin Old{
+@mixin old{
     font-family: 'Old Standard TT', sans-serif;
 } 
 @mixin archivo{

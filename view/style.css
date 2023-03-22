@@ -116,6 +116,7 @@ body {
     font-size: 16px;
     color: white;
     font-weight: 400;
+    font-family: "Archivo", sans-serif;
   }
   .header .div__hamburguer {
     display: none;
@@ -152,6 +153,8 @@ body {
 }
 .footer__div {
   padding: 30px 20px 0px;
+  max-width: 1170px;
+  margin: auto;
 }
 
 .art__logo {
@@ -168,24 +171,25 @@ body {
   line-height: 26px;
 }
 
-.art_service {
+.art__service {
   margin: auto;
-  max-width: 419px;
 }
-.art_service h2 {
+.art__service h2 {
   font-size: 24px;
   font-weight: 400;
+  font-family: "Old Standard TT", sans-serif;
+  margin-bottom: 31px;
 }
-
-.art__service__list {
-  list-style-type: none;
-  line-height: 48px;
+.art__service .service__list {
+  font-family: "Roboto", sans-serif;
   display: flex;
-  flex-flow: column wrap;
-  height: 300px;
+  justify-content: space-between;
   margin-bottom: 30px;
 }
-.art__service__list span {
+.art__service .service__list .list p {
+  margin-bottom: 30px;
+}
+.art__service .service__list span {
   font-size: 14px;
   font-weight: 700;
 }
@@ -193,17 +197,21 @@ body {
 .art__contact {
   margin: auto;
   max-width: 419px;
+  position: relative;
+  top: -29px;
   display: flex;
   flex-flow: column wrap;
 }
 .art__contact h2 {
   font-size: 24px;
   font-weight: 400;
+  font-family: "Old Standard TT", sans-serif;
 }
 
 .art__contact__item {
   display: flex;
   margin: 30px 0px;
+  font-family: "Roboto", sans-serif;
 }
 .art__contact__item div {
   margin-right: 10px;
@@ -221,6 +229,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  font-family: "Roboto", sans-serif;
 }
 .copyright p {
   font-weight: 700;
@@ -229,22 +238,15 @@ body {
 
 @media (min-width: 1000px) {
   .footer__div {
-    padding: 101px;
     display: flex;
     align-items: start;
-    justify-content: center;
+    justify-content: space-between;
   }
   .footer__div .art__logo {
     margin: 0;
   }
-  .footer__div .art_service {
-    margin: 0;
-  }
-  .footer__div .art__logo {
-    margin-right: 80px;
-  }
-  .footer__div .art__contact {
-    margin: 0 0 0 230px;
+  .footer__div .art__service {
+    width: 430px;
   }
   .footer__div .art__contact .art__contact__item {
     display: flex;
@@ -273,14 +275,15 @@ body {
   font-size: 56px;
   color: white;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 40px;
+  font-family: "Old Standard TT", sans-serif;
 }
 .index .proof__art .art__div1 .div1__button {
   display: flex;
   flex-flow: column wrap;
 }
 .index .proof__art .art__div1 .div1__button .div__button1 {
-  font-family: "Archivo", sans-serif;
   border: none;
   background-color: #BEAD8E;
   padding: 22px 0px;
@@ -288,10 +291,10 @@ body {
   font-size: 14px;
   color: white;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 24px;
 }
 .index .proof__art .art__div1 .div1__button .div__button2 {
-  font-family: "Archivo", sans-serif;
   border: solid 1px grey;
   background-color: #333333;
   padding: 22px 0px;
@@ -299,6 +302,7 @@ body {
   font-size: 14px;
   color: white;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 24px;
 }
 .index .proof__art .art__div2 {
@@ -309,7 +313,9 @@ body {
   font-size: 16px;
   color: white;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 24px;
+  font-family: "Roboto", sans-serif;
 }
 .index .proof__art .art__div2 input {
   width: 120px;
@@ -317,6 +323,7 @@ body {
   color: white;
   border: none;
   margin-bottom: 14px;
+  font-family: "Roboto", sans-serif;
 }
 .index .proof__art .art__div2 .div2__line {
   background-color: #BEAD8E;
@@ -331,7 +338,9 @@ body {
   font-size: 14px;
   color: white;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
   background-color: #BEAD8E;
+  width: 250px;
 }
 @media (min-width: 1000px) {
   .index .proof__art {
@@ -355,40 +364,46 @@ body {
   .index .proof__art .art__div1 button {
     margin-right: 30px;
   }
-  .index .proof__art .art__div2 {
+  .index .proof__art .art__div2 .div2__div {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: auto;
   }
-  .index .proof__art .art__div2 input {
+  .index .proof__art .art__div2 .div2__div input {
     width: 335px;
   }
-  .index .proof__art .art__div2 div {
+  .index .proof__art .art__div2 .div2__div div {
     margin-right: 30px;
-  }
-  .index .proof__art .art__div2 .div2__button {
-    margin-left: 50%;
   }
 }
 .index .about__art {
   background-color: #f9f9f9;
   padding: 38px 20px;
+  max-width: 1170px;
+  margin: auto;
+  margin-bottom: 118px;
 }
 .index .about__art .art__div1 h2 {
   font-size: 13px;
   color: #777777;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 32px;
 }
 .index .about__art .art__div1 .div1__p1 {
   font-size: 40px;
   color: #111111;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 16px;
+  font-family: "Old Standard TT", sans-serif;
 }
 .index .about__art .art__div1 .div1__p2 {
   font-size: 14px;
   color: #777777;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 24px;
 }
 .index .about__art .art__div1 button {
@@ -399,6 +414,7 @@ body {
   font-size: 14px;
   color: white;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
 }
 .index .about__art .art__div2 {
   display: flex;
@@ -422,13 +438,17 @@ body {
   font-size: 30px;
   color: #111111;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 21px;
+  font-family: "Old Standard TT", sans-serif;
 }
 .index .about__art .art__div2 .div2__div .div__p2 {
   text-align: center;
   font-size: 14px;
   color: #111111;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .index .about__art .art__div3 .div3__img {
   width: 270px;
@@ -448,6 +468,7 @@ body {
   font-size: 30px;
   color: #111111;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 21px;
 }
 .index .about__art .art__div3 .div3__div .div__p2 {
@@ -455,6 +476,7 @@ body {
   font-size: 14px;
   color: #111111;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
 }
 @media (min-width: 1000px) {
   .index .about__art {
@@ -482,7 +504,6 @@ body {
     background-color: white;
     max-width: 270px;
     max-height: 300px;
-    padding: 65px 35px 49px;
     margin-right: 30px;
     position: relative;
     top: -30px;
@@ -520,6 +541,7 @@ body {
   font-size: 14px;
   color: #777777;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 24px;
 }
 .index .room__art .art__p2 {
@@ -527,97 +549,134 @@ body {
   font-size: 40px;
   color: #111111;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 16px;
+  font-family: "Old Standard TT", sans-serif;
 }
-.index .room__art img {
-  width: 270px;
+.index .room__art .div__img {
+  max-width: 770px;
+  margin: auto;
+}
+.index .room__art .div__img img {
+  width: 100%;
   height: 400px;
 }
 .index .room__art .art__div1 {
   text-align: center;
+  position: relative;
+  top: -30px;
+  background-color: white;
+  width: 90%;
+  margin: auto;
 }
 .index .room__art .art__div1 .div1__p1 {
   font-size: 28px;
   color: black;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 12px;
+  grid-area: title;
 }
 .index .room__art .art__div1 .div1__p2 {
   font-size: 14px;
   color: black;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 12px;
+  grid-area: texts;
+  max-width: 437px;
+  font-family: "Roboto", sans-serif;
 }
 .index .room__art .art__div1 .div1__p3 {
+  font-size: 32px;
+  color: #bead8e;
+  font-weight: 700;
+  font-family: "Archivo", sans-serif;
+  grid-area: price;
+}
+.index .room__art .art__div1 .div1__p3 span {
   font-size: 13px;
   color: #bead8e;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
 }
-.index .room__art .art__div1 .div1__p3 span {
-  font-size: 8px;
-  color: #bead8e;
-  font-weight: 700;
+@media (min-width: 1000px) {
+  .index .room__art .art__div1 {
+    display: grid;
+    grid-template-areas: "title price" "texts price";
+    align-items: center;
+    max-width: 690px;
+    text-align: left;
+    padding: 38px;
+  }
 }
 .index .video__art {
   padding: 64px 20px 48px;
   background-color: #222222;
 }
-.index .video__art .art__p1 {
+.index .video__art .video__div .art__p1 {
   font-size: 14px;
   color: #bdac8d;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 32px;
 }
-.index .video__art .art__p2 {
+.index .video__art .video__div .art__p2 {
   font-size: 40px;
   color: white;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 16px;
+  font-family: "Old Standard TT", sans-serif;
 }
-.index .video__art .art__p3 {
+.index .video__art .video__div .art__p3 {
   font-size: 14px;
   color: #c2c2c2;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 32px;
 }
-.index .video__art button {
+.index .video__art .video__div button {
   padding: 22px 56px;
   background-color: #BEAD8E;
   font-size: 14px;
   color: white;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
   border: none;
 }
-.index .video__art .video {
+.index .video__art .video__div .video {
   min-width: 270px;
   min-height: 300px;
   margin-bottom: 36px;
 }
 @media (min-width: 1000px) {
-  .index .video__art {
+  .index .video__art .video__div {
     display: grid;
     grid-template-areas: "p1 video" "p2 video" "p3 video" "button video";
     grid-template-columns: auto 570px;
     justify-content: space-around;
+    max-width: 1170px;
+    margin: auto;
   }
-  .index .video__art .art__p1 {
+  .index .video__art .video__div .art__p1 {
     grid-area: p1;
     max-width: 500px;
   }
-  .index .video__art .art__p2 {
+  .index .video__art .video__div .art__p2 {
     grid-area: p2;
     font-size: 80px;
     max-width: 500px;
   }
-  .index .video__art .art__p3 {
+  .index .video__art .video__div .art__p3 {
     grid-area: p3;
     max-width: 500px;
   }
-  .index .video__art button {
+  .index .video__art .video__div button {
     grid-area: button;
     max-width: 216px;
   }
-  .index .video__art .video {
+  .index .video__art .video__div .video {
     grid-area: video;
     width: 570px;
     height: 460px;
@@ -632,6 +691,7 @@ body {
   font-size: 14px;
   color: #777777;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
   text-align: center;
   margin-bottom: 24px;
 }
@@ -639,7 +699,9 @@ body {
   font-size: 40px;
   color: #222222;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 32px;
+  font-family: "Old Standard TT", sans-serif;
 }
 .index .facilities__art .art__div {
   padding: 81px 15px 0;
@@ -652,6 +714,7 @@ body {
   font-size: 120px;
   color: black;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
   position: absolute;
   right: 0;
   top: 0px;
@@ -666,12 +729,15 @@ body {
   font-size: 30px;
   color: #222222;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 28px;
+  font-family: "Old Standard TT", sans-serif;
 }
 .index .facilities__art .art__div .div__p3 {
   font-size: 14px;
   color: #777777;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 32px;
 }
 .index .facilities__art .n2 {
@@ -735,17 +801,23 @@ body {
   flex-flow: column wrap;
   align-items: center;
 }
+.index .menu__art .menuss .menu__div2 {
+  display: none;
+}
 .index .menu__art .art__p1 {
   font-size: 14px;
   color: #777777;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 24px;
 }
 .index .menu__art .art__p2 {
   font-size: 40px;
   color: #222;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 32px;
+  font-family: "Old Standard TT", sans-serif;
 }
 .index .menu__art .art__div {
   display: flex;
@@ -761,16 +833,23 @@ body {
   font-size: 24px;
   color: #222;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 12px;
   margin-left: 30px;
+  font-family: "Old Standard TT", sans-serif;
 }
 .index .menu__art .art__div .div__p2 {
   font-size: 14px;
   color: #222;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
   margin-top: 12px;
   width: 185px;
   margin-left: 30px;
+  font-family: "Roboto", sans-serif;
+}
+.index .menu__art .art__div .div__p {
+  display: none;
 }
 .index .menu__art .menu__img2 {
   width: 280px;
@@ -800,6 +879,9 @@ body {
     justify-content: space-around;
     align-items: center;
   }
+  .index .menu__art .menuss .menu__div2 {
+    display: block;
+  }
   .index .menu__art .menuss .art__div {
     max-width: 570px;
     margin-bottom: 16px;
@@ -817,13 +899,14 @@ body {
   .index .menu__art .menuss .art__div .div__div .div__p1 {
     grid-area: title;
     margin: 0;
-    width: 205px;
+    width: 220px;
   }
   .index .menu__art .menuss .art__div .div__div .div__p2 {
     grid-area: text;
     margin: 0;
   }
   .index .menu__art .menuss .art__div .div__div .div__p {
+    display: block;
     grid-area: arrow;
     padding-left: 63px;
     color: #bdac8d;
@@ -850,6 +933,7 @@ body {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
+  margin: auto;
 }
 .index .number__art .art__div {
   display: flex;
@@ -866,16 +950,22 @@ body {
   font-size: 60px;
   color: white;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .index .number__art .art__div .div__p1 span {
   font-size: 16px;
   color: white;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .index .number__art .art__div .div__p2 {
   font-size: 14px;
   color: #777777;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 @media (min-width: 1000px) {
   .index .number__art {
@@ -884,6 +974,7 @@ body {
     justify-content: space-around;
     padding: 80px;
     max-width: 1170px;
+    margin-bottom: 50px;
   }
   .index .number__art .art__div {
     margin: 0;
@@ -892,21 +983,28 @@ body {
 
 .about .proof__art {
   background-color: #333333;
+}
+.about .proof__art .art__div {
   padding: 75px 20px 96px;
+  margin: auto;
+  max-width: 1170px;
   position: relative;
 }
-.about .proof__art .art__p1 {
+.about .proof__art .art__div .art__p1 {
   font-size: 14px;
   color: white;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 16px;
 }
-.about .proof__art .art__p2 {
+.about .proof__art .art__div .art__p2 {
   font-size: 56px;
   color: white;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
+  font-family: "Old Standard TT", sans-serif;
 }
-.about .proof__art .art__div {
+.about .proof__art .art__div .div__div {
   position: absolute;
   bottom: 0px;
   right: 20px;
@@ -915,49 +1013,16 @@ body {
   font-size: 16px;
   color: #222222;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
 }
-.about .proof__art .art__div span {
+.about .proof__art .art__div .div__div span {
   color: #bead8e;
-}
-@media (min-width: 1000px) {
-  .about .proof__art {
-    background-color: #333333;
-  }
-  .about .proof__art .art__div1 {
-    max-width: 1380px;
-    margin: auto;
-  }
-  .about .proof__art .art__div1 .div1__p {
-    max-width: 660px;
-  }
-  .about .proof__art .art__div1 .div1__p1 {
-    max-width: 800px;
-    font-size: 120px;
-  }
-  .about .proof__art .art__div1 .div1__button {
-    display: flex;
-    flex-direction: row;
-  }
-  .about .proof__art .art__div1 button {
-    margin-right: 30px;
-  }
-  .about .proof__art .art__div2 {
-    display: flex;
-    justify-content: center;
-  }
-  .about .proof__art .art__div2 input {
-    width: 335px;
-  }
-  .about .proof__art .art__div2 div {
-    margin-right: 30px;
-  }
-  .about .proof__art .art__div2 .div2__button {
-    margin-left: 50%;
-  }
 }
 .about .video__art {
   padding: 0px;
   margin-bottom: 71px;
+  max-width: 1170px;
+  margin: auto;
 }
 .about .video__art .video {
   min-width: 217px;
@@ -970,7 +1035,9 @@ body {
   font-size: 32px;
   color: #222222;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 51px;
+  font-family: "Old Standard TT", sans-serif;
 }
 .about .video__art .art__div {
   display: grid;
@@ -988,6 +1055,13 @@ body {
 .about .video__art .art__div div img {
   width: 58px;
   height: 58px;
+}
+.about .video__art .art__div div p {
+  font-size: 12px;
+  color: #222;
+  font-weight: 700;
+  font-family: "Archivo", sans-serif;
+  font-family: "Archivo", sans-serif;
 }
 .about .video__art .art__div :hover {
   background-color: #BEAD8E;
@@ -1022,6 +1096,8 @@ body {
 }
 .about .restaurant__art {
   padding: 20px 20px 80px;
+  max-width: 1170px;
+  margin: auto;
 }
 .about .restaurant__art .art__div1 {
   margin: auto;
@@ -1037,18 +1113,22 @@ body {
   font-size: 14px;
   color: #777;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 26px;
 }
 .about .restaurant__art .art__p2 {
   font-size: 40px;
   color: #222222;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 26px;
+  font-family: "Old Standard TT", sans-serif;
 }
 .about .restaurant__art .art__p3 {
   font-size: 14px;
   color: #777;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 16px;
 }
 .about .restaurant__art button {
@@ -1057,6 +1137,7 @@ body {
   font-size: 14px;
   color: white;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
   border: none;
 }
 @media (min-width: 1000px) {
@@ -1098,8 +1179,9 @@ body {
 }
 .about .facilities__art .art__p1 {
   font-size: 14px;
-  color: white;
+  color: #c2c2c2;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
   text-align: center;
   margin-bottom: 24px;
 }
@@ -1107,20 +1189,22 @@ body {
   font-size: 40px;
   color: white;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 32px;
+  font-family: "Old Standard TT", sans-serif;
 }
 .about .facilities__art .art__div {
-  padding: 81px 15px 0;
+  padding: 81px 15px 43px;
   position: relative;
   max-width: 370px;
-  max-height: 349px;
   margin: 15px;
-  background-color: #333333;
+  background-color: #292929;
 }
 .about .facilities__art .art__div .div__p1 {
   font-size: 120px;
   color: #222;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
   position: absolute;
   right: 0;
   top: 0px;
@@ -1134,13 +1218,15 @@ body {
   font-size: 30px;
   color: white;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 28px;
+  font-family: "Old Standard TT", sans-serif;
 }
 .about .facilities__art .art__div .div__p3 {
   font-size: 14px;
   color: white;
   font-weight: 400;
-  margin-bottom: 32px;
+  font-family: "Archivo", sans-serif;
 }
 .about .facilities__art .n2 {
   display: none;
@@ -1158,6 +1244,13 @@ body {
   display: none;
 }
 @media (min-width: 1000px) {
+  .about .facilities__art .art__div {
+    padding: 81px 60px 43px;
+  }
+  .about .facilities__art .art__div .div__p1 {
+    top: -25px;
+    right: -7px;
+  }
   .about .facilities__art .art__p1 {
     text-align: center;
   }
@@ -1197,13 +1290,16 @@ body {
   font-size: 14px;
   color: #777;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 24px;
 }
 .about .counter__art .art__div1 .art__p2 {
   font-size: 40px;
   color: #222;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 60px;
+  font-family: "Old Standard TT", sans-serif;
 }
 .about .counter__art .art__div {
   display: flex;
@@ -1222,11 +1318,14 @@ body {
   font-size: 60px;
   color: #222222;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
 }
 .about .counter__art .art__div .div__div .div__p2 {
   font-size: 16px;
   color: #777;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .about .counter__art .art__div .div__p {
   color: #dcdcdc;
@@ -1259,21 +1358,28 @@ body {
 
 .room .proof__art {
   background-color: #333333;
+}
+.room .proof__art .art__div {
   padding: 75px 20px 96px;
+  margin: auto;
+  max-width: 1170px;
   position: relative;
 }
-.room .proof__art .art__p1 {
+.room .proof__art .art__div .art__p1 {
   font-size: 14px;
   color: white;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 16px;
 }
-.room .proof__art .art__p2 {
+.room .proof__art .art__div .art__p2 {
   font-size: 56px;
   color: white;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
+  font-family: "Old Standard TT", sans-serif;
 }
-.room .proof__art .art__div {
+.room .proof__art .art__div .div__div {
   position: absolute;
   bottom: 0px;
   right: 20px;
@@ -1282,45 +1388,10 @@ body {
   font-size: 16px;
   color: #222222;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
 }
-.room .proof__art .art__div span {
+.room .proof__art .art__div .div__div span {
   color: #bead8e;
-}
-@media (min-width: 1000px) {
-  .room .proof__art {
-    background-color: #333333;
-  }
-  .room .proof__art .art__div1 {
-    max-width: 1380px;
-    margin: auto;
-  }
-  .room .proof__art .art__div1 .div1__p {
-    max-width: 660px;
-  }
-  .room .proof__art .art__div1 .div1__p1 {
-    max-width: 800px;
-    font-size: 120px;
-  }
-  .room .proof__art .art__div1 .div1__button {
-    display: flex;
-    flex-direction: row;
-  }
-  .room .proof__art .art__div1 button {
-    margin-right: 30px;
-  }
-  .room .proof__art .art__div2 {
-    display: flex;
-    justify-content: center;
-  }
-  .room .proof__art .art__div2 input {
-    width: 335px;
-  }
-  .room .proof__art .art__div2 div {
-    margin-right: 30px;
-  }
-  .room .proof__art .art__div2 .div2__button {
-    margin-left: 50%;
-  }
 }
 .room .show__art {
   padding: 50px 20px;
@@ -1348,22 +1419,27 @@ body {
   font-size: 24px;
   color: #222222;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 16px;
   text-align: center;
+  font-family: "Old Standard TT", sans-serif;
 }
 .room .show__art .art__div .div__p1 {
   font-size: 14px;
   color: #777;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
   margin: auto;
   margin-bottom: 10px;
   text-align: center;
   max-width: 290px;
+  font-family: "Roboto", sans-serif;
 }
 .room .show__art .art__div .div__p2 {
   font-size: 16px;
   color: #bead8e;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 52px;
   text-align: center;
 }
@@ -1371,6 +1447,7 @@ body {
   font-size: 16px;
   color: #bdbdbd;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
 }
 .room .show__art .n7 {
   display: none;
@@ -1420,21 +1497,27 @@ body {
 
 .room .proof__art {
   background-color: #333333;
+}
+.room .proof__art .art__div {
   padding: 75px 20px 96px;
+  margin: auto;
+  max-width: 1170px;
   position: relative;
 }
-.room .proof__art .art__p1 {
+.room .proof__art .art__div .art__p1 {
   font-size: 14px;
   color: white;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 16px;
 }
-.room .proof__art .art__p2 {
+.room .proof__art .art__div .art__p2 {
   font-size: 56px;
   color: white;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
 }
-.room .proof__art .art__div {
+.room .proof__art .art__div .div__div {
   position: absolute;
   bottom: 0px;
   right: 20px;
@@ -1443,45 +1526,10 @@ body {
   font-size: 16px;
   color: #222222;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
 }
-.room .proof__art .art__div span {
+.room .proof__art .art__div .div__div span {
   color: #bead8e;
-}
-@media (min-width: 1000px) {
-  .room .proof__art {
-    background-color: #333333;
-  }
-  .room .proof__art .art__div1 {
-    max-width: 1380px;
-    margin: auto;
-  }
-  .room .proof__art .art__div1 .div1__p {
-    max-width: 660px;
-  }
-  .room .proof__art .art__div1 .div1__p1 {
-    max-width: 800px;
-    font-size: 120px;
-  }
-  .room .proof__art .art__div1 .div1__button {
-    display: flex;
-    flex-direction: row;
-  }
-  .room .proof__art .art__div1 button {
-    margin-right: 30px;
-  }
-  .room .proof__art .art__div2 {
-    display: flex;
-    justify-content: center;
-  }
-  .room .proof__art .art__div2 input {
-    width: 335px;
-  }
-  .room .proof__art .art__div2 div {
-    margin-right: 30px;
-  }
-  .room .proof__art .art__div2 .div2__button {
-    margin-left: 50%;
-  }
 }
 .room .show__art__list {
   padding: 50px 20px;
@@ -1508,6 +1556,7 @@ body {
   font-size: 24px;
   color: #222222;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 16px;
   text-align: center;
 }
@@ -1515,6 +1564,7 @@ body {
   font-size: 14px;
   color: #777;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
   margin: auto;
   margin-bottom: 10px;
   text-align: center;
@@ -1524,6 +1574,7 @@ body {
   font-size: 16px;
   color: #bead8e;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 52px;
   text-align: center;
 }
@@ -1531,6 +1582,7 @@ body {
   font-size: 16px;
   color: #bdbdbd;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
 }
 .room .show__art__list .n7 {
   display: none;
@@ -1589,31 +1641,40 @@ body {
     font-size: 40px;
     color: #bead8e;
     font-weight: 700;
+    font-family: "Archivo", sans-serif;
   }
   .room .show__art__list .art__div .div__p2 span {
     font-size: 16px;
     color: #777;
     font-weight: 700;
+    font-family: "Archivo", sans-serif;
   }
 }
 
 .offers .proof__art {
   background-color: #333333;
+}
+.offers .proof__art .art__div {
   padding: 75px 20px 96px;
+  margin: auto;
+  max-width: 1170px;
   position: relative;
 }
-.offers .proof__art .art__p1 {
+.offers .proof__art .art__div .art__p1 {
   font-size: 14px;
   color: white;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 16px;
 }
-.offers .proof__art .art__p2 {
+.offers .proof__art .art__div .art__p2 {
   font-size: 56px;
   color: white;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
+  font-family: "Old Standard TT", sans-serif;
 }
-.offers .proof__art .art__div {
+.offers .proof__art .art__div .div__div {
   position: absolute;
   bottom: 0px;
   right: 20px;
@@ -1622,45 +1683,10 @@ body {
   font-size: 16px;
   color: #222222;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
 }
-.offers .proof__art .art__div span {
+.offers .proof__art .art__div .div__div span {
   color: #bead8e;
-}
-@media (min-width: 1000px) {
-  .offers .proof__art {
-    background-color: #333333;
-  }
-  .offers .proof__art .art__div1 {
-    max-width: 1380px;
-    margin: auto;
-  }
-  .offers .proof__art .art__div1 .div1__p {
-    max-width: 660px;
-  }
-  .offers .proof__art .art__div1 .div1__p1 {
-    max-width: 800px;
-    font-size: 120px;
-  }
-  .offers .proof__art .art__div1 .div1__button {
-    display: flex;
-    flex-direction: row;
-  }
-  .offers .proof__art .art__div1 button {
-    margin-right: 30px;
-  }
-  .offers .proof__art .art__div2 {
-    display: flex;
-    justify-content: center;
-  }
-  .offers .proof__art .art__div2 input {
-    width: 335px;
-  }
-  .offers .proof__art .art__div2 div {
-    margin-right: 30px;
-  }
-  .offers .proof__art .art__div2 .div2__button {
-    margin-left: 50%;
-  }
 }
 .offers .show__art .show__div {
   padding: 48px 20px;
@@ -1681,6 +1707,7 @@ body {
   font-size: 23px;
   color: #bead8e;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
   right: 25px;
   text-decoration: line-through;
   top: 150px;
@@ -1689,6 +1716,7 @@ body {
   font-size: 11px;
   color: #bead8e;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
   text-decoration: none;
 }
 .offers .show__art .show__div .img__p2 {
@@ -1697,6 +1725,7 @@ body {
   font-size: 30px;
   color: #de5777;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
   right: 25px;
   top: 170px;
 }
@@ -1704,11 +1733,13 @@ body {
   font-size: 11px;
   color: #de5777;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
 }
 .offers .show__art .show__p1 {
   font-size: 14px;
   color: #777;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
   padding: 0 20px;
   margin-bottom: 12px;
 }
@@ -1716,16 +1747,20 @@ body {
   font-size: 40px;
   color: #222;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
   padding: 0 20px;
   margin-bottom: 16px;
+  font-family: "Old Standard TT", sans-serif;
 }
 .offers .show__art .show__p3 {
   font-size: 14px;
   color: #777;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
   padding: 0 20px;
   margin-bottom: 24px;
   max-width: 500px;
+  font-family: "Roboto", sans-serif;
 }
 .offers .show__art .show__div1 {
   max-width: 300px;
@@ -1752,11 +1787,14 @@ body {
   font-size: 15px;
   color: #777;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .offers .show__art button {
   font-size: 14px;
   color: white;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
   padding: 23px 56px;
   margin-left: 20px;
   border: none;
@@ -1833,6 +1871,7 @@ body {
   font-size: 14px;
   color: #bead8e;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 25px;
 }
 .offers .most__art .art__p2 {
@@ -1840,7 +1879,9 @@ body {
   font-size: 40px;
   color: white;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 48px;
+  font-family: "Old Standard TT", sans-serif;
 }
 .offers .most__art .art__div {
   max-width: 370px;
@@ -1868,26 +1909,32 @@ body {
   font-size: 24px;
   color: #222222;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 24px;
   text-align: center;
+  font-family: "Old Standard TT", sans-serif;
 }
 .offers .most__art .art__div .div__div .div__p2 {
   font-size: 16px;
   color: #777;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
   text-align: center;
   margin-bottom: 5px;
+  font-family: "Roboto", sans-serif;
 }
 .offers .most__art .art__div .div__div .div__p3 {
   font-size: 16px;
   color: #bead8e;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
   text-align: center;
 }
 .offers .most__art .art__div .div__div .div__p3 span {
   font-size: 16px;
   color: #bdbdbd;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
   margin-left: 19px;
 }
 @media (min-width: 1000px) {
@@ -1901,21 +1948,28 @@ body {
 
 .details .proof__art {
   background-color: #333333;
+}
+.details .proof__art .art__div {
   padding: 75px 20px 96px;
+  margin: auto;
+  max-width: 1170px;
   position: relative;
 }
-.details .proof__art .art__p1 {
+.details .proof__art .art__div .art__p1 {
   font-size: 14px;
   color: white;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 16px;
 }
-.details .proof__art .art__p2 {
+.details .proof__art .art__div .art__p2 {
   font-size: 56px;
   color: white;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
+  font-family: "Old Standard TT", sans-serif;
 }
-.details .proof__art .art__div {
+.details .proof__art .art__div .div__div {
   position: absolute;
   bottom: 0px;
   right: 20px;
@@ -1924,45 +1978,10 @@ body {
   font-size: 16px;
   color: #222222;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
 }
-.details .proof__art .art__div span {
+.details .proof__art .art__div .div__div span {
   color: #bead8e;
-}
-@media (min-width: 1000px) {
-  .details .proof__art {
-    background-color: #333333;
-  }
-  .details .proof__art .art__div1 {
-    max-width: 1380px;
-    margin: auto;
-  }
-  .details .proof__art .art__div1 .div1__p {
-    max-width: 660px;
-  }
-  .details .proof__art .art__div1 .div1__p1 {
-    max-width: 800px;
-    font-size: 120px;
-  }
-  .details .proof__art .art__div1 .div1__button {
-    display: flex;
-    flex-direction: row;
-  }
-  .details .proof__art .art__div1 button {
-    margin-right: 30px;
-  }
-  .details .proof__art .art__div2 {
-    display: flex;
-    justify-content: center;
-  }
-  .details .proof__art .art__div2 input {
-    width: 335px;
-  }
-  .details .proof__art .art__div2 div {
-    margin-right: 30px;
-  }
-  .details .proof__art .art__div2 .div2__button {
-    margin-left: 50%;
-  }
 }
 .details .contacts__art {
   margin: auto;
@@ -1980,6 +1999,8 @@ body {
   font-size: 200px;
   color: #bead8e;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
+  font-family: "Roboto", sans-serif;
   position: absolute;
   right: 0px;
   top: -50px;
@@ -1994,12 +2015,16 @@ body {
   font-size: 20px;
   color: #222;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
   margin-bottom: 16px;
+  font-family: "Roboto", sans-serif;
 }
 .details .contacts__art .art__div .div__div .div__p2 {
   font-size: 14px;
   color: #777;
   font-weight: 400;
+  font-family: "Archivo", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .details .contacts__art .div__img {
   max-width: 1170px;
@@ -2030,6 +2055,7 @@ body {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
+  font-family: "Roboto", sans-serif;
 }
 .details .form__art .art__div .div__input {
   background-color: #f8f8f8;
@@ -2067,6 +2093,8 @@ body {
   font-size: 16px;
   color: white;
   font-weight: 700;
+  font-family: "Archivo", sans-serif;
+  font-family: "Roboto", sans-serif;
   padding: 20px 105px;
   background-color: #BEAD8E;
   border: none;

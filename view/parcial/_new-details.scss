@@ -4,58 +4,28 @@
     // PROOF --------------------------------------
     .proof__art {
         @include blackLight;
-        padding: 75px 20px 96px;
-        position: relative;
-        .art__p1 {
-            @include text(14px, white, 700);
-            margin-bottom: 16px;
-        }
-        .art__p2 {
-            @include text(56px, white);
-        }
         .art__div {
-            position: absolute;
-            bottom: 0px;
-            right: 20px;
-            background-color: white;
-            padding: 16px 24px;
-            @include text(16px, #222222, 700);
-            span {
-                color: #bead8e;
+            padding: 75px 20px 96px;
+            margin: auto;
+            max-width: 1170px;
+            position: relative;
+            .art__p1 {
+                @include text(14px, white, 700);
+                margin-bottom: 16px;
             }
-        }
-    }    @media (min-width: 1000px) {
-        .proof__art {
-            @include blackLight;
-            .art__div1 {
-                max-width: 1380px;
-                margin: auto;
-                .div1__p {
-                    max-width: 660px;
-                }
-                .div1__p1 {
-                    max-width: 800px;
-                    font-size: 120px;
-                }
-                .div1__button {
-                    display: flex;
-                    flex-direction: row;
-                }
-                button {
-                    margin-right: 30px;
-                }
+            .art__p2 {
+                @include text(56px, white);
+                @include old;
             }
-            .art__div2 {
-                display: flex;
-                justify-content: center;
-                input {
-                    width: 335px;
-                }
-                div {
-                    margin-right: 30px;
-                }
-                .div2__button {
-                    margin-left: 50%;
+            .div__div {
+                position: absolute;
+                bottom: 0px;
+                right: 20px;
+                background-color: white;
+                padding: 16px 24px;
+                @include text(16px, #222222, 700);
+                span {
+                    color: #bead8e;
                 }
             }
         }
@@ -73,6 +43,7 @@
             max-width: 370px;
             .art__p1 {
                 @include text(200px, #bead8e, 700);
+                @include roboto;
                 position: absolute;
                 right: 0px;
                 top: -50px;
@@ -87,9 +58,11 @@
                 .div__p1 {
                     @include text(20px, #222);
                     margin-bottom: 16px;
+                    @include roboto;
                 }
                 .div__p2 {
                     @include text(14px, #777);
+                    @include roboto;
                 }
             }
         }
@@ -126,6 +99,7 @@
         display: flex;
         flex-flow: column wrap;
         align-items: center;
+        @include roboto;
         .art__div {
             .div__input {
                 background-color: #f8f8f8;
@@ -162,6 +136,7 @@
         button {
             margin: auto;
             @include text(16px, white, 700);
+            @include roboto;
             padding: 20px 105px;
             @include gold;
             border: none;

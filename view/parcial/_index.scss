@@ -1,5 +1,4 @@
 @import "./_mixin.scss";
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap");
 
 .index {
     // PROOF ---------------------------------------
@@ -10,19 +9,19 @@
             @include blackLight;
             .div1__p {
                 @include text(13px, white, 700);
-                @include archivo;
+
                 margin-bottom: 40px;
                 font-family: "Archivo", sans-serif;
             }
             .div1__p1 {
                 @include text(56px, white);
                 margin-bottom: 40px;
+                @include old;
             }
             .div1__button {
                 display: flex;
                 flex-flow: column wrap;
                 .div__button1 {
-                    @include archivo;
                     border: none;
                     @include gold;
                     padding: 22px 0px;
@@ -31,7 +30,6 @@
                     margin-bottom: 24px;
                 }
                 .div__button2 {
-                    @include archivo;
                     border: solid 1px grey;
                     @include blackLight;
                     padding: 22px 0px;
@@ -47,6 +45,7 @@
             p {
                 @include text(16px, white, 700);
                 margin-bottom: 24px;
+                @include roboto;
             }
             input {
                 width: 120px;
@@ -54,6 +53,7 @@
                 color: white;
                 border: none;
                 margin-bottom: 14px;
+                @include roboto;
             }
             .div2__line {
                 @include gold;
@@ -67,6 +67,7 @@
                 padding: 22px 25px;
                 @include text(14px, white, 700);
                 @include gold;
+                width: 250px;
             }
         }
     }
@@ -92,16 +93,17 @@
                 }
             }
             .art__div2 {
-                display: flex;
-                justify-content: center;
-                input {
-                    width: 335px;
-                }
-                div {
-                    margin-right: 30px;
-                }
-                .div2__button {
-                    margin-left: 50%;
+                .div2__div{
+                    display: flex;
+                    justify-content: space-between;
+                    max-width: 1170px;
+                    margin: auto;
+                    input {
+                        width: 335px;
+                    }
+                    div {
+                        margin-right: 30px;
+                    }
                 }
             }
         }
@@ -112,6 +114,9 @@
     .about__art {
         background-color: #f9f9f9;
         padding: 38px 20px;
+        max-width: 1170px;
+        margin: auto;
+        margin-bottom: 118px;
         .art__div1 {
             h2 {
                 @include text(13px, #777777, 700);
@@ -120,6 +125,7 @@
             .div1__p1 {
                 @include text(40px, #111111);
                 margin-bottom: 16px;
+                @include old;
             }
             .div1__p2 {
                 @include text(14px, #777777);
@@ -154,10 +160,12 @@
                     text-align: center;
                     @include text(30px, #111111);
                     margin-bottom: 21px;
+                    @include old;
                 }
                 .div__p2 {
                     text-align: center;
                     @include text(14px, #111111);
+                    @include roboto;
                 }
             }
         }
@@ -211,7 +219,7 @@
                     background-color: white;
                     max-width: 270px;
                     max-height: 300px;
-                    padding: 65px 35px 49px;
+                    
                     margin-right: 30px;
                     position: relative;
                     top: -30px;
@@ -255,91 +263,123 @@
             text-align: center;
             @include text(40px, #111111);
             margin-bottom: 16px;
+            @include old;
         }
-        img {
-            width: 270px;
-            height: 400px;
+        .div__img {
+            max-width: 770px;
+            margin: auto;
+            img {
+                width: 100%;
+                height: 400px;
+            }
         }
         .art__div1 {
             text-align: center;
+            position: relative;
+            top: -30px;
+            background-color: white;
+            width: 90%;
+            margin: auto;
             .div1__p1 {
                 @include text(28px);
                 margin-bottom: 12px;
+                grid-area: title;
             }
             .div1__p2 {
                 @include text(14px);
                 margin-bottom: 12px;
+                grid-area: texts;
+                max-width: 437px;
+                @include roboto;
             }
             .div1__p3 {
-                @include text(13px, #bead8e, 700);
+                @include text(32px, #bead8e, 700);
+                grid-area: price;
                 span {
-                    @include text(8px, #bead8e, 700);
+                    @include text(13px, #bead8e, 700);
                 }
             }
         }
     }
     @media (min-width: 1000px) {
+        .room__art {
+            .art__div1 {
+                display: grid;
+                grid-template-areas: "title price" "texts price";
+                align-items: center;
+                max-width: 690px;
+                text-align: left;
+                padding: 38px;
+            }
+        }
     }
     // VIDEO -----------------------------------------------
     .video__art {
         padding: 64px 20px 48px;
         @include black;
-        .art__p1 {
-            @include text(14px, #bdac8d, 700);
-            margin-bottom: 32px;
-        }
-        .art__p2 {
-            @include text(40px, white);
-            margin-bottom: 16px;
-        }
-        .art__p3 {
-            @include text(14px, #c2c2c2);
-            margin-bottom: 32px;
-        }
-        button {
-            padding: 22px 56px;
-            @include gold;
-            @include text(14px, white, 700);
-            border: none;
-        }
-        .video {
-            min-width: 270px;
-            min-height: 300px;
-            margin-bottom: 36px;
+        .video__div {
+            .art__p1 {
+                @include text(14px, #bdac8d, 700);
+                margin-bottom: 32px;
+            }
+            .art__p2 {
+                @include text(40px, white);
+                margin-bottom: 16px;
+                @include old;
+            }
+            .art__p3 {
+                @include text(14px, #c2c2c2);
+                margin-bottom: 32px;
+            }
+            button {
+                padding: 22px 56px;
+                @include gold;
+                @include text(14px, white, 700);
+                border: none;
+            }
+            .video {
+                min-width: 270px;
+                min-height: 300px;
+                margin-bottom: 36px;
+            }
         }
     }
     @media (min-width: 1000px) {
         .video__art {
-            display: grid;
-            grid-template-areas:
-                "p1 video"
-                "p2 video"
-                "p3 video"
-                "button video";
-            grid-template-columns: auto 570px;
-            justify-content: space-around;
-            .art__p1 {
-                grid-area: p1;
-                max-width: 500px;
-            }
-            .art__p2 {
-                grid-area: p2;
-                font-size: 80px;
-                max-width: 500px;
-            }
-            .art__p3 {
-                grid-area: p3;
-                max-width: 500px;
-            }
-            button {
-                grid-area: button;
-                max-width: 216px;
-            }
-            .video {
-                grid-area: video;
-                width: 570px;
-                height: 460px;
-                margin-bottom: 0px;
+            .video__div {
+                display: grid;
+                grid-template-areas:
+                    "p1 video"
+                    "p2 video"
+                    "p3 video"
+                    "button video";
+                grid-template-columns: auto 570px;
+                justify-content: space-around;
+                max-width: 1170px;
+                margin: auto;
+                .art__p1 {
+                    grid-area: p1;
+                    max-width: 500px;
+                }
+                .art__p2 {
+                    grid-area: p2;
+                    font-size: 80px;
+                    max-width: 500px;
+                }
+                .art__p3 {
+                    grid-area: p3;
+                    max-width: 500px;
+                }
+                button {
+                    grid-area: button;
+                    max-width: 216px;
+                }
+                .video {
+                    grid-area: video;
+                    width: 570px;
+                    height: 460px;
+                    margin-bottom: 0px;
+                }
             }
         }
     }
@@ -356,6 +396,7 @@
         .art__p2 {
             @include text(40px, #222222);
             margin-bottom: 32px;
+            @include old;
         }
         .art__div {
             padding: 81px 15px 0;
@@ -378,6 +419,7 @@
             .div__p2 {
                 @include text(30px, #222222);
                 margin-bottom: 28px;
+                @include old;
             }
             .div__p3 {
                 @include text(14px, #777777);
@@ -447,6 +489,9 @@
             display: flex;
             flex-flow: column wrap;
             align-items: center;
+            .menu__div2{
+                display: none
+            }
         }
         .art__p1 {
             @include text(14px, #777777, 700);
@@ -455,6 +500,7 @@
         .art__p2 {
             @include text(40px, #222);
             margin-bottom: 32px;
+            @include old;
         }
         .art__div {
             display: flex;
@@ -469,12 +515,17 @@
                 @include text(24px, #222);
                 margin-bottom: 12px;
                 margin-left: 30px;
+                @include old;
             }
             .div__p2 {
                 @include text(14px, #222);
                 margin-top: 12px;
                 width: 185px;
                 margin-left: 30px;
+                @include roboto;
+            }
+            .div__p{
+                display: none;
             }
         }
         .menu__img2 {
@@ -504,30 +555,35 @@
                 flex-direction: row;
                 justify-content: space-around;
                 align-items: center;
-                .art__div{
+                .menu__div2{
+                    display: block;
+                }
+                .art__div {
                     max-width: 570px;
                     margin-bottom: 16px;
                     width: 570px;
-                    img{
+                    img {
                         margin: 0;
                     }
-                    .div__div{
+                    .div__div {
                         display: grid;
-                        grid-template-areas: 'title arrow'
-                        'text arrow';
+                        grid-template-areas:
+                            "title arrow"
+                            "text arrow";
                         align-items: center;
-                        
+
                         padding: 21px 40px 21px 30px;
-                        .div__p1{
+                        .div__p1 {
                             grid-area: title;
                             margin: 0;
-                            width: 205px;
+                            width: 220px;
                         }
-                        .div__p2{
+                        .div__p2 {
                             grid-area: text;
                             margin: 0;
                         }
-                        .div__p{
+                        .div__p {
+                            display: block;
                             grid-area: arrow;
                             padding-left: 63px;
                             color: #bdac8d;
@@ -535,18 +591,18 @@
                             opacity: 0;
                         }
                     }
-                        :hover{
-                            @include black;
-                            p{
-                                color: white;
-                            }
-                            .div__p{
-                                opacity: 1;
-                            }
+                    :hover {
+                        @include black;
+                        p {
+                            color: white;
+                        }
+                        .div__p {
+                            opacity: 1;
+                        }
                     }
                 }
             }
-            .div__img{
+            .div__img {
                 display: flex;
                 justify-content: space-around;
             }
@@ -559,6 +615,7 @@
         display: flex;
         flex-flow: column wrap;
         align-items: center;
+        margin: auto;
         .art__div {
             display: flex;
             flex-flow: column wrap;
@@ -571,26 +628,29 @@
             }
             .div__p1 {
                 @include text(60px, white, 700);
+                @include roboto;
                 span {
                     @include text(16px, white, 700);
+                    @include roboto;
                 }
             }
             .div__p2 {
                 @include text(14px, #777777, 700);
+                @include roboto;
             }
         }
     }
     @media (min-width: 1000px) {
-        .number__art{
+        .number__art {
             margin: auto;
             flex-direction: row;
             justify-content: space-around;
             padding: 80px;
             max-width: 1170px;
-            .art__div{
+            margin-bottom: 50px;
+            .art__div {
                 margin: 0;
             }
         }
-        
     }
 }

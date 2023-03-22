@@ -4,66 +4,39 @@
     // PROOF --------------------------------------
     .proof__art {
         @include blackLight;
-        padding: 75px 20px 96px;
-        position: relative;
-        .art__p1 {
-            @include text(14px, white, 700);
-            margin-bottom: 16px;
-        }
-        .art__p2 {
-            @include text(56px, white);
-        }
         .art__div {
-            position: absolute;
-            bottom: 0px;
-            right: 20px;
-            background-color: white;
-            padding: 16px 24px;
-            @include text(16px, #222222, 700);
-            span {
-                color: #bead8e;
+            padding: 75px 20px 96px;
+            margin: auto;
+            max-width: 1170px;
+            position: relative;
+            .art__p1 {
+                @include text(14px, white, 700);
+                margin-bottom: 16px;
             }
-        }
-    }    @media (min-width: 1000px) {
-        .proof__art {
-            @include blackLight;
-            .art__div1 {
-                max-width: 1380px;
-                margin: auto;
-                .div1__p {
-                    max-width: 660px;
-                }
-                .div1__p1 {
-                    max-width: 800px;
-                    font-size: 120px;
-                }
-                .div1__button {
-                    display: flex;
-                    flex-direction: row;
-                }
-                button {
-                    margin-right: 30px;
-                }
+            .art__p2 {
+                @include text(56px, white);
+                @include old;
             }
-            .art__div2 {
-                display: flex;
-                justify-content: center;
-                input {
-                    width: 335px;
-                }
-                div {
-                    margin-right: 30px;
-                }
-                .div2__button {
-                    margin-left: 50%;
+            .div__div {
+                position: absolute;
+                bottom: 0px;
+                right: 20px;
+                background-color: white;
+                padding: 16px 24px;
+                @include text(16px, #222222, 700);
+                span {
+                    color: #bead8e;
                 }
             }
         }
     }
+
     // VIDEO --------------------------------
     .video__art {
         padding: 0px;
         margin-bottom: 71px;
+        max-width: 1170px;
+        margin: auto;
         .video {
             min-width: 217px;
             min-height: 186px;
@@ -74,6 +47,7 @@
             padding: 0 20px;
             @include text(32px, #222222);
             margin-bottom: 51px;
+            @include old;
         }
         .art__div {
             display: grid;
@@ -91,6 +65,10 @@
                 img {
                     width: 58px;
                     height: 58px;
+                }
+                p{
+                    @include text (12px, #222, 700);
+                    @include archivo;
                 }
             }
             :hover {
@@ -131,6 +109,8 @@
     // RESTAURANT ----------------------------------------
     .restaurant__art {
         padding: 20px 20px 80px;
+        max-width: 1170px;
+        margin: auto;
         .art__div1 {
             margin: auto;
             width: 280px;
@@ -148,6 +128,7 @@
         .art__p2 {
             @include text(40px, #222222);
             margin-bottom: 26px;
+            @include old;
         }
         .art__p3 {
             @include text(14px, #777);
@@ -202,21 +183,21 @@
         margin-bottom: 175px;
         @include black;
         .art__p1 {
-            @include text(14px, white, 700);
+            @include text(14px, #c2c2c2, 700);
             text-align: center;
             margin-bottom: 24px;
         }
         .art__p2 {
             @include text(40px, white);
             margin-bottom: 32px;
+            @include old;
         }
         .art__div {
-            padding: 81px 15px 0;
+            padding: 81px 15px 43px;
             position: relative;
             max-width: 370px;
-            max-height: 349px;
             margin: 15px;
-            @include blackLight;
+            background-color: #292929;
             .div__p1 {
                 @include text(120px, #222, 700);
                 position: absolute;
@@ -231,10 +212,11 @@
             .div__p2 {
                 @include text(30px, white);
                 margin-bottom: 28px;
+                @include old;
             }
             .div__p3 {
                 @include text(14px, white);
-                margin-bottom: 32px;
+                
             }
         }
         .n2 {
@@ -255,6 +237,13 @@
     }
     @media (min-width: 1000px) {
         .facilities__art {
+            .art__div{
+                padding: 81px 60px 43px;
+                .div__p1{
+                    top: -25px;
+                    right: -7px;
+                }
+            }
             .art__p1 {
                 text-align: center;
             }
@@ -298,6 +287,7 @@
             .art__p2 {
                 @include text(40px, #222);
                 margin-bottom: 60px;
+                @include old;
             }
         }
         .art__div {
@@ -318,6 +308,7 @@
                 }
                 .div__p2 {
                     @include text(16px, #777);
+                    @include roboto;
                 }
             }
             .div__p {
@@ -334,18 +325,18 @@
         .counter__art {
             max-width: 1170px;
             margin: auto;
-            .art__div1{
-                .art__p2{
+            .art__div1 {
+                .art__p2 {
                     font-size: 80px;
                 }
             }
-            .flexing{
+            .flexing {
                 display: flex;
                 justify-content: space-around;
             }
-            .div__img{
+            .div__img {
                 display: flex;
-                .art__img{
+                .art__img {
                     width: 100%;
                     margin: 30px;
                 }
