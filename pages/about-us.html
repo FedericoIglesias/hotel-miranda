@@ -10,31 +10,65 @@
 </head>
 
 <body>
-    <header>
+    
+    
+    <!-- MENU DESPEGABLE -->
+    <div class="bar" id="bar">
+        <div class="header__div header display--none" id="bar__menu">
+            <div class="div__emblem">
+                <div class="div__logo">
+                    <a href="./index.html">
+                        <p>H</p>
+                    </a>
+                </div>
+                <h1 class="h1__name">Hotel <span>Miranda</span> </h1>
+            </div>
+            <div class="div__hamburguer" id="bar__menuBtn">
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <span class="line3"></span>
+            </div>
+            <div class="div__menu display--none" id="menus__bar">
+                <a href="./pages/about-us.html">About Us</a>
+                <a href="./pages/rooms.html">Rooms</a>
+                <a href="./pages/offers.html">Offers</a>
+                <a href="./pages/new-details.html">Contact</a>
+        </div>
+        <div class="div__img">
+            <div class="img__iconPerson"><img src="assets/login.svg" alt="iconPerson"></div>
+            <div class="img__search"><img src="assets/search.svg" alt="search"></div>
+        </div>
+    </div>
+</div>
 
-        <div class="header">
+
+    <header>
+        <div class="header ">
             <p class="header__p">We Make Your Feel Comfortable</p>
             <div class="div__emblem">
                 <div class="div__logo">
-                    <a href="../index.html">
+                    <a href="./index.html">
                         <p>H</p>
                     </a>
                 </div>
                 <h1 class="h1__name">Hotel <span>Miranda</span> </h1>
             </div>
 
-            <div class="div__hamburguer"><img src="../assets/hamburguer.svg" alt="menu"></div>
-            <div class="div__cross display--none"><img src="../assets/crooss.svg" alt="closeMenu"></div>
-            <div class="div__menu ">
-                <a href="../index.html">Home</a>
-                <a href="./rooms.html">Rooms</a>
-                <a href="./offers.html">Offers</a>
-                <a href="./new-details.html">Contact</a>
+            <div class="div__hamburguer" id="menuBtn">
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <span class="line3"></span>
+            </div>
+            <div class="div__menu display--none" id="menus">
+                <a href="./pages/about-us.html">About Us</a>
+                <a href="./pages/rooms.html">Rooms</a>
+                <a href="./pages/offers.html">Offers</a>
+                <a href="./pages/new-details.html">Contact</a>
             </div>
 
             <div class="div__img">
-                <div class="img__iconPerson"><img src="../assets/login.svg" alt="iconPerson"></div>
-                <div class="img__search"><img src="../assets/search.svg" alt="search"></div>
+                <div class="img__iconPerson"><img src="assets/login.svg" alt="iconPerson"></div>
+                <div class="img__search"><img src="assets/search.svg" alt="search"></div>
             </div>
 
         </div>
@@ -249,6 +283,7 @@
             </div>
         </div>
     </footer>
+    <script src="../js/app.js"></script>
 </body>
 
 </html>

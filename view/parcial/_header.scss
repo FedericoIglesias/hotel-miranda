@@ -1,11 +1,25 @@
 @import "./_mixin.scss";
 
+.bar{
+    height: 5px;
+    z-index: 13;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    
+    .header__div{
+        margin: auto;
+    }
+}
+
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 25px;
     position: relative;
+    background-color: white;
     z-index: 2;
     .header__p{
         display: none;
@@ -17,7 +31,6 @@
     }
     .div__logo {
         padding: 8px 8px;
-        // border: solid black 1px;
         margin-right: 10px;
         display: flex;
         justify-content: center;
@@ -42,13 +55,22 @@
         order: -1;
         width: 20px;
         height: 13px;
+        position: relative;
+        top: -5px;
+        span {
+            display: block;
+            background-color: #222;
+            height: 2px;
+            width: 40px;
+            margin-top: 6px;
+        }
     }
     .div__cross {
         order: -1;
         width: 20px;
         height: 13px;
     }
-
+    
     .div__img {
         display: flex;
         justify-content: center;
@@ -67,22 +89,37 @@
             height: 20px;
         }
     }
-
+    
     .div__menu {
         position: absolute;
-        top: 82px;
+        top: 81px;
         left: 0;
         background-color: white;
-        width: 320px;
+        width: 100%;
         font-weight: 600;
         padding: 20px 0;
-        display: none;
+        display: flex;
+        flex-flow: column wrap;
         a {
             color: black;
             text-decoration: none;
-            margin: 25px 20px;
+            padding: 25px;
+        }
+        a:hover{
+            background-color: #bead8b;
+            color: white;
         }
     }
+    .display--none{
+        display: none;
+    }
+}
+.position--fixed{
+    position: fixed;
+    top: px;
+    background-color: white;
+    width: 100%;
+    left: auto;
 }
 
 @media (min-width: 1000px) {
@@ -107,13 +144,15 @@
         }
         .div__menu {
             display: flex;
+            flex-direction: row;
             position: sticky;
             padding: 0;
             width: 100%;
             margin-left: 125px;
-            p {
-                margin: 0;
-                margin-right: 30px;
+            a:hover{
+                border-bottom: #bead8b solid 2px;
+                background-color: white;
+                color: black;
             }
         }
         .img__iconPerson {
@@ -135,4 +174,8 @@
             font-size: 26px;
         }
     }
+}
+.header__div{
+    top: 0;
+    
 }

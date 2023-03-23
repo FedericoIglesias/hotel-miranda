@@ -17,12 +17,24 @@ body {
   min-width: 320px;
 }
 
+.bar {
+  height: 5px;
+  z-index: 13;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+.bar .header__div {
+  margin: auto;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 25px;
   position: relative;
+  background-color: white;
   z-index: 2;
 }
 .header .header__p {
@@ -59,6 +71,15 @@ body {
   order: -1;
   width: 20px;
   height: 13px;
+  position: relative;
+  top: -5px;
+}
+.header .div__hamburguer span {
+  display: block;
+  background-color: #222;
+  height: 2px;
+  width: 40px;
+  margin-top: 6px;
 }
 .header .div__cross {
   order: -1;
@@ -83,18 +104,34 @@ body {
 }
 .header .div__menu {
   position: absolute;
-  top: 82px;
+  top: 81px;
   left: 0;
   background-color: white;
-  width: 320px;
+  width: 100%;
   font-weight: 600;
   padding: 20px 0;
-  display: none;
+  display: flex;
+  flex-flow: column wrap;
 }
 .header .div__menu a {
   color: black;
   text-decoration: none;
-  margin: 25px 20px;
+  padding: 25px;
+}
+.header .div__menu a:hover {
+  background-color: #bead8b;
+  color: white;
+}
+.header .display--none {
+  display: none;
+}
+
+.position--fixed {
+  position: fixed;
+  top: px;
+  background-color: white;
+  width: 100%;
+  left: auto;
 }
 
 @media (min-width: 1000px) {
@@ -123,14 +160,16 @@ body {
   }
   .header .div__menu {
     display: flex;
+    flex-direction: row;
     position: sticky;
     padding: 0;
     width: 100%;
     margin-left: 125px;
   }
-  .header .div__menu p {
-    margin: 0;
-    margin-right: 30px;
+  .header .div__menu a:hover {
+    border-bottom: #bead8b solid 2px;
+    background-color: white;
+    color: black;
   }
   .header .img__iconPerson {
     border: 1px solid gray;
@@ -151,6 +190,10 @@ body {
     font-size: 26px;
   }
 }
+.header__div {
+  top: 0;
+}
+
 .footer__div {
   padding: 30px 20px 0px;
   max-width: 1170px;
@@ -2114,4 +2157,8 @@ body {
 
 .display--none {
   display: none;
+}
+
+.display--enable {
+  display: inline-block;
 }/*# sourceMappingURL=style.css.map */
