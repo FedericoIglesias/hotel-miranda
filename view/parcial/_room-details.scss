@@ -1,0 +1,264 @@
+@import "mixin";
+
+.details {
+    section {
+        max-width: 1170px;
+        margin: auto;
+    }
+    // PROOF --------------------------
+    .proof__art {
+        margin-bottom: 48px;
+        @include blackLight;
+        .art__div {
+            padding: 75px 20px 96px;
+            margin: auto;
+            max-width: 1170px;
+            position: relative;
+            .art__p1 {
+                @include text(14px, white, 700);
+                margin-bottom: 16px;
+            }
+            .art__p2 {
+                @include text(56px, white);
+                @include old;
+            }
+            .div__div {
+                position: absolute;
+                bottom: 0px;
+                right: 20px;
+                background-color: white;
+                padding: 16px 24px;
+                @include text(16px, #222222, 700);
+                span {
+                    color: #bead8e;
+                }
+            }
+        }
+    }
+    // LUXURY ------------------------
+    .luxury__art {
+        padding: 0 20px;
+        margin-bottom: 60px;
+        .art__p1 {
+            @include text(14px, #777, 700);
+        }
+        .art__p2 {
+            @include text(40px, #222);
+        }
+        .art__p3 {
+            @include text(32px, #bead8b, 700);
+            span {
+                @include text(13px, #bead8b, 700);
+            }
+        }
+        .art__div1 {
+            max-width: 770px;
+            margin-bottom: 50px;
+            img {
+                width: 100%;
+                height: 214px;
+            }
+        }
+        .art__div2 {
+            max-width: 370px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            
+            margin-bottom: 48px;
+            .div2__p1 {
+                text-align: center;
+                @include text(18px, #222, 700);
+                margin-bottom: 19px;
+            }
+            .div2__p2 {
+                @include text(14px, #222, 700);
+                margin-bottom: 13px;
+            }
+            input {
+                padding: 20px 30px;
+                @include text(14px, #777);
+                background-color: #f8f8f8;
+                border: none;
+                width: 290px;
+                margin-bottom: 20px;
+            }
+            button {
+                padding: 22px 50px;
+                width: 290px;
+                @include gold;
+                border: none;
+                @include text(14px, white);
+                display: block;
+                margin: auto;
+            }
+        }
+        .art__p4 {
+            @include text(14px, #777);
+            max-width: 769px;
+            line-height: 24px;
+        }
+    }
+    @media (min-width: 1000px) {
+        .luxury__art {
+            display: flex;
+            flex-direction: column;
+            .art__div {
+                display: flex;
+                align-items: start;
+                .div__div{
+                    .div1__div {
+                        max-width: 730px;
+                        background-color: white;
+                    }
+                    .art__div1{
+                        position: relative;
+                        top: -30px;
+                        z-index: -1;
+                        img{
+                            height: 490px;
+                        }
+                    }
+                }
+                .art__div2{
+                    margin: 0;
+                    padding: 40px;
+                }
+            }
+        }
+    }
+
+    // AMENITIES ----------------------------
+    .amenities__art {
+        padding: 0px 20px;
+        max-width: 770px;
+        margin-bottom: 104px;
+        .art__p1 {
+            @include text(30px, #222);
+            margin-bottom: 14px;
+        }
+        .art__line {
+            height: 1px;
+            margin-bottom: 35px;
+            @include gold;
+        }
+        .art__list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .div1__div {
+                width: 170px;
+                display: flex;
+                margin-bottom: 17px;
+                @include text(15px, #777);
+                @include roboto;
+                p {
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+    @media (min-width: 1000px) {
+        .amenities__art {
+            padding: 50px;
+        }
+    }
+
+    // FOUNDER -----------------
+    .founder__art {
+        text-align: center;
+        margin-bottom: 104px;
+        padding: 60px 20px 40px;
+        max-width: 370px;
+        .div__img {
+            width: 150px;
+            height: 150px;
+            margin: auto;
+            .img__1 {
+                width: 150px;
+                height: 150px;
+                border-radius: 100%;
+            }
+        }
+        .art__p1 {
+            @include text(30px, #222);
+            @include old;
+        }
+        .art__p2 {
+            @include text(14px, #bead8b, 700);
+        }
+        .art__p3 {
+            @include text(16px, #777);
+        }
+    }
+    @media (min-width: 1000px) {
+        .founder__art {
+            box-shadow: 5px 5px 20px rgba(190, 173, 142, 0.27);
+        }
+    }
+    // CANELLATION ----------------------
+    .cancellation__art {
+        padding: 0 20px;
+        max-width: 700px;
+        margin-bottom: 101px;
+        .art__p1 {
+            @include text(30px, #222);
+            @include old;
+        }
+        .art__p2 {
+            @include text(16px, #777);
+            @include roboto;
+        }
+        .art__line {
+            height: 1px;
+            margin-bottom: 35px;
+            @include gold;
+        }
+    }
+    @media (min-width: 1000px) {
+        .cancellation__art {
+            padding: 50px;
+        }
+    }
+    // RELATED ------------
+    .related__art {
+        padding: 0 20px;
+        max-width: 375px;
+        margin-bottom: 74px;
+        .art__p1 {
+            @include text(30px, #222);
+            @include old;
+            margin-bottom: 13px;
+        }
+        .art__line {
+            height: 1px;
+            margin-bottom: 35px;
+            @include gold;
+        }
+        .div__img {
+            img {
+                width: 100%;
+                height: 218px;
+            }
+        }
+        .art__div1 {
+            text-align: center;
+            .div1__p1 {
+                @include text(24px, #222);
+                margin-bottom: 16px;
+                @include old;
+            }
+            .div1__p2 {
+                @include text(14px, #777);
+                margin-bottom: 24px;
+            }
+            .div1__p3 {
+                @include text(16px, #bead8b, 700);
+                span {
+                    margin-left: 19px;
+                    color: #777;
+                }
+            }
+        }
+    }
+}

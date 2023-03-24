@@ -1,5 +1,8 @@
 @import './_mixin.scss';
 
+footer{
+background-image: url('../../assets/background-footer.svg');
+}
 .footer__div {
     padding: 30px 20px 0px;
     max-width: 1170px;

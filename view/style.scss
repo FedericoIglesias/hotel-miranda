@@ -12,6 +12,7 @@ body { min-width: 320px }
 @import "./parcial/_rooms-list.scss";
 @import "./parcial/_offers.scss";
 @import "./parcial/_new-details.scss";
+@import 'parcial/room-details';
 
 .display--none{
     display: none;
