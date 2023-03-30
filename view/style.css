@@ -27,6 +27,7 @@ body {
 }
 .bar .header__div {
   margin: auto;
+  box-shadow: 1px 1px 5px gray;
 }
 
 .header {
@@ -167,6 +168,9 @@ body {
     width: 100%;
     margin-left: 125px;
   }
+  .header .div__menu a {
+    border-bottom: white solid 2px;
+  }
   .header .div__menu a:hover {
     border-bottom: #bead8b solid 2px;
     background-color: white;
@@ -214,6 +218,18 @@ footer {
   height: 80px;
   margin-bottom: 47px;
 }
+.art__logo .logo__social {
+  display: flex;
+}
+.art__logo .logo__social div {
+  margin-right: 10px;
+  padding: 8px;
+  background-color: #f8f8f8;
+}
+.art__logo .logo__social div:hover {
+  background-color: #bead8b;
+  transform: scale(1.2);
+}
 
 .art__logo__text {
   line-height: 26px;
@@ -221,6 +237,7 @@ footer {
 
 .art__service {
   margin: auto;
+  max-width: 450px;
 }
 .art__service h2 {
   font-size: 24px;
@@ -266,13 +283,13 @@ footer {
 }
 
 .footer__div2 {
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
 }
 
 .copyright {
   margin: auto;
   padding: 16px 20px;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   max-width: 1100px;
   display: flex;
   justify-content: space-between;
@@ -432,6 +449,10 @@ footer {
   margin: auto;
   margin-bottom: 118px;
 }
+.index .about__art .art__div1 {
+  margin: auto;
+  max-width: 460px;
+}
 .index .about__art .art__div1 h2 {
   font-size: 13px;
   color: #777777;
@@ -465,9 +486,11 @@ footer {
   font-family: "Archivo", sans-serif;
 }
 .index .about__art .art__div2 {
+  margin: auto;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
+  max-width: 270px;
 }
 .index .about__art .art__div2 .div2__img1 img {
   height: 300px;
@@ -477,6 +500,7 @@ footer {
   padding: 54px 35px 38px;
   display: flex;
   flex-flow: column wrap;
+  background-color: white;
 }
 .index .about__art .art__div2 .div2__div img {
   margin-bottom: 30px;
@@ -498,6 +522,10 @@ footer {
   font-family: "Archivo", sans-serif;
   font-family: "Roboto", sans-serif;
 }
+.index .about__art .art__div3 {
+  margin: auto;
+  max-width: 270px;
+}
 .index .about__art .art__div3 .div3__img {
   width: 270px;
   height: 300px;
@@ -507,6 +535,7 @@ footer {
   padding: 54px 35px 38px;
   display: flex;
   flex-flow: column wrap;
+  background-color: #222;
 }
 .index .about__art .art__div3 .div3__div img {
   margin-bottom: 30px;
@@ -514,7 +543,7 @@ footer {
 .index .about__art .art__div3 .div3__div .div__p1 {
   text-align: center;
   font-size: 30px;
-  color: #111111;
+  color: white;
   font-weight: 400;
   font-family: "Archivo", sans-serif;
   margin-bottom: 21px;
@@ -522,7 +551,7 @@ footer {
 .index .about__art .art__div3 .div3__div .div__p2 {
   text-align: center;
   font-size: 14px;
-  color: #111111;
+  color: white;
   font-weight: 400;
   font-family: "Archivo", sans-serif;
 }
@@ -534,7 +563,6 @@ footer {
     align-items: center;
   }
   .index .about__art .art__div1 {
-    max-width: 460px;
     margin-left: 81px;
   }
   .index .about__art .art__div1 .div1__p1 {
@@ -544,6 +572,7 @@ footer {
     max-width: 400px;
   }
   .index .about__art .art__div2 {
+    max-width: 570px;
     flex-direction: row-reverse;
     flex-wrap: wrap;
     justify-content: center;
@@ -558,6 +587,7 @@ footer {
     margin-top: 30px;
   }
   .index .about__art .art__div3 {
+    max-width: 570px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

@@ -9,6 +9,7 @@
     
     .header__div{
         margin: auto;
+        box-shadow: 1px 1px 5px gray;
     }
 }
 
@@ -149,6 +150,9 @@
             padding: 0;
             width: 100%;
             margin-left: 125px;
+            a{
+                border-bottom: white solid 2px;
+            }
             a:hover{
                 border-bottom: #bead8b solid 2px;
                 background-color: white;
