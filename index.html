@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Miranda | Home</title>
-    <link rel="stylesheet" href="view/style.css">
+    <link rel="stylesheet" href="view/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 
@@ -150,7 +150,7 @@
             <p class="art__p1">ROOMS</p>
             <p class="art__p2">Hand Picked Rooms</p>
 
-            <div class="swiper">
+            <div class="swiperRoom swiper">
 
                 <div class="swiper-wrapper">
 
@@ -197,10 +197,9 @@
                     </div>
                 </div>
 
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev room-prev"></div>
+                <div class="swiper-button-next room-next"></div>
 
-                <div class="swiper-pagination"></div>
 
             </div>
 
@@ -229,7 +228,7 @@
             <p class="art__p2">Core Features</p>
 
 
-            <div class="swiper">
+            <div class="swiper swiperFacilities">
 
                 <div class="swiper-wrapper">
 
@@ -308,8 +307,6 @@
                     </div>
                 </div>
 
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
 
                 <div class="swiper-pagination"></div>
 
@@ -320,77 +317,105 @@
             <img class="menu__img" src="./assets/index/pizza.svg" alt="">
             <p class="art__p1">MENU</p>
             <p class="art__p2">Our Foods Menu</p>
-            <div class="menuss">
-                <div class="menu__div">
-                    <div class="art__div">
-                        <img src="./assets/index/bacoon.jpg" alt="">
-                        <div class="div__div">
-                            <p class="div__p1">Eggs & Bacon</p>
-                            <p class="div__p2">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod
-                                tempor.
-                            </p>
-                            <p class="div__p">→</p>
+
+
+            <div class="swiper swiperMenu">
+
+                <div class="swiper-wrapper wrapper__menu">
+
+
+                    <div class="swiper-slide">
+
+                        <div class="art__div">
+                            <img src="./assets/index/bacoon.jpg" alt="">
+                            <div class="div__div">
+                                <p class="div__p1">Eggs & Bacon</p>
+                                <p class="div__p2">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do
+                                    eiusmod
+                                    tempor.
+                                </p>
+                                <p class="div__p">→</p>
+                            </div>
+                        </div>
+                        <div class="art__div">
+                            <img src="./assets/index/coofeAndTea.jpg" alt="">
+                            <div class="div__div">
+                                <p class="div__p1">Tea or Coffe</p>
+                                <p class="div__p2">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do
+                                    eiusmod
+                                    tempor.
+                                </p>
+                                <p class="div__p">→</p>
+                            </div>
+                        </div>
+                        <div class="art__div">
+                            <img src="./assets/index/chia.jpg" alt="">
+                            <div class="div__div">
+                                <p class="div__p1">Chia Oatmeal</p>
+                                <p class="div__p2">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do
+                                    eiusmod
+                                    tempor.
+                                </p>
+                                <p class="div__p">→</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="art__div">
-                        <img src="./assets/index/coofeAndTea.jpg" alt="">
-                        <div class="div__div">
-                            <p class="div__p1">Tea or Coffe</p>
-                            <p class="div__p2">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod
-                                tempor.
-                            </p>
-                            <p class="div__p">→</p>
+
+                    <div class="swiper-slide">
+
+
+                        <div class="art__div">
+                            <img src="./assets/index/bacoon.jpg" alt="">
+                            <div class="div__div">
+                                <p class="div__p1">Fruit Parfait</p>
+                                <p class="div__p2">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do
+                                    eiusmod
+                                    tempor.
+                                </p>
+                                <p class="div__p">→</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="art__div">
-                        <img src="./assets/index/chia.jpg" alt="">
-                        <div class="div__div">
-                            <p class="div__p1">Chia Oatmeal</p>
-                            <p class="div__p2">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod
-                                tempor.
-                            </p>
-                            <p class="div__p">→</p>
+                        <div class="art__div">
+                            <img src="./assets/index/coofeAndTea.jpg" alt="">
+                            <div class="div__div">
+                                <p class="div__p1">Marmalade Selection</p>
+                                <p class="div__p2">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do
+                                    eiusmod
+                                    tempor.
+                                </p>
+                                <p class="div__p">→</p>
+                            </div>
                         </div>
+                        <div class="art__div">
+                            <img src="./assets/index/chia.jpg" alt="">
+                            <div class="div__div">
+                                <p class="div__p1">Cheese Plate</p>
+                                <p class="div__p2">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do
+                                    eiusmod
+                                    tempor.
+                                </p>
+                                <p class="div__p">→</p>
+                            </div>
+                        </div>
+
                     </div>
+
                 </div>
 
-                <div class="menu__div2">
-                    <div class="art__div">
-                        <img src="./assets/index/bacoon.jpg" alt="">
-                        <div class="div__div">
-                            <p class="div__p1">Fruit Parfait</p>
-                            <p class="div__p2">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod
-                                tempor.
-                            </p>
-                            <p class="div__p">→</p>
-                        </div>
-                    </div>
-                    <div class="art__div">
-                        <img src="./assets/index/coofeAndTea.jpg" alt="">
-                        <div class="div__div">
-                            <p class="div__p1">Marmalade Selection</p>
-                            <p class="div__p2">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod
-                                tempor.
-                            </p>
-                            <p class="div__p">→</p>
-                        </div>
-                    </div>
-                    <div class="art__div">
-                        <img src="./assets/index/chia.jpg" alt="">
-                        <div class="div__div">
-                            <p class="div__p1">Cheese Plate</p>
-                            <p class="div__p2">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod
-                                tempor.
-                            </p>
-                            <p class="div__p">→</p>
-                        </div>
-                    </div>
-                </div>
+                <div class="swiper-button-prev menu-prev"></div>
+                <div class="swiper-button-next menu-next"></div>
+
             </div>
             <div class="div__img">
-                <img src="" alt="" class="menu__img2">
-                <img src="" alt="" class="menu__img2">
-                <img src="" alt="" class="menu__img2">
+                <div class="swiper swiperImg">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide" > <img src="" alt="" class="menu__img2 "></div>
+                        <div class="swiper-slide" > <img src="" alt="" class="menu__img2 "></div>
+                        <div class="swiper-slide" > <img src="" alt="" class="menu__img2 "></div>
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                </div>
             </div>
         </article>
         <!-- NUMBER  -->
@@ -560,7 +585,10 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/index/swiper-facilities.js"></script>
+    <script src="js/index/swiper.js"></script>
+    <script src="js/index/swipper-menu.js"></script>
+    <script srt="js/app.js"></script>
 </body>
 
 </html>

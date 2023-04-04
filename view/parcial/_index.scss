@@ -392,11 +392,14 @@
             }
         }
     }
-
+    
     // FACILITIES -----------------------------------------------
     .facilities__art {
         padding: 60px 20px;
+        margin: auto;
         margin-bottom: 175px;
+        max-width: 1170px;
+
         .art__p1 {
             @include text(14px, #777777, 700);
             text-align: center;
@@ -411,8 +414,8 @@
             padding: 81px 15px 0;
             position: relative;
             max-width: 370px;
-            max-height: 349px;
-            margin: 15px;
+            height: 349px;
+            margin: 15px auto 20px;
             .div__p1 {
                 @include text(120px, black, 700);
                 position: absolute;
@@ -432,23 +435,8 @@
             }
             .div__p3 {
                 @include text(14px, #777777);
-                margin-bottom: 32px;
+            
             }
-        }
-        .n2 {
-            display: none;
-        }
-        .n3 {
-            display: none;
-        }
-        .n4 {
-            display: none;
-        }
-        .n5 {
-            display: none;
-        }
-        .n6 {
-            display: none;
         }
     }
     @media (min-width: 1000px) {
@@ -458,31 +446,21 @@
             }
             .art__p2 {
                 text-align: center;
-            }
-            .n2 {
-                display: inline-block;
-            }
-            .n3 {
-                display: block;
-            }
-            .n4 {
-                display: block;
-            }
-            .n5 {
-                display: block;
-            }
-            .n6 {
-                display: block;
-            }
-            .flexing {
-                margin: auto;
+        }
+        .swiper{
+            max-width: 1170px;
+            .swiper-wrapper{
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: center;
-                max-width: 1200px;
+                justify-content: space-between;
+                .swiper-slide{
+                    width: 370px;
+                    margin: 10px 0px;
+                }
             }
         }
     }
+}
     // MENU FOOD ------------------------
     .menu__art {
         padding: 0 20px;
@@ -493,14 +471,6 @@
             top: -120px;
             width: 115px;
             height: 115px;
-        }
-        .menuss {
-            display: flex;
-            flex-flow: column wrap;
-            align-items: center;
-            .menu__div2{
-                display: none
-            }
         }
         .art__p1 {
             @include text(14px, #777777, 700);
@@ -560,13 +530,6 @@
             .art__p2 {
                 font-size: 80px;
             }
-            .menuss {
-                flex-direction: row;
-                justify-content: space-around;
-                align-items: center;
-                .menu__div2{
-                    display: block;
-                }
                 .art__div {
                     max-width: 570px;
                     margin-bottom: 16px;
@@ -580,7 +543,6 @@
                             "title arrow"
                             "text arrow";
                         align-items: center;
-
                         padding: 21px 40px 21px 30px;
                         .div__p1 {
                             grid-area: title;
@@ -610,11 +572,8 @@
                         }
                     }
                 }
-            }
-            .div__img {
-                display: flex;
-                justify-content: space-around;
-            }
+    
+
         }
     }
     // NUMBER -----------------------------------
