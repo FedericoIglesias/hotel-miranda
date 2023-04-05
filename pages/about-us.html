@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Miranda | About us</title>
     <link rel="stylesheet" href="../view/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 
 <body>
-    
-    
+
+
     <!-- MENU DESPEGABLE -->
     <div class="bar" id="bar">
         <div class="header__div header display--none" id="bar__menu">
@@ -33,13 +34,13 @@
                 <a href="./rooms.html">Rooms</a>
                 <a href="./offers.html">Offers</a>
                 <a href="./new-details.html">Contact</a>
-        </div>
-        <div class="div__img">
-            <div class="img__iconPerson"><img src="../assets/login.svg" alt="iconPerson"></div>
-            <div class="img__search"><img src="../assets/search.svg" alt="search"></div>
+            </div>
+            <div class="div__img">
+                <div class="img__iconPerson"><img src="../assets/login.svg" alt="iconPerson"></div>
+                <div class="img__search"><img src="../assets/search.svg" alt="search"></div>
+            </div>
         </div>
     </div>
-</div>
 
 
     <header>
@@ -120,7 +121,7 @@
         </article>
         <!-- RESTAURANT -->
         <article class="restaurant__art">
-            <img class="art__img" src="../assets/about/hosteleros.jpg" alt="">
+            <div class="art__div1"><img class="art__img" src="../assets/about/hosteleros.jpg" alt=""></div>
             <p class="art__p1">RESTAURANT</p>
             <p class="art__p2">Get Restaurant Facilities & Many Other More</p>
             <p class="art__p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tem por
@@ -133,6 +134,8 @@
         <article class="facilities__art">
             <p class="art__p1">FACILITIES</p>
             <p class="art__p2">Core Features</p>
+
+
             <div class="flexing">
                 <div class="art__div n1">
                     <p class="div__p1">01</p>
@@ -183,6 +186,83 @@
                         et dolore magna..</p>
                 </div>
             </div>
+
+
+
+            <div class="swiper swiperFacilities">
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="art__div n1">
+                            <p class="div__p1">01</p>
+                            <img src="../assets/index/facilities/facilities1.svg" alt="">
+                            <p class="div__p2">Have High Rating</p>
+                            <p class="div__p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor
+                                incididunt ut labore
+                                et dolore magna..</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="art__div n2">
+                            <p class="div__p1">02</p>
+                            <img src="../assets/index/facilities/clock.svg" alt="">
+                            <p class="div__p2">Quiet Hours</p>
+                            <p class="div__p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor
+                                incididunt ut labore
+                                et dolore magna..</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="art__div n3">
+                            <p class="div__p1">03</p>
+                            <img src="../assets/index/facilities/location.svg" alt="">
+                            <p class="div__p2">Best Locations</p>
+                            <p class="div__p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor
+                                incididunt ut labore
+                                et dolore magna..</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="art__div n4">
+                            <p class="div__p1">04</p>
+                            <img src="../assets/index/facilities/offClock.svg" alt="">
+                            <p class="div__p2">Free Cancellation</p>
+                            <p class="div__p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor
+                                incididunt ut labore
+                                et dolore magna..</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="art__div n5">
+                            <p class="div__p1">05</p>
+                            <img src="../assets/index/facilities/payCard.svg" alt="">
+                            <p class="div__p2">Payment Options</p>
+                            <p class="div__p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor
+                                incididunt ut labore
+                                et dolore magna..</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="art__div n6">
+                            <p class="div__p1">06</p>
+                            <img src="../assets/index/facilities/offerSpecial.svg" alt="">
+                            <p class="div__p2">Special Offers</p>
+                            <p class="div__p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor
+                                incididunt ut labore
+                                et dolore magna..</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+            </div>
         </article>
         <!-- COUNTER -->
         <article class="counter__art">
@@ -216,10 +296,22 @@
                     <p class="div__p">→</p>
                 </div>
             </div>
-            <div class="div__img">
-                <img class="art__img" src="../assets/about/hotel.jpg" alt="">
-                <img class="art__img" src="../assets/about/hotel.jpg" alt="">
+
+            <div class="swiper swiperImgTwo">
+                <div class="swiper-wrapper">
+
+
+                    <div class="swiper-slide"><img class="art__img" src="../assets/about/hotel.jpg" alt=""></div>
+
+                    <div class="swiper-slide"><img class="art__img" src="../assets/about/hosteleros.jpg" alt=""></div>
+
+
+                </div>
+
+                <div class="swiper-pagination"></div>
+
             </div>
+
         </article>
     </main>
     <!-- FOOTER -->
@@ -362,6 +454,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="../js/app.js"></script>
 </body>
 

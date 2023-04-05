@@ -37,17 +37,21 @@
         margin-bottom: 71px;
         max-width: 1170px;
         margin: auto;
-        .video {
-            min-width: 217px;
-            min-height: 186px;
-            max-width: 1170px;
-            max-height: 650px;
+        .video__div{
+            width: 80%;
+            margin: 10px auto;
+            
+            .video {
+                width: 100%;
+                height: 400px;
+            }
         }
         .art__p {
             padding: 0 20px;
             @include text(32px, #222222);
             margin-bottom: 51px;
             @include old;
+            text-align: center;
         }
         .art__div {
             display: grid;
@@ -66,8 +70,8 @@
                     width: 58px;
                     height: 58px;
                 }
-                p{
-                    @include text (12px, #222, 700);
+                p {
+                    @include text(12px, #222, 700);
                     @include archivo;
                 }
             }
@@ -116,8 +120,8 @@
             width: 280px;
             height: 280px;
             margin-bottom: 32px;
-            .art__img {
-                width: 280px;
+            img {
+                width: 100%;
                 height: 280px;
             }
         }
@@ -151,11 +155,15 @@
                 "img p3"
                 "img button";
             justify-content: space-around;
-            .art__img {
+            .art__div1 {
                 grid-area: img;
                 width: 530px;
                 height: 420px;
                 margin-right: 5px;
+                padding-top: 30px;
+                img {
+                    height: 103%;
+                }
             }
             .art__p1 {
                 grid-area: p1;
@@ -182,6 +190,9 @@
         padding: 60px 20px;
         margin-bottom: 175px;
         @include black;
+        .flexing {
+            display: none;
+        }
         .art__p1 {
             @include text(14px, #c2c2c2, 700);
             text-align: center;
@@ -216,30 +227,14 @@
             }
             .div__p3 {
                 @include text(14px, white);
-                
             }
-        }
-        .n2 {
-            display: none;
-        }
-        .n3 {
-            display: none;
-        }
-        .n4 {
-            display: none;
-        }
-        .n5 {
-            display: none;
-        }
-        .n6 {
-            display: none;
         }
     }
     @media (min-width: 1000px) {
         .facilities__art {
-            .art__div{
+            .art__div {
                 padding: 81px 60px 43px;
-                .div__p1{
+                .div__p1 {
                     top: -25px;
                     right: -7px;
                 }
@@ -250,27 +245,15 @@
             .art__p2 {
                 text-align: center;
             }
-            .n2 {
-                display: inline-block;
-            }
-            .n3 {
-                display: block;
-            }
-            .n4 {
-                display: block;
-            }
-            .n5 {
-                display: block;
-            }
-            .n6 {
-                display: block;
-            }
             .flexing {
                 margin: auto;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
                 max-width: 1200px;
+            }
+            .swiperFacilities {
+                display: none;
             }
         }
     }
@@ -316,9 +299,12 @@
                 font-size: 32px;
             }
         }
-        .art__img {
+        .swiper-slide {
             width: 280px;
-            height: 300px;
+            img {
+                width: 280px;
+                height: 300px;
+            }
         }
     }
     @media (min-width: 1000px) {
@@ -339,6 +325,16 @@
                 .art__img {
                     width: 100%;
                     margin: 30px;
+                }
+            }
+            .swiper-wrapper{
+                margin: auto;
+            }
+            .swiper-slide {
+                width: 570px;
+                img {
+                    width: 100%;
+                    height: 400px;
                 }
             }
         }

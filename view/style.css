@@ -819,6 +819,9 @@ footer {
   font-weight: 400;
   font-family: "Archivo", sans-serif;
 }
+.index .facilities__art .flexing {
+  display: none;
+}
 @media (min-width: 1000px) {
   .index .facilities__art .art__p1 {
     text-align: center;
@@ -827,16 +830,12 @@ footer {
     text-align: center;
   }
   .index .facilities__art .swiper {
-    max-width: 1170px;
+    display: none;
   }
-  .index .facilities__art .swiper .swiper-wrapper {
+  .index .facilities__art .flexing {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-  .index .facilities__art .swiper .swiper-wrapper .swiper-slide {
-    width: 370px;
-    margin: 10px 0px;
   }
 }
 .index .menu__art {
@@ -865,10 +864,15 @@ footer {
   margin-bottom: 32px;
   font-family: "Old Standard TT", sans-serif;
 }
+.index .menu__art .slide__menu {
+  max-width: 600px;
+  margin: 10px auto;
+}
 .index .menu__art .art__div {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  margin: auto;
 }
 .index .menu__art .art__div img {
   width: 120px;
@@ -1058,11 +1062,13 @@ footer {
   max-width: 1170px;
   margin: auto;
 }
-.about .video__art .video {
-  min-width: 217px;
-  min-height: 186px;
-  max-width: 1170px;
-  max-height: 650px;
+.about .video__art .video__div {
+  width: 80%;
+  margin: 10px auto;
+}
+.about .video__art .video__div .video {
+  width: 100%;
+  height: 400px;
 }
 .about .video__art .art__p {
   padding: 0 20px;
@@ -1072,6 +1078,7 @@ footer {
   font-family: "Archivo", sans-serif;
   margin-bottom: 51px;
   font-family: "Old Standard TT", sans-serif;
+  text-align: center;
 }
 .about .video__art .art__div {
   display: grid;
@@ -1139,8 +1146,8 @@ footer {
   height: 280px;
   margin-bottom: 32px;
 }
-.about .restaurant__art .art__div1 .art__img {
-  width: 280px;
+.about .restaurant__art .art__div1 img {
+  width: 100%;
   height: 280px;
 }
 .about .restaurant__art .art__p1 {
@@ -1181,11 +1188,15 @@ footer {
     grid-template-areas: "img p1" "img p2" "img p3" "img button";
     justify-content: space-around;
   }
-  .about .restaurant__art .art__img {
+  .about .restaurant__art .art__div1 {
     grid-area: img;
     width: 530px;
     height: 420px;
     margin-right: 5px;
+    padding-top: 30px;
+  }
+  .about .restaurant__art .art__div1 img {
+    height: 103%;
   }
   .about .restaurant__art .art__p1 {
     grid-area: p1;
@@ -1210,6 +1221,9 @@ footer {
   padding: 60px 20px;
   margin-bottom: 175px;
   background-color: #222222;
+}
+.about .facilities__art .flexing {
+  display: none;
 }
 .about .facilities__art .art__p1 {
   font-size: 14px;
@@ -1262,21 +1276,6 @@ footer {
   font-weight: 400;
   font-family: "Archivo", sans-serif;
 }
-.about .facilities__art .n2 {
-  display: none;
-}
-.about .facilities__art .n3 {
-  display: none;
-}
-.about .facilities__art .n4 {
-  display: none;
-}
-.about .facilities__art .n5 {
-  display: none;
-}
-.about .facilities__art .n6 {
-  display: none;
-}
 @media (min-width: 1000px) {
   .about .facilities__art .art__div {
     padding: 81px 60px 43px;
@@ -1291,27 +1290,15 @@ footer {
   .about .facilities__art .art__p2 {
     text-align: center;
   }
-  .about .facilities__art .n2 {
-    display: inline-block;
-  }
-  .about .facilities__art .n3 {
-    display: block;
-  }
-  .about .facilities__art .n4 {
-    display: block;
-  }
-  .about .facilities__art .n5 {
-    display: block;
-  }
-  .about .facilities__art .n6 {
-    display: block;
-  }
   .about .facilities__art .flexing {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1200px;
+  }
+  .about .facilities__art .swiperFacilities {
+    display: none;
   }
 }
 .about .counter__art {
@@ -1365,7 +1352,10 @@ footer {
   color: #dcdcdc;
   font-size: 32px;
 }
-.about .counter__art .art__img {
+.about .counter__art .swiper-slide {
+  width: 280px;
+}
+.about .counter__art .swiper-slide img {
   width: 280px;
   height: 300px;
 }
@@ -1387,6 +1377,16 @@ footer {
   .about .counter__art .div__img .art__img {
     width: 100%;
     margin: 30px;
+  }
+  .about .counter__art .swiper-wrapper {
+    margin: auto;
+  }
+  .about .counter__art .swiper-slide {
+    width: 570px;
+  }
+  .about .counter__art .swiper-slide img {
+    width: 100%;
+    height: 400px;
   }
 }
 

@@ -438,6 +438,9 @@
             
             }
         }
+        .flexing{
+            display: none;
+        }
     }
     @media (min-width: 1000px) {
         .facilities__art {
@@ -448,16 +451,13 @@
                 text-align: center;
         }
         .swiper{
-            max-width: 1170px;
-            .swiper-wrapper{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                .swiper-slide{
-                    width: 370px;
-                    margin: 10px 0px;
-                }
-            }
+            display: none;
+        }
+        .flexing{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        
         }
     }
 }
@@ -481,10 +481,15 @@
             margin-bottom: 32px;
             @include old;
         }
+        .slide__menu{
+            max-width: 600px;
+            margin: 10px auto;
+        }
         .art__div {
             display: flex;
             flex-wrap: wrap;
             justify-content: flex-start;
+            margin: auto;
             img {
                 width: 120px;
                 height: 120px;

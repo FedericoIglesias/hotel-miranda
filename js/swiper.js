@@ -52,9 +52,6 @@ function disableMenu (){
 }
 window.addEventListener('scroll', disableMenu )
 
-// SWIPER ----------------------------------
-
-
 const swiperRoom = new Swiper('.swiperRoom', {
     // Optional parameters
     direction: 'horizontal',
@@ -99,16 +96,8 @@ const swiperFacilities = new Swiper('.swiperFacilities', {
     direction: 'horizontal',
     loop: false,
     edgeSwipeDetection: false,
-    centeredSlides: true,
 
 
-    breakpoints: {
-        1000: {
-            slidesPerView: 6,
-            spaceBetween: 0,
-            createElement: false,
-        },
-    },
 
     // If we need pagination
     pagination: {
@@ -132,37 +121,9 @@ const swiperImg = new Swiper('.swiperImg', {
         },
     },
 
-    scrollbar: {
-        el: '.swiper-scrollbar-first',
-    },
-});
-
-const swiperImgTwo = new Swiper('.swiperImgTwo', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: false,
-    edgeSwipeDetection: false,
-    
-    breakpoints: {
-        320:{
-            centeredSlides: true,
-            slidesPerView: 1,
-            spaceBetween: 0,
-            centerInsufficientSlides:true,
-
-        },
-        1000: {
-            centeredSlidesBounds: true,
-            slidesPerView: 2,
-            spaceBetween: 30,
-            createElement: false,
-        },
-    },
-
-
-    // If we need pagination
     pagination: {
         el: '.swiper-pagination',
     },
-
 });
+
+
