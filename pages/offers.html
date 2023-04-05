@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Miranda | Offers</title>
     <link rel="stylesheet" href="../view/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 
 <body>
-    
-    
+
+
     <!-- MENU DESPEGABLE -->
     <div class="bar" id="bar">
         <div class="header__div header display--none" id="bar__menu">
@@ -33,13 +34,13 @@
                 <a href="./rooms.html">Rooms</a>
                 <a href="./offers.html">Offers</a>
                 <a href="./new-details.html">Contact</a>
-        </div>
-        <div class="div__img">
-            <div class="img__iconPerson"><img src="../assets/login.svg" alt="iconPerson"></div>
-            <div class="img__search"><img src="../assets/search.svg" alt="search"></div>
+            </div>
+            <div class="div__img">
+                <div class="img__iconPerson"><img src="../assets/login.svg" alt="iconPerson"></div>
+                <div class="img__search"><img src="../assets/search.svg" alt="search"></div>
+            </div>
         </div>
     </div>
-</div>
 
 
     <header>
@@ -426,15 +427,54 @@
         <article class="most__art">
             <p class="art__p1">POPULAR LIST</p>
             <p class="art__p2">Popular Rooms</p>
-            <div class="art__div">
-                <div class="div__img"><img src="../assets/room/room4.webp" alt=""></div>
-                <div class="div__div">
-                    <div class="div__img1"><img src="../assets/room/frame.svg" alt=""></div>
-                    <p class="div__p1">Minimal Duplex Room</p>
-                    <p class="div__p2">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.
-                    </p>
-                    <p class="div__p3">$345/Night<span>BookingNow</span></p>
+
+            <div class="swiper swiperRoom3">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="art__div">
+                            <div class="div__img"><img src="../assets/room/room6.jpg" alt=""></div>
+                            <div class="div__div">
+                                <div class="div__img1"><img src="../assets/room/frame.svg" alt=""></div>
+                                <p class="div__p1">Minimal Duplex Room</p>
+                                <p class="div__p2">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do
+                                    eiusmod tempor.
+                                </p>
+                                <p class="div__p3">$345/Night<span>BookingNow</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="art__div">
+                            <div class="div__img"><img src="../assets/room/room4.webp" alt=""></div>
+                            <div class="div__div">
+                                <div class="div__img1"><img src="../assets/room/frame.svg" alt=""></div>
+                                <p class="div__p1">Minimal Duplex Room</p>
+                                <p class="div__p2">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do
+                                    eiusmod tempor.
+                                </p>
+                                <p class="div__p3">$345/Night<span>BookingNow</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="art__div">
+                            <div class="div__img"><img src="../assets/room/room2.jpeg" alt=""></div>
+                            <div class="div__div">
+                                <div class="div__img1"><img src="../assets/room/frame.svg" alt=""></div>
+                                <p class="div__p1">Minimal Duplex Room</p>
+                                <p class="div__p2">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do
+                                    eiusmod tempor.
+                                </p>
+                                <p class="div__p3">$345/Night<span>BookingNow</span></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="swiper-button-prev room-prev"></div>
+                <div class="swiper-button-next room-next"></div>
+
             </div>
         </article>
 
@@ -579,6 +619,9 @@
             </div>
         </div>
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="../js/app.js"></script>
 </body>
 

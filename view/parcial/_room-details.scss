@@ -223,7 +223,7 @@
     // RELATED ------------
     .related__art {
         padding: 0 20px;
-        max-width: 375px;
+        max-width: 1170px;
         margin-bottom: 74px;
         .art__p1 {
             @include text(30px, #222);
@@ -235,14 +235,21 @@
             margin-bottom: 35px;
             @include gold;
         }
+        .swiper-slide{
+            width: 370px;
+        }
         .div__img {
+            width: 370px;
+            margin: auto;
             img {
-                width: 100%;
+                width: 370px;
                 height: 218px;
             }
         }
         .art__div1 {
             text-align: center;
+            width: 370px;
+            margin: auto;
             .div1__p1 {
                 @include text(24px, #222);
                 margin-bottom: 16px;
@@ -258,6 +265,24 @@
                     margin-left: 19px;
                     color: #777;
                 }
+            }
+        }
+        .flexing{
+            display: none;
+        }
+    }
+    @media (min-width: 1000px) {
+        .related__art{
+            .swiper{
+                display: none;
+            }
+            .flexing{
+                display: flex;
+                .swiper-slide{
+                    margin-right: 30px;
+                }
+
+                
             }
         }
     }

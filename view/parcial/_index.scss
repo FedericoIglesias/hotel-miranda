@@ -481,15 +481,13 @@
             margin-bottom: 32px;
             @include old;
         }
-        .slide__menu{
-            max-width: 600px;
-            margin: 10px auto;
-        }
-        .art__div {
-            display: flex;
+
+            .art__div {
+                display: flex;
             flex-wrap: wrap;
             justify-content: flex-start;
             margin: auto;
+            max-width: 500px;
             img {
                 width: 120px;
                 height: 120px;
@@ -512,11 +510,18 @@
                 display: none;
             }
         }
-        .menu__img2 {
-            width: 280px;
-            height: 300px;
-            margin-bottom: 91px;
-        }
+        
+            .img__food{
+                margin: auto;
+                width: 280px;
+                .menu__img2 {
+                    width: 280px;
+                    height: 300px;
+                    margin-bottom: 91px;
+                    background-color: gray;
+                }
+            }
+        
     }
     @media (min-width: 1000px) {
         .menu__art {

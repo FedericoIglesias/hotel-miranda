@@ -864,15 +864,12 @@ footer {
   margin-bottom: 32px;
   font-family: "Old Standard TT", sans-serif;
 }
-.index .menu__art .slide__menu {
-  max-width: 600px;
-  margin: 10px auto;
-}
 .index .menu__art .art__div {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   margin: auto;
+  max-width: 500px;
 }
 .index .menu__art .art__div img {
   width: 120px;
@@ -901,10 +898,15 @@ footer {
 .index .menu__art .art__div .div__p {
   display: none;
 }
-.index .menu__art .menu__img2 {
+.index .menu__art .img__food {
+  margin: auto;
+  width: 280px;
+}
+.index .menu__art .img__food .menu__img2 {
   width: 280px;
   height: 300px;
   margin-bottom: 91px;
+  background-color: gray;
 }
 @media (min-width: 1000px) {
   .index .menu__art {
@@ -1085,6 +1087,9 @@ footer {
   grid-template-areas: "auto  auto" "auto  auto";
   justify-content: center;
 }
+.about .video__art .art__div .div__icon {
+  display: none;
+}
 .about .video__art .art__div div {
   width: 158px;
   height: 158px;
@@ -1092,10 +1097,6 @@ footer {
   flex-flow: column wrap;
   align-items: center;
   justify-content: center;
-}
-.about .video__art .art__div div img {
-  width: 58px;
-  height: 58px;
 }
 .about .video__art .art__div div p {
   font-size: 12px;
@@ -1127,6 +1128,23 @@ footer {
   .about .video__art .art__div {
     display: flex;
     justify-content: space-around;
+  }
+  .about .video__art .art__div .div__icon {
+    width: 158px;
+    height: 158px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 21px;
+  }
+  .about .video__art .art__div .div__icon p {
+    font-size: 12px;
+    color: #222;
+    font-weight: 700;
+    font-family: "Archivo", sans-serif;
+    font-family: "Archivo", sans-serif;
+    text-align: center;
   }
   .about .video__art .art__div div {
     padding: 21px;
@@ -2414,7 +2432,7 @@ footer {
 }
 .details .related__art {
   padding: 0 20px;
-  max-width: 375px;
+  max-width: 1170px;
   margin-bottom: 74px;
 }
 .details .related__art .art__p1 {
@@ -2430,12 +2448,21 @@ footer {
   margin-bottom: 35px;
   background-color: #BEAD8E;
 }
+.details .related__art .swiper-slide {
+  width: 370px;
+}
+.details .related__art .div__img {
+  width: 370px;
+  margin: auto;
+}
 .details .related__art .div__img img {
-  width: 100%;
+  width: 370px;
   height: 218px;
 }
 .details .related__art .art__div1 {
   text-align: center;
+  width: 370px;
+  margin: auto;
 }
 .details .related__art .art__div1 .div1__p1 {
   font-size: 24px;
@@ -2461,6 +2488,20 @@ footer {
 .details .related__art .art__div1 .div1__p3 span {
   margin-left: 19px;
   color: #777;
+}
+.details .related__art .flexing {
+  display: none;
+}
+@media (min-width: 1000px) {
+  .details .related__art .swiper {
+    display: none;
+  }
+  .details .related__art .flexing {
+    display: flex;
+  }
+  .details .related__art .flexing .swiper-slide {
+    margin-right: 30px;
+  }
 }
 
 .display--none {

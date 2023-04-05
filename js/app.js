@@ -63,6 +63,39 @@ const swiperRoom = new Swiper('.swiperRoom', {
     edgeSwipeDetection: false,
     effect: 'coverflow',
 
+    breakpoints: {
+        1000: {
+            slidesPerView: 2,
+            spaceBetween: 0,
+            createElement: false,
+            centeredSlidesBounds: true,
+        },
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.room-next',
+        prevEl: '.room-prev',
+    },
+
+});
+
+const swiperRoom3 = new Swiper('.swiperRoom3', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 1,
+    edgeSwipeDetection: false,
+    
+
+    breakpoints: {
+        1000: {
+            slidesPerView: 3,
+            spaceBetween: 0,
+            createElement: false,
+            centeredSlidesBounds: true,
+        },
+    },
 
     // Navigation arrows
     navigation: {
@@ -83,6 +116,7 @@ const swiperMenu = new Swiper('.swiperMenu', {
             slidesPerView: 2,
             spaceBetween: 0,
             createElement: false,
+            
         },
     },
 
@@ -152,9 +186,9 @@ const swiperImgTwo = new Swiper('.swiperImgTwo', {
 
         },
         1000: {
-            centeredSlidesBounds: true,
             slidesPerView: 2,
             spaceBetween: 30,
+            centeredSlidesBounds: true,
             createElement: false,
         },
     },

@@ -59,6 +59,9 @@
                 "auto  auto"
                 "auto  auto";
             justify-content: center;
+            .div__icon{
+                display: none;
+            }
             div {
                 width: 158px;
                 height: 158px;
@@ -66,10 +69,6 @@
                 flex-flow: column wrap;
                 align-items: center;
                 justify-content: center;
-                img {
-                    width: 58px;
-                    height: 58px;
-                }
                 p {
                     @include text(12px, #222, 700);
                     @include archivo;
@@ -101,6 +100,20 @@
             .art__div {
                 display: flex;
                 justify-content: space-around;
+                .div__icon{
+                    width: 158px;
+                    height: 158px;
+                    display: flex;
+                    flex-flow: column wrap;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 21px;
+                    p {
+                        @include text(12px, #222, 700);
+                        @include archivo;
+                        text-align: center;
+                    }
+                }
                 div {
                     padding: 21px;
                     p {

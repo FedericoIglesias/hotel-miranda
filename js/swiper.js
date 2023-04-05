@@ -58,7 +58,7 @@ const swiperRoom = new Swiper('.swiperRoom', {
     loop: true,
     slidesPerView: 1,
     edgeSwipeDetection: false,
-    effect: 'coverflow',
+    
 
 
     // Navigation arrows
