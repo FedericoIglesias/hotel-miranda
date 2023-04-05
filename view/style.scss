@@ -1,22 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap');
-html, * { box-sizing: border-box;
-    margin: 0 ;
-    padding: 0 }
-body { min-width: 320px }
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap");
+html,
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-width: 320px;
+}
 
 @import "./parcial/_header.scss";
 @import "./parcial/_footer.scss";
-@import './parcial/_index.scss';
+@import "./parcial/_index.scss";
 @import "./parcial/_about.scss";
 @import "./parcial/_rooms.scss";
 @import "./parcial/_rooms-list.scss";
 @import "./parcial/_offers.scss";
 @import "./parcial/_new-details.scss";
-@import 'parcial/room-details';
+@import "parcial/room-details";
 
-.display--none{
+.display--none {
     display: none;
 }
-.display--enable{
+.display--enable {
     display: inline-block;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    padding: 30px;
+    --swiper-theme-color: black;
+    --swiper-navigation-size: 20px;
+    border: 1px solid gray;
+    :hover{
+        border: none;
+        background-color:  #bead8e;
+        --swiper-theme-color: white;
+    }
+}
+.swiper-pagination{
+    --swiper-theme-color: #bead8e;
 }

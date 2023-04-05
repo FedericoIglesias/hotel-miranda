@@ -8,7 +8,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap");
-html, * {
+html,
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -2510,4 +2511,20 @@ footer {
 
 .display--enable {
   display: inline-block;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  padding: 30px;
+  --swiper-theme-color: black;
+  --swiper-navigation-size: 20px;
+  border: 1px solid gray;
+}
+.swiper-button-prev :hover, .swiper-button-next :hover {
+  border: none;
+  background-color: #bead8e;
+  --swiper-theme-color: white;
+}
+
+.swiper-pagination {
+  --swiper-theme-color: #bead8e;
 }/*# sourceMappingURL=style.css.map */
