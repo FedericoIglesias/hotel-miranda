@@ -5,19 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Miranda | Rooms List</title>
-    <link rel="stylesheet" href="../view/style.css">
+    <title>Hotel Miranda | Home</title>
+    <link rel="stylesheet" href="view/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 
 <body>
-    
-    
+
+
     <!-- MENU DESPEGABLE -->
     <div class="bar" id="bar">
         <div class="header__div header display--none" id="bar__menu">
             <div class="div__emblem">
                 <div class="div__logo">
-                    <a href="../index.html">
+                    <a href="./index.html">
                         <p>H</p>
                     </a>
                 </div>
@@ -29,17 +30,17 @@
                 <span class="line3"></span>
             </div>
             <div class="div__menu display--none" id="menus__bar">
-                <a href="./about-us.html">About Us</a>
-                <a href="./rooms.html">Rooms</a>
-                <a href="./offers.html">Offers</a>
-                <a href="./new-details.html">Contact</a>
-        </div>
-        <div class="div__img">
-            <div class="img__iconPerson"><img src="../assets/login.svg" alt="iconPerson"></div>
-            <div class="img__search"><img src="../assets/search.svg" alt="search"></div>
+                <a href="./pages/about-us.html">About Us</a>
+                <a href="./pages/rooms.html">Rooms</a>
+                <a href="./pages/offers.html">Offers</a>
+                <a href="./pages/new-details.html">Contact</a>
+            </div>
+            <div class="div__img">
+                <div class="img__iconPerson"><img src="assets/login.svg" alt="iconPerson"></div>
+                <div class="img__search"><img src="assets/search.svg" alt="search"></div>
+            </div>
         </div>
     </div>
-</div>
 
 
     <header>
@@ -47,7 +48,7 @@
             <p class="header__p">We Make Your Feel Comfortable</p>
             <div class="div__emblem">
                 <div class="div__logo">
-                    <a href="../index.html">
+                    <a href="./index.html">
                         <p>H</p>
                     </a>
                 </div>
@@ -60,25 +61,28 @@
                 <span class="line3"></span>
             </div>
             <div class="div__menu display--none" id="menus">
-                <a href="./about-us.html">About Us</a>
-                <a href="./rooms.html">Rooms</a>
-                <a href="./offers.html">Offers</a>
-                <a href="./new-details.html">Contact</a>
+                <a href="./pages/about-us.html">About Us</a>
+                <a href="./pages/rooms.html">Rooms</a>
+                <a href="./pages/offers.html">Offers</a>
+                <a href="./pages/new-details.html">Contact</a>
             </div>
 
             <div class="div__img">
-                <div class="img__iconPerson"><img src="../assets/login.svg" alt="iconPerson"></div>
-                <div class="img__search"><img src="../assets/search.svg" alt="search"></div>
+                <div class="img__iconPerson"><img src="assets/login.svg" alt="iconPerson"></div>
+                <div class="img__search"><img src="assets/search.svg" alt="search"></div>
             </div>
 
         </div>
     </header>
 
-    <!-- FOOTER -->
-    <footer>
+    @yield('main')
+
+
+        <!-- FOOTER -->
+        <footer>
         <div class="footer__div">
             <article class="art__logo">
-                <div class="logo"><img src="../assets/logo-footer.svg" alt="logo-footer"></div>
+                <div class="logo"><img src="assets/logo-footer.svg" alt="logo-footer"></div>
                 <p class="art__logo__text">Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod
                     tempor incididunt ut
                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat ion ullamco laboris
@@ -184,21 +188,21 @@
             <article class="art__contact">
                 <h2>Conctact Us</h2>
                 <div class="art__contact__item">
-                    <div><img src="../assets/contact/phone.svg" alt=""></div>
+                    <div><img src="assets/contact/phone.svg" alt=""></div>
                     <div>
                         <p>Phone Number</p>
                         <p>+987654321</p>
                     </div>
                 </div>
                 <div class="art__contact__item">
-                    <div><img src="../assets/contact/mail.svg" alt=""></div>
+                    <div><img src="assets/contact/mail.svg" alt=""></div>
                     <div>
                         <p>Mail</p>
                         <p>miranda@mail.com</p>
                     </div>
                 </div>
                 <div class="art__contact__item">
-                    <div><img src="../assets/contact/ubi.svg" alt=""></div>
+                    <div><img src="assets/contact/ubi.svg" alt=""></div>
                     <div>
                         <p>Ubication</p>
                         <p>At World</p>
@@ -214,7 +218,9 @@
             </div>
         </div>
     </footer>
-    <script src="../js/app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
 </body>
 
 </html>
