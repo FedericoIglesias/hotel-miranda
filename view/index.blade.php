@@ -1,6 +1,7 @@
 @extends('layout')
 
 @section('main')
+<?php require_once 'variables/variables.php';?>
 
 <main class="index">
         <!-- PROOF -->
@@ -79,48 +80,21 @@
             <div class="swiperRoom swiper">
 
                 <div class="swiper-wrapper">
-
-                    <div class="swiper-slide">
+                    <?php foreach($rooms as $room) : ?>
+                        <div class="swiper-slide">
                         <div class="div__img">
                             <img src="assets/room/room3.jpg" alt="algomas">
                         </div>
                         <div class="art__div1">
-                            <p class="div1__p1">Minimal Duplex Room</p>
+                            <p class="div1__p1"><?= $room['roomType']; ?></p>
                             <p class="div1__p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                 tempor
                                 incididunt ut labore
                                 et dolore.</p>
-                            <p class="div1__p3">$345<span>/Night</span></p>
+                            <p class="div1__p3"><?= $room['price']; ?><span>/Night</span></p>
                         </div>
                     </div>
-
-                    <div class="swiper-slide">
-                        <div class="div__img">
-                            <img src="assets/room/room6.jpg" alt="algomas">
-                        </div>
-                        <div class="art__div1">
-                            <p class="div1__p1">Minimal Duplex Room</p>
-                            <p class="div1__p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor
-                                incididunt ut labore
-                                et dolore.</p>
-                            <p class="div1__p3">$345<span>/Night</span></p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="div__img">
-                            <img src="assets/room/room5.jpg" alt="algomas">
-                        </div>
-                        <div class="art__div1">
-                            <p class="div1__p1">Minimal Duplex Room</p>
-                            <p class="div1__p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor
-                                incididunt ut labore
-                                et dolore.</p>
-                            <p class="div1__p3">$345<span>/Night</span></p>
-                        </div>
-                    </div>
+                    <?php endforeach;?>
                 </div>
 
                 <div class="swiper-button-prev room-prev"></div>
@@ -157,8 +131,21 @@
             <div class="swiper swiperFacilities">
 
                 <div class="swiper-wrapper">
+                    <?php foreach($amenities as $amenitie) :?>
+                        <div class="swiper-slide">
+                        <div class="art__div ">
+                            <p class="div__p1"><?= $amenitie['id']?></p>
+                            <img src="./assets/index/facilities/facilities1.svg" alt="">
+                            <p class="div__p2"><?= $amenitie['name']?></p>
+                            <p class="div__p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor
+                                incididunt ut labore
+                                et dolore magna..</p>
+                        </div>
+                    </div>
+                        <?php endforeach; ?>
 
-                    <div class="swiper-slide">
+                    <!-- <div class="swiper-slide">
                         <div class="art__div ">
                             <p class="div__p1">01</p>
                             <img src="./assets/index/facilities/facilities1.svg" alt="">
@@ -230,7 +217,7 @@
                                 incididunt ut labore
                                 et dolore magna..</p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
 

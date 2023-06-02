@@ -1,3 +1,4 @@
+<?php require_once 'variables/variables.php';?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -169,18 +170,14 @@
  <h2>Services</h2>
  <div class="service__list">
  <div class="list">
- <p><span>+</span> Resturent & Bar</p>
- <p><span>+</span> Swimming Pool</p>
- <p><span>+</span> Wellness & Spa</p>
- <p><span>+</span> Resturant</p>
- <p><span>+</span> Conference Rooms</p>
- <p><span>+</span> Coctail Party House</p>
- </div>
+ <?php foreach ($services1 as $service) : ?>
+ <p><span>+</span> <?= $service ?></p>
+ <?php endforeach; ?>
+ </div> 
  <div class="list">
- <p><span>+</span> Gaming Zone</p>
- <p><span>+</span> Marrige Party</p>
- <p><span>+</span> Party Planning</p>
- <p><span>+</span> Tour Consultancy</p>
+ <?php foreach ($services2 as $service) : ?>
+ <p><span>+</span> <?= $service ?></p>
+ <?php endforeach; ?>
  </div>
  </div>
  </article>

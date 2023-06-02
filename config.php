@@ -1,7 +1,7 @@
 <?php
 
-require_once('BladeOne.php');
-require_once('BladeOneCache.php');
+require_once('blade/BladeOne.php');
+require_once('blade/BladeOneCache.php');
 use eftec\bladeone\BladeOne;
 $views = __Dir__ . '/view';
 $cache = __Dir__ . '/cache';
@@ -19,5 +19,3 @@ $conn = new mysqli($servername, $username, $password);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-
-// ?>
