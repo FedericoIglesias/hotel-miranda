@@ -19,7 +19,7 @@
  <div class="header__div header display--none" id="bar__menu">
  <div class="div__emblem">
  <div class="div__logo">
- <a href="/index.php">
+ <a href="/">
  <p>H</p>
  </a>
  </div>
@@ -31,10 +31,10 @@
  <span class="line3"></span>
  </div>
  <div class="div__menu display--none" id="menus__bar">
- <a href="pages/about-us.php">About Us</a>
- <a href="pages/rooms.php">Rooms</a>
- <a href="pages/offers.php">Offers</a>
- <a href="pages/new-details.php">Contact</a>
+ <a href="pages/about-us">About Us</a>
+ <a href="pages/rooms">Rooms</a>
+ <a href="pages/offers">Offers</a>
+ <a href="pages/new-details">Contact</a>
  </div>
  <div class="div__img">
  <div class="img__iconPerson"><img src="assets/login.svg" alt="iconPerson"></div>
@@ -49,7 +49,7 @@
  <p class="header__p">We Make Your Feel Comfortable</p>
  <div class="div__emblem">
  <div class="div__logo">
- <a href="index.php">
+ <a href="/">
  <p>H</p>
  </a>
  </div>
@@ -62,10 +62,10 @@
  <span class="line3"></span>
  </div>
  <div class="div__menu display--none" id="menus">
- <a href="about-us.php">About Us</a>
- <a href="rooms.php">Rooms</a>
- <a href="offers.php">Offers</a>
- <a href="new-details.php">Contact</a>
+ <a href="about-us">About Us</a>
+ <a href="rooms">Rooms</a>
+ <a href="offers">Offers</a>
+ <a href="new-details">Contact</a>
  </div>
 
  <div class="div__img">
