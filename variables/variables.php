@@ -16,7 +16,7 @@ $services2 = [
 ];
 
 
-$rooms = [
+$roomsasdad = [
     [
         'photo' => "https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1505691938895-1758d7feb511",
         'amenities' => 'oli',

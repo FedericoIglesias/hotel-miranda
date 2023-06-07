@@ -1,7 +1,7 @@
 <?php $_shouldextend[1]=1; ?>
 
 <?php $this->startSection('main'); ?>
-<?php require_once 'variables/variables.php';?>
+<?php require_once 'variables/variables.php'; ?>
 
 <main class="index">
  <!-- PROOF -->
@@ -80,21 +80,24 @@
  <div class="swiperRoom swiper">
 
  <div class="swiper-wrapper">
- <?php foreach($rooms as $room) : ?>
+ <?php 
+ $db = new DataBase();
+ $rooms = $db -> query('SELECT * FROM rooms');?>
+ <?php foreach ($rooms as $room) : ?>
  <div class="swiper-slide">
  <div class="div__img">
  <img src="assets/room/room3.jpg" alt="algomas">
  </div>
  <div class="art__div1">
- <p class="div1__p1"><?= $room['roomType']; ?></p>
+ <p class="div1__p1"><?= var_dump($room['roomType']); ?></p>
  <p class="div1__p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
  tempor
  incididunt ut labore
  et dolore.</p>
- <p class="div1__p3"><?= $room['price']; ?><span>/Night</span></p>
+ <p class="div1__p3"><?= var_dump($room['price']); ?><span>/Night</span></p>
  </div>
  </div>
- <?php endforeach;?>
+ <?php endforeach; ?>
  </div>
 
  <div class="swiper-button-prev room-prev"></div>
@@ -114,10 +117,7 @@
  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
  aliquip
  ex ea commodo consequat you have to understand this.</p>
- <iframe class="video" src="https://www.youtube.com/embed/Bu3Doe45lcU?start=25"
- title="YouTube video player" frameborder="0"
- allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
- allowfullscreen></iframe>
+ <iframe class="video" src="https://www.youtube.com/embed/Bu3Doe45lcU?start=25" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
  <button>BOOK NOW</button>
  </div>
 
@@ -131,12 +131,12 @@
  <div class="swiper swiperFacilities">
 
  <div class="swiper-wrapper">
- <?php foreach($amenities as $amenitie) :?>
+ <?php foreach ($amenities as $amenitie) : ?>
  <div class="swiper-slide">
  <div class="art__div ">
- <p class="div__p1"><?= $amenitie['id']?></p>
+ <p class="div__p1"><?= $amenitie['id'] ?></p>
  <img src="./assets/index/facilities/facilities1.svg" alt="">
- <p class="div__p2"><?= $amenitie['name']?></p>
+ <p class="div__p2"><?= $amenitie['name'] ?></p>
  <p class="div__p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
  tempor
  incididunt ut labore
@@ -144,80 +144,6 @@
  </div>
  </div>
  <?php endforeach; ?>
-
- <!-- <div class="swiper-slide">
- <div class="art__div ">
- <p class="div__p1">01</p>
- <img src="./assets/index/facilities/facilities1.svg" alt="">
- <p class="div__p2">Have High Rating</p>
- <p class="div__p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
- tempor
- incididunt ut labore
- et dolore magna..</p>
- </div>
- </div>
-
- <div class="swiper-slide">
- <div class="art__div ">
- <p class="div__p1">02</p>
- <img src="./assets/index/facilities/clock.svg" alt="">
- <p class="div__p2">Quiet Hours</p>
- <p class="div__p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
- tempor
- incididunt ut labore
- et dolore magna..</p>
- </div>
- </div>
-
-
- <div class="swiper-slide">
- <div class="art__div ">
- <p class="div__p1">03</p>
- <img src="./assets/index/facilities/location.svg" alt="">
- <p class="div__p2">Best Locations</p>
- <p class="div__p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
- tempor
- incididunt ut labore
- et dolore magna..</p>
- </div>
- </div>
-
- <div class="swiper-slide">
- <div class="art__div ">
- <p class="div__p1">04</p>
- <img src="./assets/index/facilities/offClock.svg" alt="">
- <p class="div__p2">Free Cancellation</p>
- <p class="div__p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
- tempor
- incididunt ut labore
- et dolore magna..</p>
- </div>
- </div>
-
-
- <div class="swiper-slide">
- <div class="art__div">
- <p class="div__p1">05</p>
- <img src="./assets/index/facilities/payCard.svg" alt="">
- <p class="div__p2">Payment Options</p>
- <p class="div__p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
- tempor
- incididunt ut labore
- et dolore magna..</p>
- </div>
- </div>
-
- <div class="swiper-slide">
- <div class="art__div">
- <p class="div__p1">06</p>
- <img src="./assets/index/facilities/offerSpecial.svg" alt="">
- <p class="div__p2">Special Offers</p>
- <p class="div__p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
- tempor
- incididunt ut labore
- et dolore magna..</p>
- </div>
- </div> -->
  </div>
 
 
@@ -389,11 +315,17 @@
  <div class="swiper swiperImg">
  <div class="swiper-wrapper">
 
- <div class="swiper-slide"> <div class="img__food"> <img src="" alt="" class="menu__img2 "></div></div>
- <div class="swiper-slide"> <div class="img__food"> <img src="" alt="" class="menu__img2 "></div></div>
- <div class="swiper-slide"> <div class="img__food"> <img src="" alt="" class="menu__img2 "></div></div>
+ <div class="swiper-slide">
+ <div class="img__food"> <img src="" alt="" class="menu__img2 "></div>
  </div>
- 
+ <div class="swiper-slide">
+ <div class="img__food"> <img src="" alt="" class="menu__img2 "></div>
+ </div>
+ <div class="swiper-slide">
+ <div class="img__food"> <img src="" alt="" class="menu__img2 "></div>
+ </div>
+ </div>
+
  <div class="swiper-pagination"></div>
  </div>
  </div>
@@ -421,7 +353,7 @@
  <p class="div__p2">Idea Raised Funds</p>
  </div>
  </article>
- </main>
+</main>
 
 <?php $this->stopSection(); ?>
 <?php if (isset($_shouldextend[1])) { echo $this->runChild('layout'); } ?>

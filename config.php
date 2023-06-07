@@ -8,7 +8,5 @@ $cache = __Dir__ . '/cache';
 $blade = new BladeOne($views,$cache,BladeOne::MODE_DEBUG);
 
 
-$servername = "localhost";
-$username = "root";
-$password = "1234";
+
 

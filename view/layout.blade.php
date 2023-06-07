@@ -1,4 +1,4 @@
-<?php require_once 'variables/variables.php';?>
+<?php require_once ('variables/variables.php');?>
 <!DOCTYPE html>
 <html lang="en">
 
