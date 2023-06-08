@@ -133,7 +133,7 @@
                 width: 100%;
             }
         }
-        button {
+        .btn {
             margin: auto;
             @include text(16px, white, 700);
             @include roboto;

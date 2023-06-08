@@ -45,31 +45,32 @@
  <div class="div__img"><img src="../assets/about/hotel.jpg" alt=""></div>
  </article>
  <!-- FORMS -->
- <article class="form__art">
+ <form class="form__art" method="post" action="saveMySQL.php">
  <div class="art__div">
  <div class="div__input ">
  <img src="../assets/new-details/man.svg" alt="">
- <input type="text" placeholder="Your full name">
+ <input type="text" placeholder="Your full name" name='name'>
  </div>
  <div class="div__input ">
  <img src="../assets/new-details/mail.svg" alt="">
- <input type="text" placeholder="Enter email address">
+ <input type="text" placeholder="Enter email address" name='mail'>
  </div>
  <div class="div__input ">
  <img src="../assets/new-details/phone.svg" alt="">
- <input type="text" placeholder="Add phone number">
+ <input type="text" placeholder="Add phone number" name='phone'>
  </div>
  <div class="div__input ">
  <img src="../assets/new-details/book.svg" alt="">
- <input type="text" placeholder="Enter subject">
+ <input type="text" placeholder="Enter subject" name='subject'>
  </div>
  </div>
  <div class="div__textarea">
  <img src="../assets/new-details/pencil.svg" alt="">
- <textarea name="" id="" cols="" rows="30" placeholder="Enter message"></textarea>
+ <textarea name="" id="" cols="" rows="30" placeholder="Enter message" name="description"></textarea>
  </div>
- <button>Send</button>
- </article>
+ <input type="submit" value="send" class="btn">
+ </form>
+
  </main>
 
 <?php $this->stopSection(); ?>
