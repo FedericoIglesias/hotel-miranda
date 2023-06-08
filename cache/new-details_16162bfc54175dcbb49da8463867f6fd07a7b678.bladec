@@ -45,7 +45,7 @@
  <div class="div__img"><img src="../assets/about/hotel.jpg" alt=""></div>
  </article>
  <!-- FORMS -->
- <form class="form__art" method="post" action="saveMySQL.php">
+ <form class="form__art" method="post" >
  <div class="art__div">
  <div class="div__input ">
  <img src="../assets/new-details/man.svg" alt="">
@@ -68,9 +68,25 @@
  <img src="../assets/new-details/pencil.svg" alt="">
  <textarea name="" id="" cols="" rows="30" placeholder="Enter message" name="description"></textarea>
  </div>
- <input type="submit" value="send" class="btn">
+ <input type="submit" value="send" class="btn" name="sendForm">
  </form>
+ <?php 
+ if(isset($_POST['sendForm'])){
+ $name =  $_POST['name'];
+ $mail =  $_POST['mail'];
+ $phone =  $_POST['phone'];
+ $subject =  $_POST['subject'];
+ 
 
+ $db = new DataBase();
+
+ $db -> query("INSERT INTO contacts (name, email, phone, subject) VALUES ( '$name', '$mail', '$phone', '$subject')");
+ echo'send';
+ }else{
+ echo 'no existto';
+ }
+
+ ?>
  </main>
 
 <?php $this->stopSection(); ?>

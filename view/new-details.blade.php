@@ -3,74 +3,86 @@
 @section('main')
 
 <main class="details">
-        <!-- PROOF -->
-        <article class="proof__art">
+    <!-- PROOF -->
+    <article class="proof__art">
+        <div class="art__div">
+            <p class="art__p1">THE ULTIMATE LUXURY</p>
+            <p class="art__p2">New Details</p>
+            <div class="div__div">
+                <p>Home | <span>Blog</span></p>
+            </div>
+        </div>
+    </article>
+    <!-- CONTACTS -->
+    <article class="contacts__art">
+        <div class="art__card">
+
             <div class="art__div">
-                <p class="art__p1">THE ULTIMATE LUXURY</p>
-                <p class="art__p2">New Details</p>
+                <p class="art__p1">01</p>
+                <img src="../assets/contact/phone.svg" alt="">
                 <div class="div__div">
-                    <p>Home | <span>Blog</span></p>
+                    <p class="div__p1">Phone Number</p>
+                    <p class="div__p2">+987654321</p>
                 </div>
             </div>
-        </article>
-        <!-- CONTACTS -->
-        <article class="contacts__art">
-            <div class="art__card">
-
-                <div class="art__div">
-                    <p class="art__p1">01</p>
-                    <img src="../assets/contact/phone.svg" alt="">
-                    <div class="div__div">
-                        <p class="div__p1">Phone Number</p>
-                        <p class="div__p2">+987654321</p>
-                    </div>
-                </div>
-                <div class="art__div">
-                    <p class="art__p1">02</p>
-                    <img src="../assets/contact/mail.svg" alt="">
-                    <div class="div__div">
-                        <p class="div__p1">Mail</p>
-                        <p class="div__p2">miranda@mail.com</p>
-                    </div>
-                </div>
-                <div class="art__div">
-                    <p class="art__p1">03</p>
-                    <img src="../assets/contact/ubi.svg" alt="">
-                    <div class="div__div">
-                        <p class="div__p1">Address</p>
-                        <p class="div__p2">At World</p>
-                    </div>
-                </div>
-            </div>
-            <div class="div__img"><img src="../assets/about/hotel.jpg" alt=""></div>
-        </article>
-        <!-- FORMS -->
-        <form class="form__art" method="post" action="saveMySQL.php">
             <div class="art__div">
-                <div class="div__input ">
-                    <img src="../assets/new-details/man.svg" alt="">
-                    <input type="text" placeholder="Your full name" name='name'>
-                </div>
-                <div class="div__input ">
-                    <img src="../assets/new-details/mail.svg" alt="">
-                    <input type="text" placeholder="Enter email address" name='mail'>
-                </div>
-                <div class="div__input ">
-                    <img src="../assets/new-details/phone.svg" alt="">
-                    <input type="text" placeholder="Add phone number" name='phone'>
-                </div>
-                <div class="div__input ">
-                    <img src="../assets/new-details/book.svg" alt="">
-                    <input type="text" placeholder="Enter subject" name='subject'>
+                <p class="art__p1">02</p>
+                <img src="../assets/contact/mail.svg" alt="">
+                <div class="div__div">
+                    <p class="div__p1">Mail</p>
+                    <p class="div__p2">miranda@mail.com</p>
                 </div>
             </div>
-            <div class="div__textarea">
-                <img src="../assets/new-details/pencil.svg" alt="">
-                <textarea name="" id="" cols="" rows="30" placeholder="Enter message" name="description"></textarea>
+            <div class="art__div">
+                <p class="art__p1">03</p>
+                <img src="../assets/contact/ubi.svg" alt="">
+                <div class="div__div">
+                    <p class="div__p1">Address</p>
+                    <p class="div__p2">At World</p>
+                </div>
             </div>
-            <input type="submit" value="send" class="btn">
-        </form>
+        </div>
+        <div class="div__img"><img src="../assets/about/hotel.jpg" alt=""></div>
+    </article>
+    <!-- FORMS -->
+    <form class="form__art" method="post">
+        <div class="art__div">
+            <div class="div__input ">
+                <img src="../assets/new-details/man.svg" alt="">
+                <input type="text" placeholder="Your full name" name='name'>
+            </div>
+            <div class="div__input ">
+                <img src="../assets/new-details/mail.svg" alt="">
+                <input type="text" placeholder="Enter email address" name='mail'>
+            </div>
+            <div class="div__input ">
+                <img src="../assets/new-details/phone.svg" alt="">
+                <input type="text" placeholder="Add phone number" name='phone'>
+            </div>
+            <div class="div__input ">
+                <img src="../assets/new-details/book.svg" alt="">
+                <input type="text" placeholder="Enter subject" name='subject'>
+            </div>
+        </div>
+        <div class="div__textarea">
+            <img src="../assets/new-details/pencil.svg" alt="">
+            <textarea name="" id="" cols="" rows="30" placeholder="Enter message" name="description"></textarea>
+        </div>
+        <input type="submit" value="send" class="btn" name="sendForm">
+    </form>
+    <?php
+    if (isset($_POST['sendForm'])) {
+        $name =  $_POST['name'];
+        $mail =  $_POST['mail'];
+        $phone =  $_POST['phone'];
+        $subject =  $_POST['subject'];
 
-    </main>
+        $db = new DataBase();
+
+        $db->query("INSERT INTO contacts (name, email, phone, subject) VALUES ( '$name', '$mail', '$phone', '$subject')");
+        echo 'send';
+    }
+    ?>
+</main>
 
 @endsection
