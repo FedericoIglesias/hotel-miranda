@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('main')
-<?php require_once 'variables/variables.php'; ?>
+
 
 <main class="index">
     <!-- PROOF -->
@@ -80,24 +80,22 @@
         <div class="swiperRoom swiper">
 
             <div class="swiper-wrapper">
-                <?php 
-                $db = new DataBase();
-                $rooms = $db -> query('SELECT * FROM rooms');?>
-                <?php foreach ($rooms as $room) : ?>
-                    <div class="swiper-slide">
-                        <div class="div__img">
-                            <img src="assets/room/room3.jpg" alt="algomas">
-                        </div>
-                        <div class="art__div1">
-                            <p class="div1__p1"><?= var_dump($room['roomType']); ?></p>
-                            <p class="div1__p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor
-                                incididunt ut labore
-                                et dolore.</p>
-                            <p class="div1__p3"><?= var_dump($room['price']); ?><span>/Night</span></p>
-                        </div>
+
+                @foreach ($rooms as $room)
+                <div class="swiper-slide">
+                    <div class="div__img">
+                        <img src="assets/room/room3.jpg" alt="algomas">
                     </div>
-                <?php endforeach; ?>
+                    <div class="art__div1">
+                        <p class="div1__p1">{{$room['roomType']}}</p>
+                        <p class="div1__p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor
+                            incididunt ut labore
+                            et dolore.</p>
+                        <p class="div1__p3">{{$room['price']}}<span>/Night</span></p>
+                    </div>
+                </div>
+                @endforeach
             </div>
 
             <div class="swiper-button-prev room-prev"></div>

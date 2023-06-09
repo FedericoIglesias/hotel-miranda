@@ -45,49 +45,33 @@
  <div class="div__img"><img src="../assets/about/hotel.jpg" alt=""></div>
  </article>
  <!-- FORMS -->
- <form class="form__art" method="post" >
+ <form class="form__art" method="post">
  <div class="art__div">
  <div class="div__input ">
  <img src="../assets/new-details/man.svg" alt="">
- <input type="text" placeholder="Your full name" name='name'>
+ <input type="text" placeholder="Your full name" name='name'required>
  </div>
  <div class="div__input ">
  <img src="../assets/new-details/mail.svg" alt="">
- <input type="text" placeholder="Enter email address" name='mail'>
+ <input type="email" placeholder="Enter email address" name='mail' required>
  </div>
  <div class="div__input ">
  <img src="../assets/new-details/phone.svg" alt="">
- <input type="text" placeholder="Add phone number" name='phone'>
+ <input type="number" placeholder="Add phone number" name='phone' required>
  </div>
  <div class="div__input ">
  <img src="../assets/new-details/book.svg" alt="">
- <input type="text" placeholder="Enter subject" name='subject'>
+ <input type="text" placeholder="Enter subject" name='subject' required min="1" max="30">
  </div>
  </div>
  <div class="div__textarea">
  <img src="../assets/new-details/pencil.svg" alt="">
- <textarea name="" id="" cols="" rows="30" placeholder="Enter message" name="description"></textarea>
+ <textarea name="" id="" cols="" rows="30" placeholder="Enter message" name="description" required></textarea>
  </div>
  <input type="submit" value="send" class="btn" name="sendForm">
  </form>
- <?php 
- if(isset($_POST['sendForm'])){
- $name =  $_POST['name'];
- $mail =  $_POST['mail'];
- $phone =  $_POST['phone'];
- $subject =  $_POST['subject'];
- 
 
- $db = new DataBase();
-
- $db -> query("INSERT INTO contacts (name, email, phone, subject) VALUES ( '$name', '$mail', '$phone', '$subject')");
- echo'send';
- }else{
- echo 'no existto';
- }
-
- ?>
- </main>
+</main>
 
 <?php $this->stopSection(); ?>
 <?php if (isset($_shouldextend[1])) { echo $this->runChild('layout'); } ?>
