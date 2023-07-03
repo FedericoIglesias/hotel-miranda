@@ -1,3 +1,9 @@
+name: deploy-aws
+on:
+  push:
+    branches:
+    - html-css-ts
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -13,5 +19,4 @@ jobs:
         aws-region: eu-west-3
 
     - name: Deploy static site to S3 bucket
-      run: aws s3 sync ./ s3://hotel-miranda 
-      
+      run: aws s3 sync ./ s3://oxygenshop 
